@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TCG – Campo di Battaglia v3</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;1,400&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#050508; display:flex; justify-content:center; align-items:center; min-height:100vh; }
+
+.phone {
+  width:390px; height:844px;
+  border-radius:44px;
+  border:2px solid #1e1e2e;
+  overflow:hidden;
+  position:relative;
+  box-shadow:0 0 100px rgba(80,40,160,0.3), 0 0 200px rgba(0,0,0,0.9);
+}
+
+/* ── SFONDO ── */
+.bg {
+  position:absolute; inset:0; z-index:0;
+  background:
+    radial-gradient(ellipse 80% 40% at 50% 0%,   rgba(60,20,100,0.65) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 25% at 15% 55%,  rgba(20,10,60,0.5)   0%, transparent 70%),
+    radial-gradient(ellipse 50% 25% at 85% 38%,  rgba(90,20,20,0.45)  0%, transparent 70%),
+    radial-gradient(ellipse 70% 50% at 50% 100%, rgba(30,10,60,0.5)   0%, transparent 70%),
+    linear-gradient(180deg,#0c0618 0%,#070510 50%,#040308 100%);
+}
+.stelle { position:absolute; inset:0; z-index:1; pointer-events:none; }
+.stella { position:absolute; border-radius:50%; background:#fff; animation:twinkle 3s infinite alternate; }
+@keyframes twinkle { from{opacity:0.15} to{opacity:0.65} }
+
+/* Effetto nebbia pietra nella zona creature */
+.nebbia {
+  position:absolute;
+  top:280px; left:0; right:0; height:220px;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 50%, rgba(40,20,70,0.35) 0%, transparent 100%);
+  z-index:2; pointer-events:none;
+}
+
+/* ── DIVISORE ── */
+.divisore {
+  position:absolute; top:338px; left:0; right:0; height:1px;
+  background:linear-gradient(90deg,transparent,rgba(150,100,220,0.35),rgba(201,168,76,0.55),rgba(150,100,220,0.35),transparent);
+  z-index:10;
+}
+.div-gem {
+  position:absolute; top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  width:24px; height:24px;
+  background:linear-gradient(135deg,#2a1a4a,#1a0e2e);
+  border:1px solid rgba(201,168,76,0.45);
+  border-radius:4px; rotate:45deg;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 0 10px rgba(201,168,76,0.25); z-index:11;
+}
+.div-gem-inner { rotate:-45deg; font-family:'Cinzel',serif; font-size:9px; color:#c9a84c; font-weight:700; }
+
+/* Glow divisore turno attivo */
+.divisore-glow {
+  position:absolute; top:338px; left:0; right:0; height:1px;
+  background:linear-gradient(90deg,transparent,rgba(201,168,76,0.3),transparent);
+  filter:blur(3px);
+  z-index:9;
+}
+
+/* ══════════════════════════════
+   TURNO + FASE
+══════════════════════════════ */
+.turno-wrap {
+  position:absolute; top:10px; left:50%; transform:translateX(-50%);
+  display:flex; flex-direction:column; align-items:center; gap:2px; z-index:20;
+}
+.turno-num {
+  width:36px; height:36px;
+  background:linear-gradient(135deg,#2a1a4a,#1a0e2e);
+  border:1px solid rgba(201,168,76,0.45);
+  border-radius:7px;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Cinzel',serif; font-size:17px; font-weight:700; color:#c9a84c;
+  box-shadow:0 0 12px rgba(201,168,76,0.25);
+}
+.fase-badge {
+  background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.2);
+  border-radius:20px; padding:2px 10px;
+  font-family:'Cinzel',serif; font-size:7.5px; color:#c9a84c;
+  letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap;
+}
+
+/* ══════════════════════════════
+   AVATAR
+══════════════════════════════ */
+.avatar { position:absolute; z-index:20; display:flex; align-items:center; gap:7px; }
+.avatar.av { top:8px; right:8px; flex-direction:row-reverse; }
+.avatar.gk { top:600px; right:8px; flex-direction:row-reverse; }
+
+.av-hex {
+  width:44px; height:44px;
+  clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+  position:relative; flex-shrink:0; overflow:hidden;
+}
+.av-hex-bg { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:24px; }
+.av-hex.av .av-hex-bg { background:linear-gradient(135deg,#3a1010,#200808); }
+.av-hex.gk .av-hex-bg { background:linear-gradient(135deg,#0a1a3a,#081020); }
+
+.av-info { display:flex; flex-direction:column; gap:3px; }
+.av-nome { font-family:'Cinzel',serif; font-size:9.5px; letter-spacing:1px; text-transform:uppercase; }
+.av-nome.av { color:#cc6666; }
+.av-nome.gk { color:#c9a84c; text-align:right; }
+
+.hp-row { display:flex; align-items:center; gap:4px; }
+.hp-bg { width:85px; height:6px; background:rgba(0,0,0,0.5); border-radius:3px; border:1px solid rgba(255,255,255,0.05); overflow:hidden; }
+.hp-fill { height:100%; border-radius:3px; }
+.hp-fill.av { background:linear-gradient(90deg,#7a1a1a,#c0392b); box-shadow:0 0 5px rgba(192,57,43,0.5); }
+.hp-fill.gk { background:linear-gradient(90deg,#1a5a2a,#27ae60); box-shadow:0 0 5px rgba(39,174,96,0.5); }
+.hp-val { font-family:'Cinzel',serif; font-size:9px; font-weight:700; min-width:32px; }
+.hp-val.av { color:#e07070; }
+.hp-val.gk { color:#70e090; text-align:right; }
+
+.mana-row { display:flex; gap:2px; }
+.mg { width:11px; height:11px; border-radius:50%; background:radial-gradient(circle at 35% 35%,#7a4acc,#3d1a7a); border:1px solid #8a5acc; box-shadow:0 0 3px rgba(138,90,204,0.6); }
+.mg.off { background:radial-gradient(circle at 35% 35%,#2a1a3a,#150e20); border-color:#2e1e3e; box-shadow:none; }
+
+/* ══════════════════════════════
+   MANO AVVERSARIO (compatta, coperta)
+══════════════════════════════ */
+.mano-av {
+  position:absolute; top:60px;
+  left:50%; transform:translateX(-50%);
+  display:flex; gap:3px; z-index:15;
+  transform:translateX(-50%) rotate(180deg);
+}
+.c-coperta {
+  width:26px; height:38px; border-radius:4px;
+  background:linear-gradient(135deg,#1a1a2e,#12101e);
+  border:1px solid #252538; position:relative; overflow:hidden; flex-shrink:0;
+}
+.c-coperta::after { content:'✦'; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#1e1e3a; font-size:11px; }
+
+/* ══════════════════════════════
+   SANTUARIO — lato sinistro, altezza divisore
+══════════════════════════════ */
+.santuario-area {
+  position:absolute;
+  top:309px; left:8px;
+  z-index:15;
+  display:flex; flex-direction:column; align-items:center; gap:3px;
+}
+.santuario-label-top {
+  font-family:'Cinzel',serif; font-size:5.5px; color:#5a3a8a;
+  text-transform:uppercase; letter-spacing:1px;
+}
+.santuario-card {
+  width:42px; height:58px; border-radius:7px;
+  background:linear-gradient(160deg,#2a1e3a,#180f28);
+  border:1px solid rgba(150,100,200,0.5);
+  box-shadow:0 0 14px rgba(100,60,180,0.4);
+  display:flex; flex-direction:column; align-items:center; justify-content:space-between;
+  padding:5px 3px; cursor:pointer;
+  transition:transform 0.2s, box-shadow 0.2s;
+}
+.santuario-card:hover { transform:scale(1.07); box-shadow:0 0 22px rgba(150,100,220,0.65); }
+.san-tag { font-size:5px; font-family:'Cinzel',serif; color:#6a4a9a; text-transform:uppercase; letter-spacing:0.3px; }
+.san-icon { font-size:20px; line-height:1; }
+.san-nome { font-family:'Cinzel',serif; font-size:5.5px; color:#b090e0; text-align:center; letter-spacing:0.2px; line-height:1.3; }
+
+.santuario-slot-vuoto {
+  width:42px; height:58px; border-radius:7px;
+  border:1px dashed rgba(100,60,180,0.2);
+  background:rgba(100,60,180,0.03);
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px;
+}
+.santuario-slot-vuoto span { font-size:6px; font-family:'Cinzel',serif; color:#3a2a5a; text-transform:uppercase; letter-spacing:0.3px; }
+
+/* ══════════════════════════════
+   CREATURE — zona centrale
+══════════════════════════════ */
+.creature-area {
+  position:absolute; left:0; right:0; z-index:15;
+  display:flex; flex-direction:column; align-items:center; gap:8px;
+}
+.creature-area.av { top:215px; }
+.creature-area.gk { top:368px; }
+
+.creature-row {
+  display:flex; justify-content:center; align-items:center;
+  gap:7px; padding:0 56px;
+  width:100%;
+}
+
+/* Etichetta zona */
+.zona-label {
+  font-family:'Cinzel',serif; font-size:6.5px;
+  color:rgba(100,80,150,0.4); text-transform:uppercase;
+  letter-spacing:1.5px; text-align:center;
+}
+
+/* ── CARTA UNITÀ ── */
+.cu {
+  width:54px; height:76px; border-radius:8px;
+  position:relative; cursor:pointer;
+  transition:transform 0.15s, box-shadow 0.15s;
+  flex-shrink:0; overflow:visible;
+}
+.cu:hover { transform:translateY(-8px) scale(1.06); z-index:80; }
+.cu.tappata { transform:rotate(13deg); opacity:0.72; }
+.cu.tappata:hover { transform:rotate(13deg) translateY(-5px); }
+
+.cu-inner {
+  width:100%; height:100%; border-radius:8px;
+  overflow:hidden; border:1px solid; display:flex; flex-direction:column;
+}
+.cu-inner.nord  { background:linear-gradient(160deg,#0e1e3a,#08101e); border-color:#2a4a7a; box-shadow:0 3px 10px rgba(42,74,122,0.45); }
+.cu-inner.sud   { background:linear-gradient(160deg,#2e0e0a,#1a0808); border-color:#7a2a1a; box-shadow:0 3px 10px rgba(122,42,26,0.45); }
+.cu-inner.est   { background:linear-gradient(160deg,#0a1e10,#081408); border-color:#2a6a3a; box-shadow:0 3px 10px rgba(42,106,58,0.45); }
+.cu-inner.ovest { background:linear-gradient(160deg,#1a0a2a,#0e0818); border-color:#5a2a8a; box-shadow:0 3px 10px rgba(90,42,138,0.45); }
+.cu-inner.centro{ background:linear-gradient(160deg,#1a1a1a,#0e0e0e); border-color:#4a4a5a; box-shadow:0 3px 10px rgba(74,74,90,0.45); }
+.cu-inner.av { filter:hue-rotate(12deg) brightness(0.82); }
+
+.cu-art { flex:1; display:flex; align-items:center; justify-content:center; font-size:24px; border-bottom:1px solid rgba(255,255,255,0.05); }
+.cu-stats { display:flex; justify-content:space-between; padding:2px 5px; font-family:'Cinzel',serif; }
+.cu-atk { font-size:9.5px; color:#e06060; font-weight:700; }
+.cu-def { font-size:9.5px; color:#6090e0; font-weight:700; }
+.cu-nome { font-size:5.5px; color:#6a5a8a; text-align:center; padding:0 2px 2px; font-family:'Cinzel',serif; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+.kw { position:absolute; top:-7px; right:-2px; background:rgba(201,168,76,0.14); border:1px solid rgba(201,168,76,0.38); border-radius:3px; font-size:5.5px; color:#c9a84c; padding:1px 3px; font-family:'Cinzel',serif; white-space:nowrap; z-index:5; }
+.kw.ice { background:rgba(80,140,220,0.14); border-color:rgba(80,140,220,0.38); color:#80aae0; }
+.faz { position:absolute; bottom:22px; left:3px; width:5px; height:5px; border-radius:50%; }
+.faz.nord   { background:#5588cc; box-shadow:0 0 4px #5588cc; }
+.faz.sud    { background:#cc4422; box-shadow:0 0 4px #cc4422; }
+.faz.est    { background:#44aa66; box-shadow:0 0 4px #44aa66; }
+.faz.ovest  { background:#8844aa; box-shadow:0 0 4px #8844aa; }
+.faz.centro { background:#aaaaaa; box-shadow:0 0 4px #aaaaaa; }
+.uso { position:absolute; bottom:22px; right:3px; background:rgba(0,0,0,0.55); border:1px solid rgba(255,255,255,0.08); border-radius:3px; font-size:5.5px; color:#888; padding:1px 2px; font-family:'Cinzel',serif; }
+
+.slot-v {
+  width:54px; height:76px; border-radius:8px;
+  border:1px dashed rgba(100,80,150,0.18);
+  background:rgba(100,80,150,0.025);
+  display:flex; align-items:center; justify-content:center;
+  font-size:16px; color:rgba(100,80,150,0.18); flex-shrink:0;
+}
+
+/* ══════════════════════════════
+   PANNELLI LATERALI
+══════════════════════════════ */
+/* Avversario SX — specchio del pannello SX giocatore */
+.pan-av-dx {
+  position:absolute; left:8px; top:60px;
+  display:flex; flex-direction:column; gap:4px; z-index:18; align-items:center;
+}
+/* Avversario DX — specchio del pannello DX giocatore */
+.pan-av-right {
+  position:absolute; right:8px; top:60px;
+  display:flex; flex-direction:column; gap:4px; z-index:18; align-items:center;
+}
+/* Giocatore SX */
+.pan-gk-sx {
+  position:absolute; left:8px; top:530px;
+  display:flex; flex-direction:column; gap:4px; z-index:18; align-items:center;
+}
+/* Giocatore DX */
+.pan-gk-dx {
+  position:absolute; right:8px; top:476px;
+  display:flex; flex-direction:column; gap:4px; z-index:18; align-items:center;
+}
+
+.mc {
+  width:42px; height:58px; border-radius:7px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:2px; cursor:pointer; position:relative;
+  transition:transform 0.15s, box-shadow 0.15s;
+}
+.mc:hover { transform:scale(1.07); }
+.mc.leader { background:linear-gradient(160deg,#2a1e0a,#181208); border:1px solid #c9a84c; box-shadow:0 0 10px rgba(201,168,76,0.2); }
+.mc.leader:hover { box-shadow:0 0 18px rgba(201,168,76,0.45); }
+.mc.satellite { background:linear-gradient(160deg,#0a1a2a,#08101e); border:1px solid #2a5a8a; box-shadow:0 0 7px rgba(42,90,138,0.25); }
+.mc.mazzo { background:linear-gradient(160deg,#141428,#0e0e1e); border:1px solid #2a2a4a; }
+.mc.cimitero { background:linear-gradient(160deg,#1a0a0a,#120808); border:1px solid #4a1a1a; }
+.mc.obiettivo { background:linear-gradient(160deg,#1a1a0a,#121208); border:1px dashed rgba(180,180,50,0.28); }
+.mc.tragedia { background:linear-gradient(160deg,#2a0a1a,#180810); border:1px solid #6a1a3a; box-shadow:0 0 7px rgba(106,26,58,0.3); }
+.mc.benedizione { background:linear-gradient(160deg,#0a1a0e,#081208); border:1px solid #1a4a2a; box-shadow:0 0 7px rgba(26,74,42,0.3); }
+.mc.benedizione .mc-lbl { color:#3a8a4a; }
+.mc.benedizione .mc-val { color:#60c070; font-size:6px; }
+
+.mc-crown { position:absolute; top:-7px; left:50%; transform:translateX(-50%); font-size:10px; filter:drop-shadow(0 0 4px rgba(201,168,76,0.9)); }
+
+/* Badge morti e costo Leader */
+.mc-badge-morte {
+  position:absolute; bottom:3px; left:3px;
+  background:rgba(0,0,0,0.65); border:1px solid rgba(180,60,60,0.4);
+  border-radius:3px; font-family:'Cinzel',serif; font-size:5px;
+  color:#cc6060; padding:1px 2px; line-height:1;
+}
+.mc-badge-costo {
+  position:absolute; bottom:3px; right:3px;
+  background:rgba(0,0,0,0.65); border:1px solid rgba(100,60,180,0.4);
+  border-radius:3px; font-family:'Cinzel',serif; font-size:5px;
+  color:#9a7acc; padding:1px 2px; line-height:1;
+}
+
+/* Vite respawn */
+.vita-row { display:flex; gap:2px; margin-top:1px; }
+.vita { font-size:7px; line-height:1; }
+.vita.on  { color:#c0392b; filter:drop-shadow(0 0 2px rgba(192,57,43,0.7)); }
+.vita.off { color:#3a1a1a; }
+
+/* Badge formato obiettivo */
+.obj-badge {
+  font-family:'Cinzel',serif; font-size:6px; color:#8a8a30;
+  background:rgba(180,180,50,0.08); border:1px solid rgba(180,180,50,0.18);
+  border-radius:10px; padding:1px 5px; margin-top:1px; letter-spacing:0.3px;
+}
+.mc-art { font-size:20px; line-height:1; }
+.mc-art.blur { filter:blur(1.5px); }
+.mc-lbl { font-size:5.5px; font-family:'Cinzel',serif; text-transform:uppercase; letter-spacing:0.3px; }
+.mc-val { font-size:7.5px; font-family:'Cinzel',serif; font-weight:700; }
+.mc.leader .mc-lbl { color:#c9a84c; }
+.mc.leader .mc-val { color:#e8d5a0; }
+.mc.satellite .mc-lbl { color:#4a9acc; }
+.mc.mazzo .mc-lbl { color:#5570aa; }
+.mc.mazzo .mc-val { color:#8090cc; }
+.mc.cimitero .mc-lbl { color:#884444; }
+.mc.cimitero .mc-val { color:#cc6666; }
+.mc.obiettivo .mc-lbl { color:#6a6a22; }
+.mc.obiettivo .mc-val { color:#8a8a30; font-size:6px; }
+.mc.tragedia .mc-lbl { color:#aa4466; }
+.mc.tragedia .mc-val { color:#cc6688; font-size:6px; }
+
+/* ══════════════════════════════
+   BOTTONE FINE TURNO
+══════════════════════════════ */
+.btn-fine {
+  position:absolute; right:10px; top:50%; transform:translateY(-50%);
+  z-index:25;
+  background:linear-gradient(160deg,#2a1e0a,#181208);
+  border:1px solid rgba(201,168,76,0.45); border-radius:8px;
+  padding:11px 6px;
+  font-family:'Cinzel',serif; font-size:7px; color:#c9a84c;
+  letter-spacing:1px; text-transform:uppercase;
+  cursor:pointer; writing-mode:vertical-rl;
+  box-shadow:0 0 12px rgba(201,168,76,0.18);
+  transition:box-shadow 0.2s, background 0.2s;
+}
+.btn-fine:hover { box-shadow:0 0 22px rgba(201,168,76,0.5); background:linear-gradient(160deg,#3a2e1a,#221a0e); }
+
+/* ══════════════════════════════
+   MANO GIOCATORE
+══════════════════════════════ */
+.mano-wrap {
+  position:absolute; bottom:0; left:0; right:0; height:215px; z-index:30;
+  background:linear-gradient(180deg,transparent 0%,rgba(5,3,10,0.9) 22%,rgba(4,2,8,0.98) 100%);
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-end; padding-bottom:14px;
+}
+.mano-header {
+  display:flex; align-items:center; gap:6px; margin-bottom:7px;
+}
+.mano-cnt { font-family:'Cinzel',serif; font-size:7.5px; color:#3a2a5a; letter-spacing:1px; text-transform:uppercase; }
+.mano-dots { display:flex; gap:3px; }
+.m-dot { width:5px; height:5px; border-radius:50%; background:#2a2a3a; border:1px solid #3a3a4a; }
+.m-dot.on { background:#c9a84c; box-shadow:0 0 5px rgba(201,168,76,0.7); }
+
+.mano-fan {
+  display:flex; align-items:flex-end; justify-content:center;
+  width:100%; padding:0 8px; position:relative;
+}
+
+/* Carta mano */
+.cm {
+  width:70px; height:98px; border-radius:9px;
+  position:relative; cursor:pointer; flex-shrink:0;
+  overflow:hidden; border:1px solid;
+  margin-left:-10px; transition:transform 0.2s, box-shadow 0.2s, z-index 0.1s;
+}
+.cm:first-child { margin-left:0; }
+.cm:nth-child(1) { transform:rotate(-16deg) translateY(12px); z-index:1; }
+.cm:nth-child(2) { transform:rotate(-8deg)  translateY(6px);  z-index:2; }
+.cm:nth-child(3) { transform:rotate(0deg)   translateY(0px);  z-index:3; }
+.cm:nth-child(4) { transform:rotate(8deg)   translateY(6px);  z-index:2; }
+.cm:nth-child(5) { transform:rotate(16deg)  translateY(12px); z-index:1; }
+.cm:hover { transform:translateY(-24px) scale(1.09) rotate(0deg) !important; z-index:100; box-shadow:0 14px 32px rgba(0,0,0,0.75), 0 0 20px rgba(201,168,76,0.28); }
+.cm.sel  { transform:translateY(-30px) scale(1.11) rotate(0deg) !important; z-index:100; box-shadow:0 16px 36px rgba(0,0,0,0.8), 0 0 28px rgba(201,168,76,0.5); }
+
+.cm.nord  { background:linear-gradient(160deg,#0e1e3a,#08101e); border-color:#3a5a9a; }
+.cm.sud   { background:linear-gradient(160deg,#2e0e0a,#1a0808); border-color:#9a3a2a; }
+.cm.est   { background:linear-gradient(160deg,#0a2010,#081408); border-color:#3a8a4a; }
+.cm.ovest { background:linear-gradient(160deg,#1a0a2a,#0e0818); border-color:#6a3a9a; }
+.cm.centro{ background:linear-gradient(160deg,#1a1a1a,#0e0e0e); border-color:#5a5a6a; }
+.cm.magia { background:linear-gradient(160deg,#1a180a,#12100a); border-color:#b0aa2a; box-shadow:0 0 8px rgba(200,200,40,0.18); }
+
+.cm-art {
+  width:100%; height:58px;
+  display:flex; align-items:center; justify-content:center; font-size:30px;
+  border-bottom:1px solid rgba(255,255,255,0.06); position:relative;
+}
+.cm-cost {
+  position:absolute; top:4px; left:4px;
+  width:19px; height:19px; border-radius:50%;
+  background:radial-gradient(circle at 35% 35%,#7a4acc,#3d1a7a);
+  border:1px solid #8a5acc;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Cinzel',serif; font-size:9px; font-weight:700; color:#e0d0f0;
+  box-shadow:0 0 6px rgba(138,90,204,0.6);
+}
+.cm-faz-dot {
+  position:absolute; top:4px; right:4px;
+  width:8px; height:8px; border-radius:50%;
+}
+.cm-stats { display:flex; justify-content:space-between; padding:3px 6px; font-family:'Cinzel',serif; }
+.cm-atk { font-size:10.5px; color:#e06060; font-weight:700; }
+.cm-def { font-size:10.5px; color:#6090e0; font-weight:700; }
+.cm-tipo { text-align:center; font-size:7px; color:#c9a84c; font-family:'Cinzel',serif; font-weight:600; letter-spacing:0.5px; text-transform:uppercase; padding-top:3px; }
+.cm-nome { font-size:7px; color:#7a6a9a; text-align:center; padding:1px 4px 3px; font-family:'Cinzel',serif; letter-spacing:0.3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+/* Vignetta */
+.vignetta { position:absolute; inset:0; z-index:4; background:radial-gradient(ellipse at 50% 50%,transparent 50%,rgba(0,0,0,0.42) 100%); pointer-events:none; }
+.content  { position:absolute; inset:0; z-index:5; }
+</style>
+</head>
+<body>
+<div class="phone">
+  <div class="bg"></div>
+  <div class="stelle" id="stelle"></div>
+  <div class="nebbia"></div>
+  <div class="divisore"><div class="div-gem"><div class="div-gem-inner">6</div></div></div>
+  <div class="divisore-glow"></div>
+
+  <div class="content">
+
+    <!-- TURNO + FASE -->
+    <div class="turno-wrap">
+      <div class="turno-num">6</div>
+      <div class="fase-badge">⚔ Fase Combattimento</div>
+    </div>
+
+    <!-- AVATAR AVVERSARIO (specchio: dx, info a sinistra) -->
+    <div class="avatar av">
+      <div class="av-hex av"><div class="av-hex-bg">🧟</div></div>
+      <div class="av-info" style="align-items:flex-end">
+        <span class="av-nome av">Mordak</span>
+        <div class="hp-row">
+          <span class="hp-val av">17/30</span>
+          <div class="hp-bg"><div class="hp-fill av" style="width:57%"></div></div>
+        </div>
+        <div class="mana-row" style="flex-direction:row-reverse">
+          <div class="mg"></div><div class="mg"></div><div class="mg"></div>
+          <div class="mg off"></div><div class="mg off"></div><div class="mg off"></div>
+        </div>
+        <div class="vita-row" style="flex-direction:row-reverse">
+          <span class="vita on">♥</span>
+          <span class="vita on">♥</span>
+          <span class="vita off">♥</span>
+        </div>
+        <div class="obj-badge">◆ 0/1</div>
+      </div>
+    </div>
+
+    <!-- AVATAR GIOCATORE -->
+    <div class="avatar gk">
+      <div class="av-hex gk"><div class="av-hex-bg">🧝</div></div>
+      <div class="av-info" style="align-items:flex-end">
+        <span class="av-nome gk">Eryndal</span>
+        <div class="hp-row">
+          <span class="hp-val gk">25/30</span>
+          <div class="hp-bg"><div class="hp-fill gk" style="width:83%"></div></div>
+        </div>
+        <div class="mana-row" style="flex-direction:row-reverse">
+          <div class="mg"></div><div class="mg"></div>
+          <div class="mg off"></div><div class="mg off"></div><div class="mg off"></div><div class="mg off"></div>
+        </div>
+        <div class="vita-row" style="flex-direction:row-reverse">
+          <span class="vita on">♥</span>
+          <span class="vita on">♥</span>
+          <span class="vita on">♥</span>
+        </div>
+        <div class="obj-badge">◆ 1/3</div>
+      </div>
+    </div>
+
+    <!-- MANO AVVERSARIO -->
+    <div class="mano-av">
+      <div class="c-coperta"></div><div class="c-coperta"></div><div class="c-coperta"></div>
+      <div class="c-coperta"></div><div class="c-coperta"></div><div class="c-coperta"></div>
+    </div>
+
+    <!-- PANNELLO SX AVVERSARIO (specchio pannello SX giocatore) -->
+    <div class="pan-av-dx">
+      <div class="mc leader">
+        <div class="mc-crown">♛</div>
+        <div class="mc-art">🧙</div>
+        <div class="mc-lbl">Leader</div>
+        <div class="mc-val">❤ 8</div>
+        <div class="mc-badge-morte">†1</div>
+        <div class="mc-badge-costo">⬡?</div>
+      </div>
+      <div class="mc satellite">
+        <div class="mc-art">🛸</div>
+        <div class="mc-lbl">Satellite</div>
+      </div>
+      <div class="mc tragedia">
+        <div class="mc-art">💔</div>
+        <div class="mc-lbl">Tragedia</div>
+        <div class="mc-val">×2</div>
+      </div>
+      <div class="mc benedizione">
+        <div class="mc-art">✨</div>
+        <div class="mc-lbl">Benediz.</div>
+        <div class="mc-val">×1</div>
+      </div>
+    </div>
+
+    <!-- PANNELLO DX AVVERSARIO (specchio pannello DX giocatore) -->
+    <div class="pan-av-right">
+      <div class="mc mazzo">
+        <div class="mc-art">📚</div>
+        <div class="mc-val">32</div>
+        <div class="mc-lbl">Mazzo</div>
+      </div>
+      <div class="mc cimitero">
+        <div class="mc-art">💀</div>
+        <div class="mc-val">9</div>
+        <div class="mc-lbl">Cimit.</div>
+      </div>
+    </div>
+
+    <!-- ── SANTUARIO (zona alta, tra mano av e creature) ── -->
+    <div class="santuario-area">
+      <div class="santuario-label-top">✦ Santuario Attivo ✦</div>
+      <div class="santuario-card">
+        <div class="san-tag">Santuario</div>
+        <div class="san-icon">🏛</div>
+        <div class="san-nome">Tempio del Vuoto Primordiale</div>
+      </div>
+    </div>
+
+    <!-- ── CREATURE AVVERSARIO ── -->
+    <div class="creature-area av">
+      <div class="creature-row">
+        <div class="cu">
+          <div class="cu-inner sud av">
+            <div class="cu-art">🐉</div>
+            <div class="cu-stats"><span class="cu-atk">4</span><span class="cu-def">2</span></div>
+            <div class="cu-nome">Wyrm Infernale</div>
+          </div>
+          <div class="faz sud"></div>
+        </div>
+        <div class="cu">
+          <div class="cu-inner ovest av">
+            <div class="cu-art">💀</div>
+            <div class="cu-stats"><span class="cu-atk">3</span><span class="cu-def">5</span></div>
+            <div class="cu-nome">Custode Ombra</div>
+          </div>
+          <div class="faz ovest"></div>
+          <div class="kw ice">❄ Gelo</div>
+        </div>
+        <div class="cu">
+          <div class="cu-inner sud av" style="opacity:0.65; transform:rotate(0deg)">
+            <div class="cu-art">⚔️</div>
+            <div class="cu-stats"><span class="cu-atk">5</span><span class="cu-def">1</span></div>
+            <div class="cu-nome">Berserker</div>
+          </div>
+          <div class="faz sud"></div>
+        </div>
+        <div class="slot-v">+</div>
+      </div>
+      <div class="zona-label">— Campo Avversario —</div>
+    </div>
+
+    <!-- ── CREATURE GIOCATORE ── -->
+    <div class="creature-area gk">
+      <div class="creature-row">
+        <div class="cu">
+          <div class="cu-inner nord">
+            <div class="cu-art">🐺</div>
+            <div class="cu-stats"><span class="cu-atk">3</span><span class="cu-def">4</span></div>
+            <div class="cu-nome">Lupo Glaciale</div>
+          </div>
+          <div class="faz nord"></div>
+          <div class="kw">❄ Gelo</div>
+          <div class="uso">∞</div>
+        </div>
+        <div class="cu" style="transform:rotate(14deg); opacity:0.7;">
+          <div class="cu-inner est">
+            <div class="cu-art">🌿</div>
+            <div class="cu-stats"><span class="cu-atk">2</span><span class="cu-def">3</span></div>
+            <div class="cu-nome">Spirito Foresta</div>
+          </div>
+          <div class="faz est"></div>
+        </div>
+        <div class="cu">
+          <div class="cu-inner centro">
+            <div class="cu-art">⚗️</div>
+            <div class="cu-stats"><span class="cu-atk">5</span><span class="cu-def">2</span></div>
+            <div class="cu-nome">Alchimista</div>
+          </div>
+          <div class="faz centro"></div>
+          <div class="kw">✦ Nexus</div>
+          <div class="uso">7</div>
+        </div>
+        <div class="slot-v">+</div>
+      </div>
+      <div class="zona-label">— Il Tuo Campo —</div>
+    </div>
+
+    <!-- PANNELLO SX GIOCATORE -->
+    <div class="pan-gk-sx">
+      <div class="mc leader">
+        <div class="mc-crown">♛</div>
+        <div class="mc-art">🧝</div>
+        <div class="mc-lbl">Leader</div>
+        <div class="mc-val">❤ 12</div>
+        <div class="mc-badge-morte">†0</div>
+        <div class="mc-badge-costo">⬡4</div>
+      </div>
+      <div class="mc satellite">
+        <div class="mc-art">🛸</div>
+        <div class="mc-lbl">Satellite</div>
+      </div>
+      <div class="mc tragedia">
+        <div class="mc-art">💔</div>
+        <div class="mc-lbl">Tragedia</div>
+        <div class="mc-val">×1</div>
+      </div>
+      <div class="mc benedizione">
+        <div class="mc-art">✨</div>
+        <div class="mc-lbl">Benediz.</div>
+        <div class="mc-val">×2</div>
+      </div>
+      <div class="mc obiettivo">
+        <div class="mc-art blur">📜</div>
+        <div class="mc-lbl">Obiettivo</div>
+        <div class="mc-val">1/3 ✓</div>
+      </div>
+    </div>
+
+    <!-- PANNELLO DX GIOCATORE -->
+    <div class="pan-gk-dx">
+      <div class="mc mazzo">
+        <div class="mc-art">📚</div>
+        <div class="mc-val">28</div>
+        <div class="mc-lbl">Mazzo</div>
+      </div>
+      <div class="mc cimitero">
+        <div class="mc-art">💀</div>
+        <div class="mc-val">12</div>
+        <div class="mc-lbl">Cimit.</div>
+      </div>
+    </div>
+
+    <!-- BOTTONE FINE TURNO -->
+    <div class="btn-fine">Fine Turno</div>
+
+    <!-- ══════════════════════
+         MANO GIOCATORE
+    ══════════════════════ -->
+    <div class="mano-wrap">
+      <div class="mano-header">
+        <span class="mano-cnt">Mano — 6 carte</span>
+        <div class="mano-dots">
+          <div class="m-dot on"></div><div class="m-dot on"></div><div class="m-dot on"></div>
+          <div class="m-dot on"></div><div class="m-dot on"></div><div class="m-dot on"></div>
+        </div>
+      </div>
+      <div class="mano-fan" id="mano">
+        <!-- Carta 1 -->
+        <div class="cm nord">
+          <div class="cm-art">
+            <span class="cm-cost">3</span><span>🌊</span>
+            <div class="cm-faz-dot" style="background:#5588cc;box-shadow:0 0 4px #5588cc;"></div>
+          </div>
+          <div class="cm-stats"><span class="cm-atk">2</span><span class="cm-def">6</span></div>
+          <div class="cm-nome">Torrente Boreale</div>
+        </div>
+        <!-- Carta 2 -->
+        <div class="cm sud">
+          <div class="cm-art">
+            <span class="cm-cost">2</span><span>🔥</span>
+            <div class="cm-faz-dot" style="background:#cc4422;box-shadow:0 0 4px #cc4422;"></div>
+          </div>
+          <div class="cm-stats"><span class="cm-atk">4</span><span class="cm-def">1</span></div>
+          <div class="cm-nome">Fiamma Eterna</div>
+        </div>
+        <!-- Carta 3 — MAGIA selezionata -->
+        <div class="cm magia sel">
+          <div class="cm-art" style="background:linear-gradient(160deg,#2a280a,#1a180a);">
+            <span class="cm-cost" style="background:radial-gradient(circle at 35% 35%,#aa9a20,#6a600e);border-color:#c9a84c;box-shadow:0 0 6px rgba(201,168,76,0.7);">4</span>
+            <span>⚡</span>
+          </div>
+          <div class="cm-tipo">Istante</div>
+          <div class="cm-nome" style="color:#c9a84c;font-size:7.5px;">Fulmine Arcano</div>
+        </div>
+        <!-- Carta 4 -->
+        <div class="cm ovest">
+          <div class="cm-art">
+            <span class="cm-cost">5</span><span>🌑</span>
+            <div class="cm-faz-dot" style="background:#8844aa;box-shadow:0 0 4px #8844aa;"></div>
+          </div>
+          <div class="cm-stats"><span class="cm-atk">6</span><span class="cm-def">3</span></div>
+          <div class="cm-nome">Ombra Divoratrice</div>
+        </div>
+        <!-- Carta 5 -->
+        <div class="cm est">
+          <div class="cm-art">
+            <span class="cm-cost">1</span><span>🌿</span>
+            <div class="cm-faz-dot" style="background:#44aa66;box-shadow:0 0 4px #44aa66;"></div>
+          </div>
+          <div class="cm-stats"><span class="cm-atk">1</span><span class="cm-def">1</span></div>
+          <div class="cm-nome">Terra Vivente</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /content -->
+  <div class="vignetta"></div>
+</div>
+
+<script>
+  // Stelle
+  const s = document.getElementById('stelle');
+  for(let i=0;i<90;i++){
+    const d = document.createElement('div');
+    d.className='stella';
+    const sz = Math.random()*1.4+0.4;
+    d.style.cssText=`width:${sz}px;height:${sz}px;top:${Math.random()*58}%;left:${Math.random()*100}%;animation-delay:${Math.random()*3}s;animation-duration:${2+Math.random()*3}s;opacity:${Math.random()*0.35+0.08};`;
+    s.appendChild(d);
+  }
+  // Click carte mano
+  document.querySelectorAll('.cm').forEach(c=>{
+    c.addEventListener('click',()=>{
+      document.querySelectorAll('.cm').forEach(x=>x.classList.remove('sel'));
+      c.classList.add('sel');
+    });
+  });
+</script>
+</body>
+</html>

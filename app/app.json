@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "Gioco",
+    "slug": "gioco",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.gioco.tcg"
+    },
+    "android": {
+      "package": "com.gioco.tcg"
+    },
+    "plugins": [
+      "expo-asset"
+    ]
+  }
+}
