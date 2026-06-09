@@ -7,7 +7,9 @@
 
 | Parametro | Valore |
 |---|---|
-| Carte nel mazzo principale | 80 carte |
+| Mazzo totale | 60 carte (incluso il Leader) |
+| Mazzo principale (escluso Leader) | 59 carte |
+| Leader | 1 carta — sempre nella Zona di Comando, fuori dal mazzo principale |
 | Carte nel mazzo Obiettivi | 35 carte |
 | Mano iniziale | 6 carte |
 | Limite massimo in mano | 7 carte |
@@ -106,11 +108,29 @@ Questa regola permette di bilanciare carte molto potenti imponendo un numero mas
   - **Sorcery:** Giocabile solo durante le proprie Main Phase (non durante il turno avversario)
   - **Istante:** Giocabile in qualsiasi momento, anche durante il turno avversario o in risposta a un'azione (come gli "instant" di Magic)
 
-### 5.3 — EQUIPAGGIAMENTO / ARTEFATTO
-- Carta permanente che si attacca a un'Unità del giocatore
-- Fornisce bonus statistici o abilità aggiuntive all'Unità equipaggiata
-- Se l'Unità viene distrutta, l'Equipaggiamento può rimanere in campo non equipaggiato o andare al Cimitero (da definire per ogni carta)
-- Può essere riattrezzato a un'altra Unità pagando un costo
+### 5.3 — ARTEFATTO
+
+Categoria di carte permanenti non legate a un'identità di fazione. Tre sottotipi distinti:
+
+#### 5.3.a — Artefatto (classico)
+- Carta permanente non-creatura. Non si attacca a nessuna unità.
+- Può avere effetti passivi (innescati a un evento o continui), abilità attivabili (es. tappa, paga mana, sacrifica) o entrambi.
+- Non ha valori di ATK/DEF — non attacca, non blocca.
+- Può essere bersaglio di effetti che cercano "artefatto".
+
+#### 5.3.b — Artefatto — Equipaggiamento
+- Sottotipo di Artefatto. Carta permanente che si attacca a una propria creatura tramite l'azione **Equipaggia**.
+- Quando entra in campo non è attaccato a nulla: l'azione Equipaggia va eseguita separatamente.
+- **Equipaggia: X mana** — azione di velocità Sorcery (giocabile solo nelle proprie Main Phase a stack vuoto) che attacca l'Equipaggiamento a una propria creatura, pagando X mana qualsiasi (valore stampato sulla carta).
+- L'Equipaggiamento conferisce alla creatura equipaggiata bonus statistici, keyword, abilità innescate o attivabili (a seconda della carta).
+- **Default detach:** quando la creatura equipaggiata viene distrutta o lascia il campo, l'Equipaggiamento **resta in campo non equipaggiato**. Può essere ri-attaccato a un'altra propria creatura pagando di nuovo il costo Equipaggia.
+- Eventuali eccezioni al default (es. Equipaggiamento che torna in mano o si auto-sacrifica) sono scritte esplicitamente sulla carta.
+
+#### 5.3.c — Artefatto — Creatura
+- Sottotipo combinato. Carta permanente che è **simultaneamente Artefatto e Creatura**.
+- Ha valori di ATK/DEF, attacca e blocca come una creatura normale (incluso il rispetto della summoning sickness, salvo Velocità).
+- È bersagliabile sia da effetti che cercano creature sia da effetti che cercano artefatti.
+- Sotto-tipi creatura tipici: Costrutto, Golem, Colosso (le carte Nomadi rappresentano la maggioranza degli Artefatti Creatura, in quanto costrutti senza fazione).
 
 ### 5.4 — LEADER / EROE
 - **1 carta Leader per mazzo**, tenuta fuori dal mazzo principale nella **Zona di Comando** (sempre visibile a tutti i giocatori, come il Commander in Magic)
@@ -141,7 +161,12 @@ Le due opzioni sono **mutuamente esclusive per ogni rientro**: il giocatore sceg
 ### 5.6 — TRAGEDIA / MALEDIZIONE
 - Carta permanente che si attacca **al proprio giocatore** (non alle unità)
 - Applica simultaneamente un **malus** e un **bonus** allo stesso giocatore
-- Entrambi gli effetti sono **permanenti** (fino a quando la Tragedia è in campo)
+- Quando giocata, l'effetto (malus + bonus) si attiva **subito** una prima volta
+- Gli effetti possono essere **permanenti** (fino a quando la Tragedia è in campo) oppure **immediati/one-shot** (subiti una volta), a seconda della carta
+- **Meccanica Eco**: una volta per turno, il proprietario può pagare il **costo Eco** della Tragedia per applicare una **nuova istanza** di malus + bonus (effetti continui si cumulano; effetti immediati si ripetono)
+  - Il costo Eco può essere **mana** (uguale, inferiore o superiore al costo della carta in base alla potenza dell'effetto)
+  - Il costo Eco può essere **non-mana** (es. "metti una carta in fondo al mazzo", "scarta una carta", "sacrifica una creatura")
+  - Il costo Eco può essere **assente** (la Tragedia non è ripetibile e applica l'effetto una sola volta in modo permanente)
 - Esempio: *"Dimezza i tuoi HP attuali. Per i prossimi 3 turni, hai 2 fasi di combattimento per turno."*
 - Si possono avere più Tragedie attive contemporaneamente (da verificare in fase di bilanciamento)
 - Il giocatore sceglie consapevolmente di giocarle — sono carte ad alto rischio/alto rendimento
@@ -273,7 +298,7 @@ La scelta del formato è **pubblica** (gli avversari sanno quanti obiettivi hai)
 
 ### 8.1 — 1v1 Duello
 - 2 giocatori si sfidano direttamente
-- Ogni giocatore ha il proprio mazzo da 80 carte + obiettivi assegnati dall'avversario
+- Ogni giocatore ha il proprio mazzo da 60 carte (incluso il Leader, che resta in Zona di Comando) + obiettivi assegnati dall'avversario
 - HP consigliati: 30 per partite rapide
 
 ### 8.2 — Multiplayer Free-For-All (FFA)

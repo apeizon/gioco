@@ -67,8 +67,8 @@ Permette di attaccare e difendere nello stesso turno. Ottima per Nord (sempre pr
 ---
 
 ### 🛡️ SCUDO *(nuovo)*
-> Questa unità può assorbire 1 fonte di danno o distruzione senza effetto. Rimuovi Scudo dopo l'uso.
-Simile a "Indistruttibile" ma a uso singolo. Una protezione consumabile tracciata con un contatore.
+> Questa unità annulla la prima fonte avversaria che la bersaglia o la colpisce, senza alcun effetto residuo. Rimuovi Scudo dopo l'uso.
+Tutela complessiva contro **una singola interazione**: blocca interamente l'effetto, qualunque esso sia (distruzione, intera fase di combattimento contro un'altra unità, danno da Magia tipo "fulmine", applicazione di status come Gelo/Maledizione, ecc.). Non assorbe "1 punto di danno" — annulla l'intera fonte come se non fosse mai avvenuta. Consumabile a uso singolo, tracciato con un flag booleano.
 
 ---
 
@@ -124,8 +124,8 @@ Non è Scudo (che protegge da tutto) — protegge solo dai danni da combattiment
 La più aggressiva delle keyword esclusive. Il secondo attacco è diretto — garantisce sempre un danno. Costo mana elevato sulle carte con Frenesia.
 
 #### INCENDIO
-> Quando questa unità infligge danno da combattimento a un giocatore, quel giocatore subisce X danno aggiuntivo alla fine del suo prossimo turno. (X indicato sulla carta)
-Danno "ritardato" che si attiva nel turno avversario — difficile da anticipare. Accumula se più unità con Incendio colpiscono.
+> Quando questa unità infligge danno da combattimento a un giocatore, quel giocatore subisce X danno aggiuntivo alla prossima End Step (indipendentemente da chi sia di turno). (X indicato sulla carta)
+Danno "ritardato" che si risolve alla prima End Step disponibile dopo l'attacco — semplifica il timing rispetto a "alla fine del prossimo turno del giocatore colpito". Accumula se più unità con Incendio colpiscono.
 
 #### SURRISCALDAMENTO
 > Ogni volta che giochi una Magia Sorcery o Istante nel tuo turno, questa unità guadagna +1/+0 fino alla fine del turno.
@@ -156,12 +156,12 @@ Ogni carta con Lamento ha un effetto specifico che si attiva alla sua morte — 
 Controllo del mazzo — sai cosa stai per pescare. Fondamentale per la strategia Ovest basata su pianificazione e manipolazione della natura.
 
 #### ECO
-> Quando giochi una Magia mentre questa unità è in campo, puoi copiare quell'effetto su un secondo bersaglio legittimo senza pagarne il costo.
-L'effetto della Magia viene duplicato gratuitamente. Il secondo bersaglio deve essere valido per quell'effetto. Trasforma ogni spell singola in un'azione doppia.
+> La prima Magia che giochi ogni turno mentre questa unità è in campo viene copiata; puoi scegliere un secondo bersaglio legittimo per la copia, senza pagarne il costo. Solo la prima Magia di ogni turno beneficia di Eco — Magie successive nello stesso turno non vengono copiate.
+L'effetto della prima Magia di ogni turno viene duplicato gratuitamente. Il secondo bersaglio deve essere valido per quell'effetto. Limitato a una sola Magia per turno per evitare loop e sovrappotenza con Eco multipli o spell-spam.
 
 #### ARCANO
-> Le tue Magie costano 1 mana in meno per ogni unità con Arcano che controlli in campo (minimo 1).
-Sconto cumulativo sugli spell. Con 3 unità Arcano in campo, le Magie da 4 costano 1. Incentiva swarm di piccole unità Ovest + spam di spell.
+> Le tue Magie costano 1 mana generico in meno per essere giocate per ogni unità con Arcano che controlli in campo. Lo sconto si applica esclusivamente al mana generico — il costo in mana di fazione specifica (Nord, Sud, Est, Ovest, Centro) resta da pagare per intero. Il costo totale di una Magia non può comunque scendere sotto 1 mana.
+Sconto cumulativo solo sul mana generico. Con 3 unità Arcano, una Magia da {2 OVEST}{3} (totale 5) diventa {2 OVEST}{0} = 2 mana totale. Una Magia mono-fazione tipo {1 OVEST} non può essere ridotta perché non ha mana generico.
 
 ---
 
@@ -192,7 +192,7 @@ Il bonus è cumulativo e non ha limite massimo. Cresce per tutta la partita in m
 | Carica | Universale | — | Raddoppia ATK o DEF a scelta durante l'attacco |
 | Compromesso | Universale | — | Danno subito dall'unità = HP recuperati dal proprietario |
 | Vedetta | Universale | — | Non si tappa quando attacca |
-| Scudo | Universale | — | Assorbe 1 danno/distruzione (consumabile) |
+| Scudo | Universale | — | Annulla la prima interazione avversaria (consumabile) |
 | Protezione | Universale | — | Non bersagliabile da effetti avversari (non protegge da effetti non mirati) |
 | Resilienza | Universale | — | Sopravvive la prima distruzione con 1 DEF |
 | Inafferrabile | Universale | — | Bloccabile da max 1 unità |

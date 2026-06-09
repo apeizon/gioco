@@ -5,14 +5,15 @@
 
 ## SISTEMA FAZIONI
 
-Il gioco è diviso in **5 fazioni**, ognuna con una propria identità filosofica, uno stile di gioco distinto e un'estetica riconoscibile. Le fazioni sono rappresentate dai **punti cardinali + il Centro**.
+Il gioco è diviso in **5 fazioni** (Nord, Sud, Est, Ovest, Centro), ognuna con una propria identità filosofica, uno stile di gioco distinto e un'estetica riconoscibile. Le fazioni sono rappresentate dai **punti cardinali + il Centro**. Esiste inoltre una categoria parallela: le **carte Nomadi**, apolidi e senza fazione, equivalente concettuale dell'incolore di Magic.
 
 ### Costruzione del mazzo — Identità Fazione
 - La **fazione del Leader** determina l'**identità fazione** del mazzo: il mazzo può contenere **solo carte appartenenti alle fazioni del Leader**
-  - Leader mono-fazione (es. Est) → solo carte Est + carte Centro
-  - Leader bi-fazione (es. Est + Ovest) → solo carte Est, Ovest + carte Centro
+  - Leader mono-fazione (es. Est) → solo carte Est + carte Centro + carte Nomadi
+  - Leader bi-fazione (es. Est + Ovest) → solo carte Est, Ovest + carte Centro + carte Nomadi
   - Non esistono Leader tri-fazione o superiori (da confermare in fase di design carte)
 - Le carte **Centro** possono essere inserite in **qualsiasi mazzo**, indipendentemente dalla fazione del Leader
+- Le carte **Nomadi** possono essere inserite in **qualsiasi mazzo**, indipendentemente dalla fazione del Leader (sono apolidi)
 - Le carte multifazione (es. Nord+Est) possono essere inserite solo se **entrambe le fazioni** rientrano nell'identità del Leader
 - Un mazzo mono-fazione è più consistente ma prevedibile; un mazzo bi-fazione è più versatile ma richiede terre di due tipi diversi
 
@@ -147,6 +148,36 @@ Il gioco è diviso in **5 fazioni**, ognuna con una propria identità filosofica
 
 ---
 
+## ◯ NOMADI — Apolidi / Incolori
+
+**Filosofia:** Non c'è patria, non c'è simbolo, non c'è guida. I Nomadi sono ciò che precede o sopravvive alle fazioni — costrutti dimenticati, viandanti, reliquie di ere passate, bestie senza territorio. Vagano tra le direzioni senza appartenere a nessuna.
+
+**Natura:** I Nomadi **non sono una fazione vera** — sono l'**assenza di fazione**. Equivalente concettuale dell'incolore di Magic. Servono come categoria di carte universalmente accessibili, utili a riempire ruoli che ogni mazzo potrebbe desiderare a prescindere dall'identità del Leader.
+
+**Stile di gioco:** Utility trasversale. Le carte Nomadi sono pensate per offrire effetti generalisti — strumenti di base, supporti meccanici, oggetti antichi — senza definire una strategia da sole. Un mazzo non si costruisce *attorno* ai Nomadi: i Nomadi *integrano* qualsiasi strategia.
+
+**Bilanciamento:** Le carte Nomadi non sono per principio più deboli delle carte di fazione — possono essere altrettanto forti, ma il costo deve essere proporzionato all'accessibilità universale. In generale i Nomadi non hanno keyword esclusive di fazione e non competono direttamente con le specialità identitarie (es. niente mass damage stile Sud, niente mill stile Est), ma possono offrire effetti utility competitivi al giusto costo.
+
+**Meccaniche preferite:**
+- Artefatti utility (riduzioni di costo, rigenerazione, contatori)
+- Equipaggiamenti generici (+ATK / +DEF, parole chiave universali)
+- Costrutti e golem (creature senza affiliazione: Costrutto, Golem, Bestia Antica)
+- Reliquie con Utilizzo Limitato che si auto-esauriscono
+- Effetti di "fix" del mana (cercare terre, scartare e ripescare)
+
+**Tipi di carte preferiti:**
+- **SÌ:** Artefatti, Equipaggiamenti, alcune Creature (Costrutti / Golem / Bestie senza casa), occasionali Satelliti / Santuari neutri
+- **NO o molto rari:** Magie (le Magie restano fortemente identitarie delle fazioni), Tragedie e Benedizioni (legate alla filosofia di una fazione)
+- **MAI:** Leader (i Leader sono sempre vincolati a un'identità di fazione)
+
+**Estetica:** Pietra antica, polvere, ruggine, sabbia, statue erose, costrutti dimenticati, paesaggi lunari, deserti senza nome. Palette cromatica: grigio sabbia, ocra, marrone pietra, beige, ferro ossidato. **Bordo carta:** pietra antica (grigio sabbia con texture pietra erosa, distinto dal grigio "rarità Comune").
+
+**Costo mana:** I Nomadi **non hanno una propria tipologia di mana**. Le carte Nomadi si pagano **esclusivamente con mana generico di qualsiasi tipo** — non c'è alcun requisito di mana specifico di fazione. Esempio: una creatura Nomade da costo 3 si paga con 3 mana di qualsiasi combinazione (Nord, Sud, Est, Ovest, Centro o mix).
+
+**Mana:** Nessuna terra Nomade — i Nomadi non generano mana proprio, né hanno avamposti dedicati.
+
+---
+
 ## INTERAZIONI TRA FAZIONI
 
 | Combo | Sinergia |
@@ -163,12 +194,15 @@ Il gioco è diviso in **5 fazioni**, ognuna con una propria identità filosofica
 ## NOTE PER LO SVILUPPO (Claude Code)
 
 - Il **Leader** ha un campo `identita_fazione` (array) che definisce le fazioni giocabili nel mazzo (es. `["EST", "OVEST"]`)
-- Il deck builder deve validare che ogni carta nel mazzo rientri nell'identità fazione del Leader selezionato; le carte Centro sono sempre valide
-- Ogni carta deve avere un campo `fazione` con uno dei 5 valori: `NORD`, `SUD`, `EST`, `OVEST`, `CENTRO`
+- Il deck builder deve validare che ogni carta nel mazzo rientri nell'identità fazione del Leader selezionato; le carte **Centro** e **Nomadi** sono sempre valide
+- Ogni carta deve avere un campo `fazione` con uno dei valori: `NORD`, `SUD`, `EST`, `OVEST`, `CENTRO`, `NOMADE`
 - Le terre devono avere un campo `tipo_mana` corrispondente alla loro fazione
 - Il mana generato deve essere tipizzato: pagare una carta Nord richiede mana Nord (o mana Centro neutro)
+- Le carte **Nomadi** non hanno requisito di mana specifico: il loro costo è interamente in mana generico, pagabile con qualsiasi combinazione di mana di qualsiasi fazione
+- I Nomadi non hanno avamposti propri — non esiste `tipo_mana = NOMADE`
 - Carte multicolore/multifazione devono supportare array di fazioni: `fazione: ["NORD", "EST"]`
 - Il costo mana di una carta multifazione specifica quante unità di ogni tipo sono richieste (es. `{1 NORD}{1 EST}` = 1 mana Nord + 1 mana Est); non è possibile sostituire un tipo con l'altro, salvo mana Centro neutro
 - L'interfaccia deve mostrare chiaramente la fazione di ogni carta tramite colore bordo, simbolo e palette cromatica dedicata
+- Le carte Nomadi usano bordo "pietra antica" (grigio sabbia con texture pietra erosa) — distinto dal grigio "rarità Comune"
 - Le terre Centro devono essere marcate come "mana neutro" e accettate da qualsiasi slot mana
-- Il sistema di filtro nel deck builder deve permettere di filtrare per fazione
+- Il sistema di filtro nel deck builder deve permettere di filtrare per fazione (incluso filtro `NOMADE`)

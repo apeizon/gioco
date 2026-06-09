@@ -8,6 +8,7 @@ In ogni conversazione puoi invocare uno o più agenti per lavorare nella loro ar
 | Agente | File | Area |
 |--------|------|------|
 | Game Designer (TCG) | `game-designer.md` | Meccaniche, regole, GDD, bilanciamento |
+| **Team Card Design** | `card-design/` | Design specifico delle carte: filosofia, templating, originalità (3 sub-agenti) |
 | Mobile Developer | `mobile-developer.md` | App iOS/Android, game engine client |
 | Backend Developer | `backend-developer.md` | Server, matchmaking, real-time, DB |
 | UI/UX Designer | `ui-ux-designer.md` | Esperienza utente, interfaccia, flussi |
