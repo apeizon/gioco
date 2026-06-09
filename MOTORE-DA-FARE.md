@@ -1,6 +1,6 @@
 # Motore — carte da fare a mano
 <!-- AUTO-GENERATO dal validatore. Non modificare a mano. -->
-Ultimo aggiornamento: commit e3b290e
+Ultimo aggiornamento: commit 2fabb65
 
 ## ⚠️ CAT3 — serve codice custom (121)
 | Carta | File | Motivo |
