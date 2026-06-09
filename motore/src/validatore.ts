@@ -1,8 +1,9 @@
 import type { RecordCarta } from "./estrai-carta.js";
-import type { CartaParsata, Effetto } from "./schema.js";
+import type { Azione, CartaParsata, Effetto } from "./schema.js";
 import { parseEffetto } from "./parser.js";
 import { classifica } from "./classifica.js";
 import { KEYWORD } from "./grammatica.js";
+import { archetipoAvamposto, estraiMana } from "./avamposti.js";
 
 // Campi che possono contenere effetti in prosa.
 const CAMPI_EFFETTO = ["Effetto", "Bonus", "Malus", "Eco"];
@@ -10,6 +11,24 @@ const CAMPI_EFFETTO = ["Effetto", "Bonus", "Malus", "Eco"];
 export function validaCarta(rec: RecordCarta): CartaParsata {
   const id = rec.file.split("/").pop()!.replace(/\.md$/, "");
   const keyword = estraiKeyword(rec.campi["Keyword"]);
+
+  const arch = archetipoAvamposto(rec.file);
+  if (arch) {
+    const azione: Azione = { verbo: "avamposto", archetipo: arch };
+    const mana = estraiMana(rec.campi["Effetto"] ?? "");
+    if (mana) azione.mana = mana;
+    return {
+      id,
+      file: rec.file,
+      nome: rec.nome,
+      tipo: rec.campi["Tipo"] ?? "",
+      fazione: rec.campi["Fazione"],
+      costo: rec.campi["Costo"],
+      keyword,
+      effetti: [{ trigger: "passiva", azioni: [azione] }],
+      categoria: "CAT2",
+    };
+  }
 
   const effetti: Effetto[] = [];
   let okTotale = true;

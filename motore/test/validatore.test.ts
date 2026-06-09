@@ -47,3 +47,25 @@ test("legge effetti anche da Bonus e Malus", () => {
   expect(c.categoria).toBe("CAT2");
   expect(c.effetti.length).toBeGreaterThanOrEqual(2);
 });
+
+test("avamposto tappato => CAT2 con archetipo e mana", () => {
+  const c = validaCarta({
+    nome: "Altipiano",
+    file: "carte/avamposti/avamposti-tappati/ALTIPIANO.md",
+    campi: { Tipo: "Avamposto", Effetto: "Entra tappato. Genera 1 mana Nord, 1 mana Ovest o 1 mana Centro a scelta." },
+  });
+  expect(c.categoria).toBe("CAT2");
+  expect(c.effetti[0].azioni[0].verbo).toBe("avamposto");
+  expect(c.effetti[0].azioni[0].archetipo).toBe("tappato");
+  expect((c.effetti[0].azioni[0].mana as any).colori).toEqual(["nord", "ovest", "centro"]);
+});
+
+test("avamposto dormiente => CAT2, mai CAT3", () => {
+  const c = validaCarta({
+    nome: "Altare",
+    file: "carte/avamposti/avamposti-dormienti/ALTARE.md",
+    campi: { Tipo: "Avamposto", Effetto: "Entra inattivo — non genera mana finché la condizione non è soddisfatta. Si attiva la prima volta che recuperi HP. Una volta attivo, genera 1 mana Nord o 1 mana Centro a scelta per turno." },
+  });
+  expect(c.categoria).toBe("CAT2");
+  expect(c.effetti[0].azioni[0].archetipo).toBe("dormiente");
+});

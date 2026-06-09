@@ -578,9 +578,26 @@
     "nome": "Alcova d'Argento",
     "tipo": "Avamposto / Vorthaan · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "bounce",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "APPRODO_SILENTE",
@@ -588,9 +605,26 @@
     "nome": "Approdo Silente",
     "tipo": "Avamposto / Vorthaan · Endal",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "bounce",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "est"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CAPPELLA_ARDENTE",
@@ -598,9 +632,26 @@
     "nome": "Cappella Ardente",
     "tipo": "Avamposto / Caleth · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "bounce",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CAVERNA_FUMANTE",
@@ -608,9 +659,26 @@
     "nome": "Caverna Fumante",
     "tipo": "Avamposto / Caleth · Endal",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "bounce",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "est"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "GIARDINO_ETERNO",
@@ -618,9 +686,26 @@
     "nome": "Giardino Eterno",
     "tipo": "Avamposto / Faelorn · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "bounce",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "ovest",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "INSENATURA_VERDE",
@@ -628,9 +713,26 @@
     "nome": "Insenatura Verde",
     "tipo": "Avamposto / Vorthaan · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "bounce",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "MONASTERO_SILENTE",
@@ -638,9 +740,26 @@
     "nome": "Monastero Silente",
     "tipo": "Avamposto / Endal · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "bounce",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "OASI_SELVAGGIA",
@@ -648,9 +767,26 @@
     "nome": "Oasi Selvaggia",
     "tipo": "Avamposto / Caleth · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "bounce",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "PORTO_DELLE_BRACI",
@@ -658,9 +794,26 @@
     "nome": "Porto delle Braci",
     "tipo": "Avamposto / Vorthaan · Caleth",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "bounce",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "sud"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "TANA_DEI_RAMI",
@@ -668,9 +821,26 @@
     "nome": "Tana dei Rami",
     "tipo": "Avamposto / Endal · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "bounce",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "ALTARE_SEPOLTO",
@@ -679,9 +849,26 @@
     "tipo": "Avamposto",
     "fazione": "Nord · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "BRACIERE_SPENTO",
@@ -690,9 +877,26 @@
     "tipo": "Avamposto",
     "fazione": "Caleth · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CALDERA_SOPITA",
@@ -701,9 +905,25 @@
     "tipo": "Avamposto",
     "fazione": "Sud",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud"
+              ],
+              "scelta": false
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CENERE_DI_MORDETH",
@@ -712,9 +932,26 @@
     "tipo": "Avamposto",
     "fazione": "Caleth · Endal",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "est"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CREPA_GLACIALE",
@@ -723,9 +960,25 @@
     "tipo": "Avamposto",
     "fazione": "Nord",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord"
+              ],
+              "scelta": false
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CRIPTA_VELATA",
@@ -734,9 +987,26 @@
     "tipo": "Avamposto",
     "fazione": "Endal · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "FORESTA_INCANTATA",
@@ -745,9 +1015,26 @@
     "tipo": "Avamposto",
     "fazione": "Faelorn · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "ovest",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "FRATTURA_DI_CONFINE",
@@ -756,9 +1043,26 @@
     "tipo": "Avamposto",
     "fazione": "Nord · Caleth",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "sud"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "HUMUS_CORROTTO",
@@ -767,9 +1071,26 @@
     "tipo": "Avamposto",
     "fazione": "Endal · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "PIANA_SILENTE",
@@ -778,9 +1099,26 @@
     "tipo": "Avamposto",
     "fazione": "Nord · Endal",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "est"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "SANTUARIO_INERTE",
@@ -789,9 +1127,25 @@
     "tipo": "Avamposto",
     "fazione": "Centro",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "centro"
+              ],
+              "scelta": false
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "SAVANA_ADDORMENTATA",
@@ -800,9 +1154,26 @@
     "tipo": "Avamposto",
     "fazione": "Caleth · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "SEME_DELL'OBLIO",
@@ -811,9 +1182,25 @@
     "tipo": "Avamposto",
     "fazione": "Ovest",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "ovest"
+              ],
+              "scelta": false
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "TOMBA_SILENTE",
@@ -822,9 +1209,25 @@
     "tipo": "Avamposto",
     "fazione": "Est",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est"
+              ],
+              "scelta": false
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "TUNDRA_SOPITA",
@@ -833,9 +1236,26 @@
     "tipo": "Avamposto",
     "fazione": "Nord · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "dormiente",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "LANDA_BRUCIANTE",
@@ -843,9 +1263,18 @@
     "nome": "Landa Bruciante",
     "tipo": "Avamposto",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Faelorn, mettilo in campo tappato e mischia il mazzo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "fetch"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "MIRE_DELL'OBLIO",
@@ -853,9 +1282,18 @@
     "nome": "Mire dell'Oblio",
     "tipo": "Avamposto",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Endal, mettilo in campo tappato e mischia il mazzo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "fetch"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "PIANURA_SACRA",
@@ -863,9 +1301,18 @@
     "nome": "Pianura Sacra",
     "tipo": "Avamposto",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Mid Vael, mettilo in campo tappato e mischia il mazzo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "fetch"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "PRATERIA_SELVAGGIA",
@@ -873,9 +1320,18 @@
     "nome": "Prateria Selvaggia",
     "tipo": "Avamposto",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Caleth, mettilo in campo tappato e mischia il mazzo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "fetch"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "TUNDRA_SENZA_FINE",
@@ -883,9 +1339,18 @@
     "nome": "Tundra Senza Fine",
     "tipo": "Avamposto",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Vorthaan, mettilo in campo tappato e mischia il mazzo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "fetch"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "ALBA_VELATA",
@@ -894,9 +1359,26 @@
     "tipo": "Avamposto",
     "fazione": "Sud / Centro",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "BRACI_OSCURE",
@@ -905,9 +1387,26 @@
     "tipo": "Avamposto",
     "fazione": "Sud / Est",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "est"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "BRINA_SELVATICA",
@@ -916,9 +1415,26 @@
     "tipo": "Avamposto",
     "fazione": "Nord / Ovest",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CENERE_SILENZIOSA",
@@ -927,9 +1443,25 @@
     "tipo": "Avamposto",
     "fazione": "Sud",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud"
+              ],
+              "scelta": false
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "FORESTA_FUMANTE",
@@ -938,9 +1470,26 @@
     "tipo": "Avamposto",
     "fazione": "Sud / Ovest",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "GELO_SILENTE",
@@ -949,9 +1498,26 @@
     "tipo": "Avamposto",
     "fazione": "Nord / Est",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "est"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "GIARDINO_SEGRETO",
@@ -960,9 +1526,26 @@
     "tipo": "Avamposto",
     "fazione": "Ovest / Centro",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "ovest",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "LUCE_CELATA",
@@ -971,9 +1554,25 @@
     "tipo": "Avamposto",
     "fazione": "Centro",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "centro"
+              ],
+              "scelta": false
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "NEBBIA_DI_CENERE",
@@ -982,9 +1581,26 @@
     "tipo": "Avamposto",
     "fazione": "Nord / Sud",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "sud"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "OMBRA_SENZA_NOME",
@@ -993,9 +1609,25 @@
     "tipo": "Avamposto",
     "fazione": "Est",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est"
+              ],
+              "scelta": false
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "RADICI_DIMENTICATE",
@@ -1004,9 +1636,25 @@
     "tipo": "Avamposto",
     "fazione": "Ovest",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "ovest"
+              ],
+              "scelta": false
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "SOGLIA_D'ARGENTO",
@@ -1015,9 +1663,26 @@
     "tipo": "Avamposto",
     "fazione": "Nord / Centro",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "SOTTOBOSCO_DEI_MORTI",
@@ -1026,9 +1691,26 @@
     "tipo": "Avamposto",
     "fazione": "Est / Ovest",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "VELO_CONSACRATO",
@@ -1037,9 +1719,26 @@
     "tipo": "Avamposto",
     "fazione": "Est / Centro",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "VELO_D'INVERNO",
@@ -1048,9 +1747,25 @@
     "tipo": "Avamposto",
     "fazione": "Nord",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "coperto",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord"
+              ],
+              "scelta": false
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "AVAMPOSTO_DI_CALETH",
@@ -1065,9 +1780,15 @@
         "trigger": "passiva",
         "azioni": [
           {
-            "verbo": "genera_mana",
-            "valore": 1,
-            "colore": "Sud"
+            "verbo": "avamposto",
+            "archetipo": "semplice",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud"
+              ],
+              "scelta": false
+            }
           }
         ]
       }
@@ -1087,9 +1808,15 @@
         "trigger": "passiva",
         "azioni": [
           {
-            "verbo": "genera_mana",
-            "valore": 1,
-            "colore": "Est"
+            "verbo": "avamposto",
+            "archetipo": "semplice",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est"
+              ],
+              "scelta": false
+            }
           }
         ]
       }
@@ -1109,9 +1836,15 @@
         "trigger": "passiva",
         "azioni": [
           {
-            "verbo": "genera_mana",
-            "valore": 1,
-            "colore": "Ovest"
+            "verbo": "avamposto",
+            "archetipo": "semplice",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "ovest"
+              ],
+              "scelta": false
+            }
           }
         ]
       }
@@ -1131,9 +1864,15 @@
         "trigger": "passiva",
         "azioni": [
           {
-            "verbo": "genera_mana",
-            "valore": 1,
-            "colore": "Centro"
+            "verbo": "avamposto",
+            "archetipo": "semplice",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "centro"
+              ],
+              "scelta": false
+            }
           }
         ]
       }
@@ -1153,9 +1892,15 @@
         "trigger": "passiva",
         "azioni": [
           {
-            "verbo": "genera_mana",
-            "valore": 1,
-            "colore": "Nord"
+            "verbo": "avamposto",
+            "archetipo": "semplice",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord"
+              ],
+              "scelta": false
+            }
           }
         ]
       }
@@ -1168,9 +1913,26 @@
     "nome": "Abisso Consacrato",
     "tipo": "Avamposto / Endal · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "shock",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "ANFITEATRO_ARTICO",
@@ -1178,9 +1940,26 @@
     "nome": "Anfiteatro Artico",
     "tipo": "Avamposto / Vorthaan · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "shock",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "BURRONE_DELLE_RADICI",
@@ -1188,9 +1967,26 @@
     "nome": "Burrone delle Radici",
     "tipo": "Avamposto / Caleth · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "shock",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "COLONNA_DI_URIA",
@@ -1198,9 +1994,26 @@
     "nome": "Colonna di Uria",
     "tipo": "Avamposto / Caleth · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "shock",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "DOLINA_FIORITA",
@@ -1208,9 +2021,26 @@
     "nome": "Dolina Fiorita",
     "tipo": "Avamposto / Faelorn · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "shock",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "ovest",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "FAGLIA_DI_AETHRA",
@@ -1218,9 +2048,26 @@
     "nome": "Faglia di Aethra",
     "tipo": "Avamposto / Vorthaan · Caleth",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "shock",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "sud"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "GOLA_DEL_PRIMO_GELO",
@@ -1228,9 +2075,26 @@
     "nome": "Gola del Primo Gelo",
     "tipo": "Avamposto / Vorthaan · Endal",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "shock",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "est"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "PANTANO_SILENTE",
@@ -1238,9 +2102,26 @@
     "nome": "Pantano Silente",
     "tipo": "Avamposto / Endal · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "shock",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "PINNACOLO_D'ARGENTO",
@@ -1248,9 +2129,26 @@
     "nome": "Pinnacolo d'Argento",
     "tipo": "Avamposto / Vorthaan · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "shock",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "VORAGINE_FUMANTE",
@@ -1258,9 +2156,26 @@
     "nome": "Voragine Fumante",
     "tipo": "Avamposto / Caleth · Endal",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "shock",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "est"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "ALTIPIANO_DEI_TRE_REGNI",
@@ -1268,9 +2183,27 @@
     "nome": "Altipiano dei Tre Regni",
     "tipo": "Avamposto / Vorthaan · Faelorn · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "ovest",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "ALTOPIANO_SACRO",
@@ -1278,9 +2211,26 @@
     "nome": "Altopiano Sacro",
     "tipo": "Avamposto / Caleth · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "ALTURA_CONSACRATA",
@@ -1288,9 +2238,26 @@
     "nome": "Altura Consacrata",
     "tipo": "Avamposto / Vorthaan · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "ARA_DEL_SACRIFICIO",
@@ -1298,9 +2265,27 @@
     "nome": "Ara del Sacrificio",
     "tipo": "Avamposto / Caleth · Endal · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "est",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CATTEDRALE_DI_GELO",
@@ -1308,9 +2293,27 @@
     "nome": "Cattedrale di Gelo",
     "tipo": "Avamposto / Vorthaan · Endal · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "est",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "COLLINE_ARDENTI",
@@ -1318,9 +2321,27 @@
     "nome": "Colline Ardenti",
     "tipo": "Avamposto / Caleth · Faelorn · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "ovest",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CONFLUENZA_DI_AETHRA",
@@ -1328,9 +2349,27 @@
     "nome": "Confluenza di Aethra",
     "tipo": "Avamposto / Vorthaan · Caleth · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "sud",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "FORESTA_DEI_GUARDIANI",
@@ -1338,9 +2377,27 @@
     "nome": "Foresta dei Guardiani",
     "tipo": "Avamposto / Endal · Faelorn · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est",
+                "ovest",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "FORESTA_MALEDETTA",
@@ -1348,9 +2405,27 @@
     "nome": "Foresta Maledetta",
     "tipo": "Avamposto / Caleth · Endal · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "est",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "FOSSO_PROFANATO",
@@ -1358,9 +2433,26 @@
     "nome": "Fosso Profanato",
     "tipo": "Avamposto / Endal · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "GOLA_FUMANTE",
@@ -1368,9 +2460,26 @@
     "nome": "Gola Fumante",
     "tipo": "Avamposto / Caleth · Endal",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "est"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "GUADO_VERDE",
@@ -1378,9 +2487,26 @@
     "nome": "Guado Verde",
     "tipo": "Avamposto / Caleth · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "PALUDE_SILENZIOSA",
@@ -1388,9 +2514,26 @@
     "nome": "Palude Silenziosa",
     "tipo": "Avamposto / Endal · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "PASSO_BIFRONTE",
@@ -1398,9 +2541,26 @@
     "nome": "Passo Bifronte",
     "tipo": "Avamposto / Vorthaan · Caleth",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "sud"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "RADURA_ETERNA",
@@ -1408,9 +2568,26 @@
     "nome": "Radura Eterna",
     "tipo": "Avamposto / Faelorn · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "ovest",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "RIVA_BOREALE",
@@ -1418,9 +2595,26 @@
     "nome": "Riva Boreale",
     "tipo": "Avamposto / Vorthaan · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "SPELONCA_DEI_CADUTI",
@@ -1428,9 +2622,27 @@
     "nome": "Spelonca dei Caduti",
     "tipo": "Avamposto / Vorthaan · Endal · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "est",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "TRIPLICE_VORAGINE",
@@ -1438,9 +2650,27 @@
     "nome": "Triplice Voragine",
     "tipo": "Avamposto / Vorthaan · Caleth · Endal",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "sud",
+                "est"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "VALICO_DEL_SILENZIO",
@@ -1448,9 +2678,26 @@
     "nome": "Valico del Silenzio",
     "tipo": "Avamposto / Vorthaan · Endal",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "est"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "VALLE_DEI_TRE_VENTI",
@@ -1458,9 +2705,27 @@
     "nome": "Valle dei Tre Venti",
     "tipo": "Avamposto / Vorthaan · Caleth · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "tappato",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "sud",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "ALTARE_DI_VAEL",
@@ -1469,9 +2734,25 @@
     "tipo": "Avamposto",
     "fazione": "Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, recupera 2 HP.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "centro"
+              ],
+              "scelta": false
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "BASTIONE_DI_SOHL",
@@ -1480,9 +2761,25 @@
     "tipo": "Avamposto",
     "fazione": "Nord",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, guarda l'ultima carta del tuo mazzo: scegli se tenerla lì o metterla in cima.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord"
+              ],
+              "scelta": false
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "BASTIONE_SACRO",
@@ -1491,9 +2788,26 @@
     "tipo": "Avamposto",
     "fazione": "Vorthaan · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, recupera 2 HP.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "BOSCO_DELLE_OMBRE",
@@ -1502,9 +2816,26 @@
     "tipo": "Avamposto",
     "fazione": "Endal · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Se in questo turno una creatura è morta, metti un segnalino +1/+1 su una creatura che controlli.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CRIPTA_DEL_GELO",
@@ -1513,9 +2844,26 @@
     "tipo": "Avamposto",
     "fazione": "Vorthaan · Endal",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "est"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "FORNACE_DI_KHAL",
@@ -1524,9 +2872,25 @@
     "tipo": "Avamposto",
     "fazione": "Caleth",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "FORTEZZA_DI_CONFINE",
@@ -1535,9 +2899,26 @@
     "tipo": "Avamposto",
     "fazione": "Vorthaan · Caleth",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "sud"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "GIARDINO_ARTICO",
@@ -1546,9 +2927,26 @@
     "tipo": "Avamposto",
     "fazione": "Vorthaan · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, metti un segnalino +0/+1 su una creatura che controlli.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "nord",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "GIARDINO_SACRO",
@@ -1557,9 +2955,26 @@
     "tipo": "Avamposto",
     "fazione": "Faelorn · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, se controlli 2 o più creature, recupera 2 HP.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "ovest",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "OSSARIO_CONSACRATO",
@@ -1568,9 +2983,26 @@
     "tipo": "Avamposto",
     "fazione": "Endal · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "OSSARIO_DI_MORDETH",
@@ -1579,9 +3011,25 @@
     "tipo": "Avamposto",
     "fazione": "Endal",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "est"
+              ],
+              "scelta": false
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "PIRA_MALEDETTA",
@@ -1590,9 +3038,26 @@
     "tipo": "Avamposto",
     "fazione": "Caleth · Endal",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "est"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "RADICI_DI_LYREN",
@@ -1601,9 +3066,25 @@
     "tipo": "Avamposto",
     "fazione": "Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, se controlli 2 o più creature, metti un segnalino +1/+1 su una di esse.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "ovest"
+              ],
+              "scelta": false
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "SAVANA_IN_FIAMME",
@@ -1612,9 +3093,26 @@
     "tipo": "Avamposto",
     "fazione": "Caleth · Faelorn",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "ovest"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "TEMPIO_ARDENTE",
@@ -1623,9 +3121,26 @@
     "tipo": "Avamposto",
     "fazione": "Caleth · Mid Vael",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "avamposto",
+            "archetipo": "vivo",
+            "mana": {
+              "quantita": 1,
+              "colori": [
+                "sud",
+                "centro"
+              ],
+              "scelta": true
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "BUSSOLA_DEL_PELLEGRINO",

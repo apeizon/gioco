@@ -1,8 +1,8 @@
 # Motore — carte da fare a mano
 <!-- AUTO-GENERATO dal validatore. Non modificare a mano. -->
-Ultimo aggiornamento: commit 13f5704
+Ultimo aggiornamento: commit 52ef978
 
-## ⚠️ CAT3 — serve codice custom (238)
+## ⚠️ CAT3 — serve codice custom (148)
 | Carta | File | Motivo |
 |---|---|---|
 | Mantello del Riflesso | carte/artefatti/artefatti-mono/artefatti-centro/MANTELLO_DEL_RIFLESSO.md | [Effetto] frase non riconosciuta: "La creatura equipaggiata guadagna Riflesso 2." |
@@ -40,96 +40,6 @@ Ultimo aggiornamento: commit 13f5704
 | Lama Spuntata | carte/artefatti/artefatti-nomadi/equipaggiamenti/LAMA_SPUNTATA.md | [Effetto] frase non riconosciuta: "La creatura equipaggiata riceve +1 atk/+0 def." |
 | Sciabola della Sentinella Erosa | carte/artefatti/artefatti-nomadi/equipaggiamenti/SCIABOLA_DELLA_SENTINELLA_EROSA.md | [Effetto] frase non riconosciuta: "La creatura equipaggiata guadagna Vedetta." |
 | Stivali del Viandante | carte/artefatti/artefatti-nomadi/equipaggiamenti/STIVALI_DEL_VIANDANTE.md | [Effetto] frase non riconosciuta: "La creatura equipaggiata guadagna Velocità e Protezione." |
-| Alcova d'Argento | carte/avamposti/avamposti-bounce/ALCOVA_D'ARGENTO.md | [Effetto] frase non riconosciuta: "Quando entra in campo, rimanda in mano uno dei tuoi Avamposti." |
-| Approdo Silente | carte/avamposti/avamposti-bounce/APPRODO_SILENTE.md | [Effetto] frase non riconosciuta: "Quando entra in campo, rimanda in mano uno dei tuoi Avamposti." |
-| Cappella Ardente | carte/avamposti/avamposti-bounce/CAPPELLA_ARDENTE.md | [Effetto] frase non riconosciuta: "Quando entra in campo, rimanda in mano uno dei tuoi Avamposti." |
-| Caverna Fumante | carte/avamposti/avamposti-bounce/CAVERNA_FUMANTE.md | [Effetto] frase non riconosciuta: "Quando entra in campo, rimanda in mano uno dei tuoi Avamposti." |
-| Giardino Eterno | carte/avamposti/avamposti-bounce/GIARDINO_ETERNO.md | [Effetto] frase non riconosciuta: "Quando entra in campo, rimanda in mano uno dei tuoi Avamposti." |
-| Insenatura Verde | carte/avamposti/avamposti-bounce/INSENATURA_VERDE.md | [Effetto] frase non riconosciuta: "Quando entra in campo, rimanda in mano uno dei tuoi Avamposti." |
-| Monastero Silente | carte/avamposti/avamposti-bounce/MONASTERO_SILENTE.md | [Effetto] frase non riconosciuta: "Quando entra in campo, rimanda in mano uno dei tuoi Avamposti." |
-| Oasi Selvaggia | carte/avamposti/avamposti-bounce/OASI_SELVAGGIA.md | [Effetto] frase non riconosciuta: "Quando entra in campo, rimanda in mano uno dei tuoi Avamposti." |
-| Porto delle Braci | carte/avamposti/avamposti-bounce/PORTO_DELLE_BRACI.md | [Effetto] frase non riconosciuta: "Quando entra in campo, rimanda in mano uno dei tuoi Avamposti." |
-| Tana dei Rami | carte/avamposti/avamposti-bounce/TANA_DEI_RAMI.md | [Effetto] frase non riconosciuta: "Quando entra in campo, rimanda in mano uno dei tuoi Avamposti." |
-| Altare Sepolto | carte/avamposti/avamposti-dormienti/ALTARE_SEPOLTO.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Braciere Spento | carte/avamposti/avamposti-dormienti/BRACIERE_SPENTO.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Caldera Sopita | carte/avamposti/avamposti-dormienti/CALDERA_SOPITA.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Cenere Di Mordeth | carte/avamposti/avamposti-dormienti/CENERE_DI_MORDETH.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Crepa Glaciale | carte/avamposti/avamposti-dormienti/CREPA_GLACIALE.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Cripta Velata | carte/avamposti/avamposti-dormienti/CRIPTA_VELATA.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Foresta Incantata | carte/avamposti/avamposti-dormienti/FORESTA_INCANTATA.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Frattura Di Confine | carte/avamposti/avamposti-dormienti/FRATTURA_DI_CONFINE.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Humus Corrotto | carte/avamposti/avamposti-dormienti/HUMUS_CORROTTO.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Piana Silente | carte/avamposti/avamposti-dormienti/PIANA_SILENTE.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Santuario Inerte | carte/avamposti/avamposti-dormienti/SANTUARIO_INERTE.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Savana Addormentata | carte/avamposti/avamposti-dormienti/SAVANA_ADDORMENTATA.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Seme Dell'Oblio | carte/avamposti/avamposti-dormienti/SEME_DELL'OBLIO.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Tomba Silente | carte/avamposti/avamposti-dormienti/TOMBA_SILENTE.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Tundra Sopita | carte/avamposti/avamposti-dormienti/TUNDRA_SOPITA.md | [Effetto] frase non riconosciuta: "Entra inattivo — non genera mana finché la condizione non è soddisfatta." |
-| Landa Bruciante | carte/avamposti/avamposti-fetch/LANDA_BRUCIANTE.md | [Effetto] frase non riconosciuta: "Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Faelorn, mettilo in campo tappato e mischia il mazzo." |
-| Mire dell'Oblio | carte/avamposti/avamposti-fetch/MIRE_DELL'OBLIO.md | [Effetto] frase non riconosciuta: "Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Endal, mettilo in campo tappato e mischia il mazzo." |
-| Pianura Sacra | carte/avamposti/avamposti-fetch/PIANURA_SACRA.md | [Effetto] frase non riconosciuta: "Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Mid Vael, mettilo in campo tappato e mischia il mazzo." |
-| Prateria Selvaggia | carte/avamposti/avamposti-fetch/PRATERIA_SELVAGGIA.md | [Effetto] frase non riconosciuta: "Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Caleth, mettilo in campo tappato e mischia il mazzo." |
-| Tundra Senza Fine | carte/avamposti/avamposti-fetch/TUNDRA_SENZA_FINE.md | [Effetto] frase non riconosciuta: "Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Vorthaan, mettilo in campo tappato e mischia il mazzo." |
-| Alba Velata | carte/avamposti/avamposti-nascosti/ALBA_VELATA.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Braci Oscure | carte/avamposti/avamposti-nascosti/BRACI_OSCURE.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Brina Selvatica | carte/avamposti/avamposti-nascosti/BRINA_SELVATICA.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Cenere Silenziosa | carte/avamposti/avamposti-nascosti/CENERE_SILENZIOSA.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Foresta Fumante | carte/avamposti/avamposti-nascosti/FORESTA_FUMANTE.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Gelo Silente | carte/avamposti/avamposti-nascosti/GELO_SILENTE.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Giardino Segreto | carte/avamposti/avamposti-nascosti/GIARDINO_SEGRETO.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Luce Celata | carte/avamposti/avamposti-nascosti/LUCE_CELATA.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Nebbia Di Cenere | carte/avamposti/avamposti-nascosti/NEBBIA_DI_CENERE.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Ombra Senza Nome | carte/avamposti/avamposti-nascosti/OMBRA_SENZA_NOME.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Radici Dimenticate | carte/avamposti/avamposti-nascosti/RADICI_DIMENTICATE.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Soglia D'Argento | carte/avamposti/avamposti-nascosti/SOGLIA_D'ARGENTO.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Sottobosco Dei Morti | carte/avamposti/avamposti-nascosti/SOTTOBOSCO_DEI_MORTI.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Velo Consacrato | carte/avamposti/avamposti-nascosti/VELO_CONSACRATO.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Velo D'Inverno | carte/avamposti/avamposti-nascosti/VELO_D'INVERNO.md | [Effetto] frase non riconosciuta: "Entra coperto." |
-| Abisso Consacrato | carte/avamposti/avamposti-shock/ABISSO_CONSACRATO.md | [Effetto] frase non riconosciuta: "Entra tappata." |
-| Anfiteatro Artico | carte/avamposti/avamposti-shock/ANFITEATRO_ARTICO.md | [Effetto] frase non riconosciuta: "Entra tappata." |
-| Burrone delle Radici | carte/avamposti/avamposti-shock/BURRONE_DELLE_RADICI.md | [Effetto] frase non riconosciuta: "Entra tappata." |
-| Colonna di Uria | carte/avamposti/avamposti-shock/COLONNA_DI_URIA.md | [Effetto] frase non riconosciuta: "Entra tappata." |
-| Dolina Fiorita | carte/avamposti/avamposti-shock/DOLINA_FIORITA.md | [Effetto] frase non riconosciuta: "Entra tappata." |
-| Faglia di Aethra | carte/avamposti/avamposti-shock/FAGLIA_DI_AETHRA.md | [Effetto] frase non riconosciuta: "Entra tappata." |
-| Gola del Primo Gelo | carte/avamposti/avamposti-shock/GOLA_DEL_PRIMO_GELO.md | [Effetto] frase non riconosciuta: "Entra tappata." |
-| Pantano Silente | carte/avamposti/avamposti-shock/PANTANO_SILENTE.md | [Effetto] frase non riconosciuta: "Entra tappata." |
-| Pinnacolo d'Argento | carte/avamposti/avamposti-shock/PINNACOLO_D'ARGENTO.md | [Effetto] frase non riconosciuta: "Entra tappata." |
-| Voragine Fumante | carte/avamposti/avamposti-shock/VORAGINE_FUMANTE.md | [Effetto] frase non riconosciuta: "Entra tappata." |
-| Altipiano dei Tre Regni | carte/avamposti/avamposti-tappati/ALTIPIANO_DEI_TRE_REGNI.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Altopiano Sacro | carte/avamposti/avamposti-tappati/ALTOPIANO_SACRO.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Altura Consacrata | carte/avamposti/avamposti-tappati/ALTURA_CONSACRATA.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Ara del Sacrificio | carte/avamposti/avamposti-tappati/ARA_DEL_SACRIFICIO.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Cattedrale di Gelo | carte/avamposti/avamposti-tappati/CATTEDRALE_DI_GELO.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Colline Ardenti | carte/avamposti/avamposti-tappati/COLLINE_ARDENTI.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Confluenza di Aethra | carte/avamposti/avamposti-tappati/CONFLUENZA_DI_AETHRA.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Foresta dei Guardiani | carte/avamposti/avamposti-tappati/FORESTA_DEI_GUARDIANI.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Foresta Maledetta | carte/avamposti/avamposti-tappati/FORESTA_MALEDETTA.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Fosso Profanato | carte/avamposti/avamposti-tappati/FOSSO_PROFANATO.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Gola Fumante | carte/avamposti/avamposti-tappati/GOLA_FUMANTE.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Guado Verde | carte/avamposti/avamposti-tappati/GUADO_VERDE.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Palude Silenziosa | carte/avamposti/avamposti-tappati/PALUDE_SILENZIOSA.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Passo Bifronte | carte/avamposti/avamposti-tappati/PASSO_BIFRONTE.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Radura Eterna | carte/avamposti/avamposti-tappati/RADURA_ETERNA.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Riva Boreale | carte/avamposti/avamposti-tappati/RIVA_BOREALE.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Spelonca dei Caduti | carte/avamposti/avamposti-tappati/SPELONCA_DEI_CADUTI.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Triplice Voragine | carte/avamposti/avamposti-tappati/TRIPLICE_VORAGINE.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Valico del Silenzio | carte/avamposti/avamposti-tappati/VALICO_DEL_SILENZIO.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| Valle dei Tre Venti | carte/avamposti/avamposti-tappati/VALLE_DEI_TRE_VENTI.md | [Effetto] frase non riconosciuta: "Entra tappato." |
-| ALTARE DI VAEL | carte/avamposti/avamposti-vivi/ALTARE_DI_VAEL.md | [Effetto] frase non riconosciuta: "Quando entra in campo, recupera 2 HP." |
-| BASTIONE DI SOHL | carte/avamposti/avamposti-vivi/BASTIONE_DI_SOHL.md | [Effetto] frase non riconosciuta: "Quando entra in campo, guarda l'ultima carta del tuo mazzo: scegli se tenerla lì o metterla in cima." |
-| BASTIONE SACRO | carte/avamposti/avamposti-vivi/BASTIONE_SACRO.md | [Effetto] frase non riconosciuta: "Quando entra in campo, recupera 2 HP." |
-| BOSCO DELLE OMBRE | carte/avamposti/avamposti-vivi/BOSCO_DELLE_OMBRE.md | [Effetto] frase non riconosciuta: "Se in questo turno una creatura è morta, metti un segnalino +1/+1 su una creatura che controlli." |
-| CRIPTA DEL GELO | carte/avamposti/avamposti-vivi/CRIPTA_DEL_GELO.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
-| FORNACE DI KHAL | carte/avamposti/avamposti-vivi/FORNACE_DI_KHAL.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
-| FORTEZZA DI CONFINE | carte/avamposti/avamposti-vivi/FORTEZZA_DI_CONFINE.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
-| GIARDINO ARTICO | carte/avamposti/avamposti-vivi/GIARDINO_ARTICO.md | [Effetto] frase non riconosciuta: "Quando entra in campo, metti un segnalino +0/+1 su una creatura che controlli." |
-| GIARDINO SACRO | carte/avamposti/avamposti-vivi/GIARDINO_SACRO.md | [Effetto] frase non riconosciuta: "Quando entra in campo, se controlli 2 o più creature, recupera 2 HP." |
-| OSSARIO CONSACRATO | carte/avamposti/avamposti-vivi/OSSARIO_CONSACRATO.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
-| OSSARIO DI MORDETH | carte/avamposti/avamposti-vivi/OSSARIO_DI_MORDETH.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
-| PIRA MALEDETTA | carte/avamposti/avamposti-vivi/PIRA_MALEDETTA.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
-| RADICI DI LYREN | carte/avamposti/avamposti-vivi/RADICI_DI_LYREN.md | [Effetto] frase non riconosciuta: "Quando entra in campo, se controlli 2 o più creature, metti un segnalino +1/+1 su una di esse." |
-| SAVANA IN FIAMME | carte/avamposti/avamposti-vivi/SAVANA_IN_FIAMME.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
-| TEMPIO ARDENTE | carte/avamposti/avamposti-vivi/TEMPIO_ARDENTE.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
 | Bussola del Pellegrino | carte/benedizioni/benedizioni-nomadi/BUSSOLA_DEL_PELLEGRINO.md | [Effetto] frase non riconosciuta: "All'inizio del tuo Mantenimento, fai scry 1." |
 | Elisir di Giovinezza | carte/benedizioni/benedizioni-nomadi/ELISIR_DI_GIOVINEZZA.md | [Effetto] frase non riconosciuta: "Ogni volta che giochi una creatura, guadagni HP pari al suo costo totale in mana." |
 | Il Bene che Torna | carte/benedizioni/benedizioni-nomadi/IL_BENE_CHE_TORNA.md | [Effetto] frase non riconosciuta: "All'inizio del tuo Mantenimento, evoca un Token "Pellegrino Senza Nome" 1/1 incolore di tipo Umano sotto il tuo controllo." |
@@ -245,4 +155,4 @@ Ultimo aggiornamento: commit 13f5704
 | Nell'Occhio del Ciclone | carte/tragedie/tragedie-nord/NELL_OCCHIO_DEL_CICLONE.md | [Bonus] frase non riconosciuta: "Tutte le creature avversarie non si stappano durante la fase di Sveglia avversaria." |
 
 ## ✅ Riepilogo
-317 carte · 52 CAT1 · 27 CAT2 · 238 CAT3
+317 carte · 52 CAT1 · 117 CAT2 · 148 CAT3
