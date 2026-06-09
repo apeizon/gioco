@@ -1,0 +1,3938 @@
+[
+  {
+    "id": "FRAMMENTO_DEL_NEXUS",
+    "file": "carte/artefatti/artefatti-mono/artefatti-centro/FRAMMENTO_DEL_NEXUS.md",
+    "nome": "Frammento del Nexus",
+    "tipo": "Artefatto",
+    "fazione": "Centro",
+    "costo": "1 Centro più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Tappa:** aggiungi 1 mana generico alla tua riserva.\""
+  },
+  {
+    "id": "MANTELLO_DEL_RIFLESSO",
+    "file": "carte/artefatti/artefatti-mono/artefatti-centro/MANTELLO_DEL_RIFLESSO.md",
+    "nome": "Mantello del Riflesso",
+    "tipo": "Artefatto — Equipaggiamento",
+    "fazione": "Centro",
+    "costo": "2 Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata guadagna Riflesso 2.\""
+  },
+  {
+    "id": "SENTINELLA_DEL_NEXUS",
+    "file": "carte/artefatti/artefatti-mono/artefatti-centro/SENTINELLA_DEL_NEXUS.md",
+    "nome": "Sentinella del Nexus",
+    "tipo": "Artefatto — Creatura — Costrutto",
+    "fazione": "Centro",
+    "costo": "1 Centro più 2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "SPECCHIO_CENTRALE",
+    "file": "carte/artefatti/artefatti-mono/artefatti-centro/SPECCHIO_CENTRALE.md",
+    "nome": "Specchio Centrale",
+    "tipo": "Artefatto",
+    "fazione": "Centro",
+    "costo": "2 Centro più 3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Tappa, paga 3 mana qualsiasi:** copia una Magia bersaglio attualmente sullo stack.\""
+  },
+  {
+    "id": "STENDARDO_DELL_ASSORBIMENTO",
+    "file": "carte/artefatti/artefatti-mono/artefatti-centro/STENDARDO_DELL_ASSORBIMENTO.md",
+    "nome": "Stendardo dell'Assorbimento",
+    "tipo": "Artefatto",
+    "fazione": "Centro",
+    "costo": "1 Centro più 2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che un'unità avversaria viene distrutta, una tua creatura bersaglio riceve +1 atk/+1 def in modo permanente.\""
+  },
+  {
+    "id": "BRANDELLO_DI_SUDARIO",
+    "file": "carte/artefatti/artefatti-mono/artefatti-est/BRANDELLO_DI_SUDARIO.md",
+    "nome": "Brandello di Sudario",
+    "tipo": "Artefatto",
+    "fazione": "Est",
+    "costo": "1 Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Tappa, sacrifica Brandello di Sudario:** applica un contatore Maledizione -1 atk/-1 def a un'unità avversaria bersaglio.\""
+  },
+  {
+    "id": "CALICE_DEL_FALCEMORTIS",
+    "file": "carte/artefatti/artefatti-mono/artefatti-est/CALICE_DEL_FALCEMORTIS.md",
+    "nome": "Calice del Falcemortis",
+    "tipo": "Artefatto",
+    "fazione": "Est",
+    "costo": "3 Est più 2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo turno, ogni giocatore avversario mette le prime 2 carte del proprio mazzo nel proprio Cimitero.\""
+  },
+  {
+    "id": "CINTO_DI_ENDAL",
+    "file": "carte/artefatti/artefatti-mono/artefatti-est/CINTO_DI_ENDAL.md",
+    "nome": "Cinto di Endal",
+    "tipo": "Artefatto — Equipaggiamento",
+    "fazione": "Est",
+    "costo": "2 Est più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata guadagna Revoca.\""
+  },
+  {
+    "id": "LICH_COSTRUTTO",
+    "file": "carte/artefatti/artefatti-mono/artefatti-est/LICH_COSTRUTTO.md",
+    "nome": "Lich-Costrutto",
+    "tipo": "Artefatto — Creatura — Costrutto",
+    "fazione": "Est",
+    "costo": "3 Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Lamento —** Lich-Costrutto infligge 2 danni a un'unità avversaria a scelta.\""
+  },
+  {
+    "id": "STENDARDO_DEI_LAMENTI",
+    "file": "carte/artefatti/artefatti-mono/artefatti-est/STENDARDO_DEI_LAMENTI.md",
+    "nome": "Stendardo dei Lamenti",
+    "tipo": "Artefatto",
+    "fazione": "Est",
+    "costo": "2 Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo turno, ogni giocatore avversario mette la prima carta del proprio mazzo nel proprio Cimitero.\""
+  },
+  {
+    "id": "ARMATURA_GLACIALE",
+    "file": "carte/artefatti/artefatti-mono/artefatti-nord/ARMATURA_GLACIALE.md",
+    "nome": "Armatura Glaciale",
+    "tipo": "Artefatto — Equipaggiamento",
+    "fazione": "Nord",
+    "costo": "2 Nord più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata riceve +0 atk/+2 def e guadagna Baluardo.\""
+  },
+  {
+    "id": "CRISTALLO_GELIDO",
+    "file": "carte/artefatti/artefatti-mono/artefatti-nord/CRISTALLO_GELIDO.md",
+    "nome": "Cristallo Gelido",
+    "tipo": "Artefatto",
+    "fazione": "Nord",
+    "costo": "1 Nord",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Tappa, sacrifica Cristallo Gelido:** applica Gelo 1 a un'unità avversaria bersaglio.\""
+  },
+  {
+    "id": "SENTINELLA_GLACIALE",
+    "file": "carte/artefatti/artefatti-mono/artefatti-nord/SENTINELLA_GLACIALE.md",
+    "nome": "Sentinella Glaciale",
+    "tipo": "Artefatto — Creatura — Costrutto",
+    "fazione": "Nord",
+    "costo": "3 Nord",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando Sentinella Glaciale blocca un attaccante, applica Gelo 1 a quell'attaccante.\""
+  },
+  {
+    "id": "SIGILLO_DEL_PERMAFROST",
+    "file": "carte/artefatti/artefatti-mono/artefatti-nord/SIGILLO_DEL_PERMAFROST.md",
+    "nome": "Sigillo del Permafrost",
+    "tipo": "Artefatto",
+    "fazione": "Nord",
+    "costo": "3 Nord più 2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Le creature avversarie entrano in campo tappate.\""
+  },
+  {
+    "id": "STENDARDO_DEL_BALUARDO",
+    "file": "carte/artefatti/artefatti-mono/artefatti-nord/STENDARDO_DEL_BALUARDO.md",
+    "nome": "Stendardo del Baluardo",
+    "tipo": "Artefatto",
+    "fazione": "Nord",
+    "costo": "2 Nord",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Le tue creature ricevono +0 atk/+1 def fintanto che Stendardo del Baluardo è in campo.\""
+  },
+  {
+    "id": "ANELLO_ARCANO_DEL_BOSCO",
+    "file": "carte/artefatti/artefatti-mono/artefatti-ovest/ANELLO_ARCANO_DEL_BOSCO.md",
+    "nome": "Anello Arcano del Bosco",
+    "tipo": "Artefatto",
+    "fazione": "Ovest",
+    "costo": "3 Ovest più 2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le tue creature hanno Arcano.\""
+  },
+  {
+    "id": "CUSTODE_DRUIDA",
+    "file": "carte/artefatti/artefatti-mono/artefatti-ovest/CUSTODE_DRUIDA.md",
+    "nome": "Custode Druida",
+    "tipo": "Artefatto — Creatura — Costrutto",
+    "fazione": "Ovest",
+    "costo": "3 Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "MANTELLO_DEL_DRUIDO",
+    "file": "carte/artefatti/artefatti-mono/artefatti-ovest/MANTELLO_DEL_DRUIDO.md",
+    "nome": "Mantello del Druido",
+    "tipo": "Artefatto — Equipaggiamento",
+    "fazione": "Ovest",
+    "costo": "2 Ovest più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che la creatura equipaggiata attacca, il suo controllore guarda le prime 2 carte del proprio mazzo, poi rimette ciascuna in cima o in fondo al proprio mazzo.\""
+  },
+  {
+    "id": "PIETRA_RUNICA",
+    "file": "carte/artefatti/artefatti-mono/artefatti-ovest/PIETRA_RUNICA.md",
+    "nome": "Pietra Rúnica",
+    "tipo": "Artefatto",
+    "fazione": "Ovest",
+    "costo": "1 Ovest più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Tappa, sacrifica Pietra Rúnica:** guarda le prime 3 carte del tuo mazzo, poi rimettile in cima al tuo mazzo nell'ordine che preferisci.\""
+  },
+  {
+    "id": "STENDARDO_DEL_BOSCO_ANTICO",
+    "file": "carte/artefatti/artefatti-mono/artefatti-ovest/STENDARDO_DEL_BOSCO_ANTICO.md",
+    "nome": "Stendardo del Bosco Antico",
+    "tipo": "Artefatto",
+    "fazione": "Ovest",
+    "costo": "3 Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Le tue Magie Ovest costano 1 mana generico in meno per essere giocate.\""
+  },
+  {
+    "id": "BANDIERA_DELLA_FRENESIA",
+    "file": "carte/artefatti/artefatti-mono/artefatti-sud/BANDIERA_DELLA_FRENESIA.md",
+    "nome": "Bandiera della Frenesia",
+    "tipo": "Artefatto",
+    "fazione": "Sud",
+    "costo": "2 Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Le tue creature ricevono +1 atk/+0 def fintanto che Bandiera della Frenesia è in campo.\""
+  },
+  {
+    "id": "BERSERKER_DI_BRONZO",
+    "file": "carte/artefatti/artefatti-mono/artefatti-sud/BERSERKER_DI_BRONZO.md",
+    "nome": "Berserker di Bronzo",
+    "tipo": "Artefatto — Creatura — Costrutto",
+    "fazione": "Sud",
+    "costo": "3 Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "CARBONE_ARDENTE",
+    "file": "carte/artefatti/artefatti-mono/artefatti-sud/CARBONE_ARDENTE.md",
+    "nome": "Carbone Ardente",
+    "tipo": "Artefatto",
+    "fazione": "Sud",
+    "costo": "1 Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Tappa, sacrifica Carbone Ardente:** Carbone Ardente infligge 2 danni a un bersaglio: un'unità o un giocatore.\""
+  },
+  {
+    "id": "FORGIA_DI_CALETH",
+    "file": "carte/artefatti/artefatti-mono/artefatti-sud/FORGIA_DI_CALETH.md",
+    "nome": "Forgia di Caleth",
+    "tipo": "Artefatto",
+    "fazione": "Sud",
+    "costo": "2 Sud più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le tue creature hanno Surriscaldamento.\""
+  },
+  {
+    "id": "LAMA_INCANDESCENTE",
+    "file": "carte/artefatti/artefatti-mono/artefatti-sud/LAMA_INCANDESCENTE.md",
+    "nome": "Lama Incandescente",
+    "tipo": "Artefatto — Equipaggiamento",
+    "fazione": "Sud",
+    "costo": "1 Sud più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata guadagna Frenesia.\""
+  },
+  {
+    "id": "ANELLO_DEL_VIANDANTE",
+    "file": "carte/artefatti/artefatti-nomadi/artefatti/ANELLO_DEL_VIANDANTE.md",
+    "nome": "Anello del Viandante",
+    "tipo": "Artefatto",
+    "fazione": "Nomade",
+    "costo": "3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tappa: scarta una carta.\""
+  },
+  {
+    "id": "BUSSOLA_EROSA",
+    "file": "carte/artefatti/artefatti-nomadi/artefatti/BUSSOLA_EROSA.md",
+    "nome": "Bussola Erosa",
+    "tipo": "Artefatto",
+    "fazione": "Nomade",
+    "costo": "2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tappa: guarda la prima carta del tuo mazzo.\""
+  },
+  {
+    "id": "SFERA_DEL_NEXUS_EROSA",
+    "file": "carte/artefatti/artefatti-nomadi/artefatti/SFERA_DEL_NEXUS_EROSA.md",
+    "nome": "Sfera del Nexus Erosa",
+    "tipo": "Artefatto",
+    "fazione": "Nomade",
+    "costo": "3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tappa: aggiungi 2 mana di qualsiasi tipo alla tua riserva.\""
+  },
+  {
+    "id": "TALISMANO_DELLA_MARCIA",
+    "file": "carte/artefatti/artefatti-nomadi/artefatti/TALISMANO_DELLA_MARCIA.md",
+    "nome": "Talismano della Marcia",
+    "tipo": "Artefatto",
+    "fazione": "Nomade",
+    "costo": "4 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo turno, recuperi 1 punto vita.\""
+  },
+  {
+    "id": "TAMBURO_DEL_NOMADE",
+    "file": "carte/artefatti/artefatti-nomadi/artefatti/TAMBURO_DEL_NOMADE.md",
+    "nome": "Tamburo del Nomade",
+    "tipo": "Artefatto",
+    "fazione": "Nomade",
+    "costo": "3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tappa: una tua creatura bersaglio riceve +1 atk/+0 def fino alla fine del turno.\""
+  },
+  {
+    "id": "TOMO_DEL_VIANDANTE",
+    "file": "carte/artefatti/artefatti-nomadi/artefatti/TOMO_DEL_VIANDANTE.md",
+    "nome": "Tomo del Viandante",
+    "tipo": "Artefatto",
+    "fazione": "Nomade",
+    "costo": "3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tomo del Viandante entra in campo con 3 segnalini sopra di sé.\""
+  },
+  {
+    "id": "ARIETE_EROSSO",
+    "file": "carte/artefatti/artefatti-nomadi/creature/ARIETE_EROSSO.md",
+    "nome": "Ariete Erosso",
+    "tipo": "Artefatto — Creatura — Costrutto",
+    "fazione": "Nomade",
+    "costo": "5 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "AUTOMA_DEL_CAMMINO",
+    "file": "carte/artefatti/artefatti-nomadi/creature/AUTOMA_DEL_CAMMINO.md",
+    "nome": "Automa del Cammino",
+    "tipo": "Artefatto — Creatura — Costrutto",
+    "fazione": "Nomade",
+    "costo": "4 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando Automa del Cammino entra in campo, guarda la prima carta del tuo mazzo.\""
+  },
+  {
+    "id": "COLOSSO_DI_FERRO_ANTICO",
+    "file": "carte/artefatti/artefatti-nomadi/creature/COLOSSO_DI_FERRO_ANTICO.md",
+    "nome": "Colosso di Ferro Antico",
+    "tipo": "Artefatto — Creatura — Colosso",
+    "fazione": "Nomade",
+    "costo": "8 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando Colosso di Ferro Antico entra in campo, infligge 4 danni a un'unità avversaria bersaglio.\""
+  },
+  {
+    "id": "CUSTODE_DELLE_ROVINE",
+    "file": "carte/artefatti/artefatti-nomadi/creature/CUSTODE_DELLE_ROVINE.md",
+    "nome": "Custode delle Rovine",
+    "tipo": "Artefatto — Creatura — Golem",
+    "fazione": "Nomade",
+    "costo": "5 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che un altro artefatto che controlli va al Cimitero, Custode delle Rovine riceve +1 atk/+1 def in modo permanente.\""
+  },
+  {
+    "id": "GOLEM_DI_SABBIA",
+    "file": "carte/artefatti/artefatti-nomadi/creature/GOLEM_DI_SABBIA.md",
+    "nome": "Golem di Sabbia",
+    "tipo": "Artefatto — Creatura — Golem",
+    "fazione": "Nomade",
+    "costo": "4 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "SENTINELLA_DI_PIETRA",
+    "file": "carte/artefatti/artefatti-nomadi/creature/SENTINELLA_DI_PIETRA.md",
+    "nome": "Sentinella di Pietra",
+    "tipo": "Artefatto — Creatura — Costrutto",
+    "fazione": "Nomade",
+    "costo": "2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "SERVITORE_DI_OTTONE",
+    "file": "carte/artefatti/artefatti-nomadi/creature/SERVITORE_DI_OTTONE.md",
+    "nome": "Servitore di Ottone",
+    "tipo": "Artefatto — Creatura — Costrutto",
+    "fazione": "Nomade",
+    "costo": "3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "STATUA_DEL_VEGLIANTE",
+    "file": "carte/artefatti/artefatti-nomadi/creature/STATUA_DEL_VEGLIANTE.md",
+    "nome": "Statua del Vegliante",
+    "tipo": "Artefatto — Creatura — Costrutto",
+    "fazione": "Nomade",
+    "costo": "3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Statua del Vegliante non può attaccare.\""
+  },
+  {
+    "id": "CINTURA_DEL_PELLEGRINO",
+    "file": "carte/artefatti/artefatti-nomadi/equipaggiamenti/CINTURA_DEL_PELLEGRINO.md",
+    "nome": "Cintura del Pellegrino",
+    "tipo": "Artefatto — Equipaggiamento",
+    "fazione": "Nomade",
+    "costo": "2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"**1 mana qualsiasi, Tappa la creatura equipaggiata:** aggiungi 1 mana di un tipo a tua scelta alla riserva del controllore.\""
+  },
+  {
+    "id": "EGIDA_DEL_VEGLIANTE_ETERNO",
+    "file": "carte/artefatti/artefatti-nomadi/equipaggiamenti/EGIDA_DEL_VEGLIANTE_ETERNO.md",
+    "nome": "Egida del Vegliante Eterno",
+    "tipo": "Artefatto — Equipaggiamento",
+    "fazione": "Nomade",
+    "costo": "3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata guadagna Resilienza e Protezione.\""
+  },
+  {
+    "id": "LAMA_DEL_CATACLISMA_SEPOLTO",
+    "file": "carte/artefatti/artefatti-nomadi/equipaggiamenti/LAMA_DEL_CATACLISMA_SEPOLTO.md",
+    "nome": "Lama del Cataclisma Sepolto",
+    "tipo": "Artefatto — Equipaggiamento",
+    "fazione": "Nomade",
+    "costo": "4 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando Lama del Cataclisma Sepolto entra in campo, equipaggiala a una creatura che il suo controllore controlla, se possibile.\""
+  },
+  {
+    "id": "LAMA_SPUNTATA",
+    "file": "carte/artefatti/artefatti-nomadi/equipaggiamenti/LAMA_SPUNTATA.md",
+    "nome": "Lama Spuntata",
+    "tipo": "Artefatto — Equipaggiamento",
+    "fazione": "Nomade",
+    "costo": "1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata riceve +1 atk/+0 def.\""
+  },
+  {
+    "id": "SCIABOLA_DELLA_SENTINELLA_EROSA",
+    "file": "carte/artefatti/artefatti-nomadi/equipaggiamenti/SCIABOLA_DELLA_SENTINELLA_EROSA.md",
+    "nome": "Sciabola della Sentinella Erosa",
+    "tipo": "Artefatto — Equipaggiamento",
+    "fazione": "Nomade",
+    "costo": "3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata guadagna Vedetta.\""
+  },
+  {
+    "id": "STIVALI_DEL_VIANDANTE",
+    "file": "carte/artefatti/artefatti-nomadi/equipaggiamenti/STIVALI_DEL_VIANDANTE.md",
+    "nome": "Stivali del Viandante",
+    "tipo": "Artefatto — Equipaggiamento",
+    "fazione": "Nomade",
+    "costo": "2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata guadagna Velocità e Protezione.\""
+  },
+  {
+    "id": "ALCOVA_D'ARGENTO",
+    "file": "carte/avamposti/avamposti-bounce/ALCOVA_D'ARGENTO.md",
+    "nome": "Alcova d'Argento",
+    "tipo": "Avamposto / Vorthaan · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+  },
+  {
+    "id": "APPRODO_SILENTE",
+    "file": "carte/avamposti/avamposti-bounce/APPRODO_SILENTE.md",
+    "nome": "Approdo Silente",
+    "tipo": "Avamposto / Vorthaan · Endal",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+  },
+  {
+    "id": "CAPPELLA_ARDENTE",
+    "file": "carte/avamposti/avamposti-bounce/CAPPELLA_ARDENTE.md",
+    "nome": "Cappella Ardente",
+    "tipo": "Avamposto / Caleth · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+  },
+  {
+    "id": "CAVERNA_FUMANTE",
+    "file": "carte/avamposti/avamposti-bounce/CAVERNA_FUMANTE.md",
+    "nome": "Caverna Fumante",
+    "tipo": "Avamposto / Caleth · Endal",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+  },
+  {
+    "id": "GIARDINO_ETERNO",
+    "file": "carte/avamposti/avamposti-bounce/GIARDINO_ETERNO.md",
+    "nome": "Giardino Eterno",
+    "tipo": "Avamposto / Faelorn · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+  },
+  {
+    "id": "INSENATURA_VERDE",
+    "file": "carte/avamposti/avamposti-bounce/INSENATURA_VERDE.md",
+    "nome": "Insenatura Verde",
+    "tipo": "Avamposto / Vorthaan · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+  },
+  {
+    "id": "MONASTERO_SILENTE",
+    "file": "carte/avamposti/avamposti-bounce/MONASTERO_SILENTE.md",
+    "nome": "Monastero Silente",
+    "tipo": "Avamposto / Endal · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+  },
+  {
+    "id": "OASI_SELVAGGIA",
+    "file": "carte/avamposti/avamposti-bounce/OASI_SELVAGGIA.md",
+    "nome": "Oasi Selvaggia",
+    "tipo": "Avamposto / Caleth · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+  },
+  {
+    "id": "PORTO_DELLE_BRACI",
+    "file": "carte/avamposti/avamposti-bounce/PORTO_DELLE_BRACI.md",
+    "nome": "Porto delle Braci",
+    "tipo": "Avamposto / Vorthaan · Caleth",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+  },
+  {
+    "id": "TANA_DEI_RAMI",
+    "file": "carte/avamposti/avamposti-bounce/TANA_DEI_RAMI.md",
+    "nome": "Tana dei Rami",
+    "tipo": "Avamposto / Endal · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, rimanda in mano uno dei tuoi Avamposti.\""
+  },
+  {
+    "id": "ALTARE_SEPOLTO",
+    "file": "carte/avamposti/avamposti-dormienti/ALTARE_SEPOLTO.md",
+    "nome": "Altare Sepolto",
+    "tipo": "Avamposto",
+    "fazione": "Nord · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "BRACIERE_SPENTO",
+    "file": "carte/avamposti/avamposti-dormienti/BRACIERE_SPENTO.md",
+    "nome": "Braciere Spento",
+    "tipo": "Avamposto",
+    "fazione": "Caleth · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "CALDERA_SOPITA",
+    "file": "carte/avamposti/avamposti-dormienti/CALDERA_SOPITA.md",
+    "nome": "Caldera Sopita",
+    "tipo": "Avamposto",
+    "fazione": "Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "CENERE_DI_MORDETH",
+    "file": "carte/avamposti/avamposti-dormienti/CENERE_DI_MORDETH.md",
+    "nome": "Cenere Di Mordeth",
+    "tipo": "Avamposto",
+    "fazione": "Caleth · Endal",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "CREPA_GLACIALE",
+    "file": "carte/avamposti/avamposti-dormienti/CREPA_GLACIALE.md",
+    "nome": "Crepa Glaciale",
+    "tipo": "Avamposto",
+    "fazione": "Nord",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "CRIPTA_VELATA",
+    "file": "carte/avamposti/avamposti-dormienti/CRIPTA_VELATA.md",
+    "nome": "Cripta Velata",
+    "tipo": "Avamposto",
+    "fazione": "Endal · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "FORESTA_INCANTATA",
+    "file": "carte/avamposti/avamposti-dormienti/FORESTA_INCANTATA.md",
+    "nome": "Foresta Incantata",
+    "tipo": "Avamposto",
+    "fazione": "Faelorn · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "FRATTURA_DI_CONFINE",
+    "file": "carte/avamposti/avamposti-dormienti/FRATTURA_DI_CONFINE.md",
+    "nome": "Frattura Di Confine",
+    "tipo": "Avamposto",
+    "fazione": "Nord · Caleth",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "HUMUS_CORROTTO",
+    "file": "carte/avamposti/avamposti-dormienti/HUMUS_CORROTTO.md",
+    "nome": "Humus Corrotto",
+    "tipo": "Avamposto",
+    "fazione": "Endal · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "PIANA_SILENTE",
+    "file": "carte/avamposti/avamposti-dormienti/PIANA_SILENTE.md",
+    "nome": "Piana Silente",
+    "tipo": "Avamposto",
+    "fazione": "Nord · Endal",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "SANTUARIO_INERTE",
+    "file": "carte/avamposti/avamposti-dormienti/SANTUARIO_INERTE.md",
+    "nome": "Santuario Inerte",
+    "tipo": "Avamposto",
+    "fazione": "Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "SAVANA_ADDORMENTATA",
+    "file": "carte/avamposti/avamposti-dormienti/SAVANA_ADDORMENTATA.md",
+    "nome": "Savana Addormentata",
+    "tipo": "Avamposto",
+    "fazione": "Caleth · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "SEME_DELL'OBLIO",
+    "file": "carte/avamposti/avamposti-dormienti/SEME_DELL'OBLIO.md",
+    "nome": "Seme Dell'Oblio",
+    "tipo": "Avamposto",
+    "fazione": "Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "TOMBA_SILENTE",
+    "file": "carte/avamposti/avamposti-dormienti/TOMBA_SILENTE.md",
+    "nome": "Tomba Silente",
+    "tipo": "Avamposto",
+    "fazione": "Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "TUNDRA_SOPITA",
+    "file": "carte/avamposti/avamposti-dormienti/TUNDRA_SOPITA.md",
+    "nome": "Tundra Sopita",
+    "tipo": "Avamposto",
+    "fazione": "Nord · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra inattivo — non genera mana finché la condizione non è soddisfatta.\""
+  },
+  {
+    "id": "LANDA_BRUCIANTE",
+    "file": "carte/avamposti/avamposti-fetch/LANDA_BRUCIANTE.md",
+    "nome": "Landa Bruciante",
+    "tipo": "Avamposto",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Faelorn, mettilo in campo tappato e mischia il mazzo.\""
+  },
+  {
+    "id": "MIRE_DELL'OBLIO",
+    "file": "carte/avamposti/avamposti-fetch/MIRE_DELL'OBLIO.md",
+    "nome": "Mire dell'Oblio",
+    "tipo": "Avamposto",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Endal, mettilo in campo tappato e mischia il mazzo.\""
+  },
+  {
+    "id": "PIANURA_SACRA",
+    "file": "carte/avamposti/avamposti-fetch/PIANURA_SACRA.md",
+    "nome": "Pianura Sacra",
+    "tipo": "Avamposto",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Mid Vael, mettilo in campo tappato e mischia il mazzo.\""
+  },
+  {
+    "id": "PRATERIA_SELVAGGIA",
+    "file": "carte/avamposti/avamposti-fetch/PRATERIA_SELVAGGIA.md",
+    "nome": "Prateria Selvaggia",
+    "tipo": "Avamposto",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Caleth, mettilo in campo tappato e mischia il mazzo.\""
+  },
+  {
+    "id": "TUNDRA_SENZA_FINE",
+    "file": "carte/avamposti/avamposti-fetch/TUNDRA_SENZA_FINE.md",
+    "nome": "Tundra Senza Fine",
+    "tipo": "Avamposto",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Puoi tapparla e sacrificarla: cerca nel tuo mazzo un Avamposto di Vorthaan, mettilo in campo tappato e mischia il mazzo.\""
+  },
+  {
+    "id": "ALBA_VELATA",
+    "file": "carte/avamposti/avamposti-nascosti/ALBA_VELATA.md",
+    "nome": "Alba Velata",
+    "tipo": "Avamposto",
+    "fazione": "Sud / Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "BRACI_OSCURE",
+    "file": "carte/avamposti/avamposti-nascosti/BRACI_OSCURE.md",
+    "nome": "Braci Oscure",
+    "tipo": "Avamposto",
+    "fazione": "Sud / Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "BRINA_SELVATICA",
+    "file": "carte/avamposti/avamposti-nascosti/BRINA_SELVATICA.md",
+    "nome": "Brina Selvatica",
+    "tipo": "Avamposto",
+    "fazione": "Nord / Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "CENERE_SILENZIOSA",
+    "file": "carte/avamposti/avamposti-nascosti/CENERE_SILENZIOSA.md",
+    "nome": "Cenere Silenziosa",
+    "tipo": "Avamposto",
+    "fazione": "Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "FORESTA_FUMANTE",
+    "file": "carte/avamposti/avamposti-nascosti/FORESTA_FUMANTE.md",
+    "nome": "Foresta Fumante",
+    "tipo": "Avamposto",
+    "fazione": "Sud / Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "GELO_SILENTE",
+    "file": "carte/avamposti/avamposti-nascosti/GELO_SILENTE.md",
+    "nome": "Gelo Silente",
+    "tipo": "Avamposto",
+    "fazione": "Nord / Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "GIARDINO_SEGRETO",
+    "file": "carte/avamposti/avamposti-nascosti/GIARDINO_SEGRETO.md",
+    "nome": "Giardino Segreto",
+    "tipo": "Avamposto",
+    "fazione": "Ovest / Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "LUCE_CELATA",
+    "file": "carte/avamposti/avamposti-nascosti/LUCE_CELATA.md",
+    "nome": "Luce Celata",
+    "tipo": "Avamposto",
+    "fazione": "Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "NEBBIA_DI_CENERE",
+    "file": "carte/avamposti/avamposti-nascosti/NEBBIA_DI_CENERE.md",
+    "nome": "Nebbia Di Cenere",
+    "tipo": "Avamposto",
+    "fazione": "Nord / Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "OMBRA_SENZA_NOME",
+    "file": "carte/avamposti/avamposti-nascosti/OMBRA_SENZA_NOME.md",
+    "nome": "Ombra Senza Nome",
+    "tipo": "Avamposto",
+    "fazione": "Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "RADICI_DIMENTICATE",
+    "file": "carte/avamposti/avamposti-nascosti/RADICI_DIMENTICATE.md",
+    "nome": "Radici Dimenticate",
+    "tipo": "Avamposto",
+    "fazione": "Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "SOGLIA_D'ARGENTO",
+    "file": "carte/avamposti/avamposti-nascosti/SOGLIA_D'ARGENTO.md",
+    "nome": "Soglia D'Argento",
+    "tipo": "Avamposto",
+    "fazione": "Nord / Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "SOTTOBOSCO_DEI_MORTI",
+    "file": "carte/avamposti/avamposti-nascosti/SOTTOBOSCO_DEI_MORTI.md",
+    "nome": "Sottobosco Dei Morti",
+    "tipo": "Avamposto",
+    "fazione": "Est / Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "VELO_CONSACRATO",
+    "file": "carte/avamposti/avamposti-nascosti/VELO_CONSACRATO.md",
+    "nome": "Velo Consacrato",
+    "tipo": "Avamposto",
+    "fazione": "Est / Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "VELO_D'INVERNO",
+    "file": "carte/avamposti/avamposti-nascosti/VELO_D'INVERNO.md",
+    "nome": "Velo D'Inverno",
+    "tipo": "Avamposto",
+    "fazione": "Nord",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra coperto.\""
+  },
+  {
+    "id": "AVAMPOSTO_DI_CALETH",
+    "file": "carte/avamposti/avamposti-semplici/AVAMPOSTO_DI_CALETH/AVAMPOSTO_DI_CALETH.md",
+    "nome": "AVAMPOSTO DI CALETH",
+    "tipo": "Avamposto Semplice",
+    "fazione": "Sud",
+    "costo": "0 — giocabile 1 volta per turno",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "genera_mana",
+            "valore": 1,
+            "colore": "Sud"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "AVAMPOSTO_DI_ENDAL",
+    "file": "carte/avamposti/avamposti-semplici/AVAMPOSTO_DI_ENDAL/AVAMPOSTO_DI_ENDAL.md",
+    "nome": "AVAMPOSTO DI ENDAL",
+    "tipo": "Avamposto Semplice",
+    "fazione": "Est",
+    "costo": "0 — giocabile 1 volta per turno",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "genera_mana",
+            "valore": 1,
+            "colore": "Est"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "AVAMPOSTO_DI_FAELORN",
+    "file": "carte/avamposti/avamposti-semplici/AVAMPOSTO_DI_FAELORN/AVAMPOSTO_DI_FAELORN.md",
+    "nome": "AVAMPOSTO DI FAELORN",
+    "tipo": "Avamposto Semplice",
+    "fazione": "Ovest",
+    "costo": "0 — giocabile 1 volta per turno",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "genera_mana",
+            "valore": 1,
+            "colore": "Ovest"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "AVAMPOSTO_DI_MID_VAEL",
+    "file": "carte/avamposti/avamposti-semplici/AVAMPOSTO_DI_MID_VAEL/AVAMPOSTO_DI_MID_VAEL.md",
+    "nome": "AVAMPOSTO DI MID VAEL",
+    "tipo": "Avamposto Semplice / Mid Vael",
+    "fazione": "Centro",
+    "costo": "0 — giocabile 1 volta per turno",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "genera_mana",
+            "valore": 1,
+            "colore": "Centro"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "AVAMPOSTO_DI_VORTHAAN",
+    "file": "carte/avamposti/avamposti-semplici/AVAMPOSTO_DI_VORTHAAN/AVAMPOSTO_DI_VORTHAAN.md",
+    "nome": "AVAMPOSTO DI VORTHAAN",
+    "tipo": "Avamposto Semplice / Vorthaan",
+    "fazione": "Nord",
+    "costo": "0 — giocabile 1 volta per turno",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "genera_mana",
+            "valore": 1,
+            "colore": "Nord"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "ABISSO_CONSACRATO",
+    "file": "carte/avamposti/avamposti-shock/ABISSO_CONSACRATO.md",
+    "nome": "Abisso Consacrato",
+    "tipo": "Avamposto / Endal · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+  },
+  {
+    "id": "ANFITEATRO_ARTICO",
+    "file": "carte/avamposti/avamposti-shock/ANFITEATRO_ARTICO.md",
+    "nome": "Anfiteatro Artico",
+    "tipo": "Avamposto / Vorthaan · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+  },
+  {
+    "id": "BURRONE_DELLE_RADICI",
+    "file": "carte/avamposti/avamposti-shock/BURRONE_DELLE_RADICI.md",
+    "nome": "Burrone delle Radici",
+    "tipo": "Avamposto / Caleth · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+  },
+  {
+    "id": "COLONNA_DI_URIA",
+    "file": "carte/avamposti/avamposti-shock/COLONNA_DI_URIA.md",
+    "nome": "Colonna di Uria",
+    "tipo": "Avamposto / Caleth · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+  },
+  {
+    "id": "DOLINA_FIORITA",
+    "file": "carte/avamposti/avamposti-shock/DOLINA_FIORITA.md",
+    "nome": "Dolina Fiorita",
+    "tipo": "Avamposto / Faelorn · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+  },
+  {
+    "id": "FAGLIA_DI_AETHRA",
+    "file": "carte/avamposti/avamposti-shock/FAGLIA_DI_AETHRA.md",
+    "nome": "Faglia di Aethra",
+    "tipo": "Avamposto / Vorthaan · Caleth",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+  },
+  {
+    "id": "GOLA_DEL_PRIMO_GELO",
+    "file": "carte/avamposti/avamposti-shock/GOLA_DEL_PRIMO_GELO.md",
+    "nome": "Gola del Primo Gelo",
+    "tipo": "Avamposto / Vorthaan · Endal",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+  },
+  {
+    "id": "PANTANO_SILENTE",
+    "file": "carte/avamposti/avamposti-shock/PANTANO_SILENTE.md",
+    "nome": "Pantano Silente",
+    "tipo": "Avamposto / Endal · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+  },
+  {
+    "id": "PINNACOLO_D'ARGENTO",
+    "file": "carte/avamposti/avamposti-shock/PINNACOLO_D'ARGENTO.md",
+    "nome": "Pinnacolo d'Argento",
+    "tipo": "Avamposto / Vorthaan · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+  },
+  {
+    "id": "VORAGINE_FUMANTE",
+    "file": "carte/avamposti/avamposti-shock/VORAGINE_FUMANTE.md",
+    "nome": "Voragine Fumante",
+    "tipo": "Avamposto / Caleth · Endal",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappata.\""
+  },
+  {
+    "id": "ALTIPIANO_DEI_TRE_REGNI",
+    "file": "carte/avamposti/avamposti-tappati/ALTIPIANO_DEI_TRE_REGNI.md",
+    "nome": "Altipiano dei Tre Regni",
+    "tipo": "Avamposto / Vorthaan · Faelorn · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "ALTOPIANO_SACRO",
+    "file": "carte/avamposti/avamposti-tappati/ALTOPIANO_SACRO.md",
+    "nome": "Altopiano Sacro",
+    "tipo": "Avamposto / Caleth · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "ALTURA_CONSACRATA",
+    "file": "carte/avamposti/avamposti-tappati/ALTURA_CONSACRATA.md",
+    "nome": "Altura Consacrata",
+    "tipo": "Avamposto / Vorthaan · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "ARA_DEL_SACRIFICIO",
+    "file": "carte/avamposti/avamposti-tappati/ARA_DEL_SACRIFICIO.md",
+    "nome": "Ara del Sacrificio",
+    "tipo": "Avamposto / Caleth · Endal · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "CATTEDRALE_DI_GELO",
+    "file": "carte/avamposti/avamposti-tappati/CATTEDRALE_DI_GELO.md",
+    "nome": "Cattedrale di Gelo",
+    "tipo": "Avamposto / Vorthaan · Endal · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "COLLINE_ARDENTI",
+    "file": "carte/avamposti/avamposti-tappati/COLLINE_ARDENTI.md",
+    "nome": "Colline Ardenti",
+    "tipo": "Avamposto / Caleth · Faelorn · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "CONFLUENZA_DI_AETHRA",
+    "file": "carte/avamposti/avamposti-tappati/CONFLUENZA_DI_AETHRA.md",
+    "nome": "Confluenza di Aethra",
+    "tipo": "Avamposto / Vorthaan · Caleth · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "FORESTA_DEI_GUARDIANI",
+    "file": "carte/avamposti/avamposti-tappati/FORESTA_DEI_GUARDIANI.md",
+    "nome": "Foresta dei Guardiani",
+    "tipo": "Avamposto / Endal · Faelorn · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "FORESTA_MALEDETTA",
+    "file": "carte/avamposti/avamposti-tappati/FORESTA_MALEDETTA.md",
+    "nome": "Foresta Maledetta",
+    "tipo": "Avamposto / Caleth · Endal · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "FOSSO_PROFANATO",
+    "file": "carte/avamposti/avamposti-tappati/FOSSO_PROFANATO.md",
+    "nome": "Fosso Profanato",
+    "tipo": "Avamposto / Endal · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "GOLA_FUMANTE",
+    "file": "carte/avamposti/avamposti-tappati/GOLA_FUMANTE.md",
+    "nome": "Gola Fumante",
+    "tipo": "Avamposto / Caleth · Endal",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "GUADO_VERDE",
+    "file": "carte/avamposti/avamposti-tappati/GUADO_VERDE.md",
+    "nome": "Guado Verde",
+    "tipo": "Avamposto / Caleth · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "PALUDE_SILENZIOSA",
+    "file": "carte/avamposti/avamposti-tappati/PALUDE_SILENZIOSA.md",
+    "nome": "Palude Silenziosa",
+    "tipo": "Avamposto / Endal · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "PASSO_BIFRONTE",
+    "file": "carte/avamposti/avamposti-tappati/PASSO_BIFRONTE.md",
+    "nome": "Passo Bifronte",
+    "tipo": "Avamposto / Vorthaan · Caleth",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "RADURA_ETERNA",
+    "file": "carte/avamposti/avamposti-tappati/RADURA_ETERNA.md",
+    "nome": "Radura Eterna",
+    "tipo": "Avamposto / Faelorn · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "RIVA_BOREALE",
+    "file": "carte/avamposti/avamposti-tappati/RIVA_BOREALE.md",
+    "nome": "Riva Boreale",
+    "tipo": "Avamposto / Vorthaan · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "SPELONCA_DEI_CADUTI",
+    "file": "carte/avamposti/avamposti-tappati/SPELONCA_DEI_CADUTI.md",
+    "nome": "Spelonca dei Caduti",
+    "tipo": "Avamposto / Vorthaan · Endal · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "TRIPLICE_VORAGINE",
+    "file": "carte/avamposti/avamposti-tappati/TRIPLICE_VORAGINE.md",
+    "nome": "Triplice Voragine",
+    "tipo": "Avamposto / Vorthaan · Caleth · Endal",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "VALICO_DEL_SILENZIO",
+    "file": "carte/avamposti/avamposti-tappati/VALICO_DEL_SILENZIO.md",
+    "nome": "Valico del Silenzio",
+    "tipo": "Avamposto / Vorthaan · Endal",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "VALLE_DEI_TRE_VENTI",
+    "file": "carte/avamposti/avamposti-tappati/VALLE_DEI_TRE_VENTI.md",
+    "nome": "Valle dei Tre Venti",
+    "tipo": "Avamposto / Vorthaan · Caleth · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Entra tappato.\""
+  },
+  {
+    "id": "ALTARE_DI_VAEL",
+    "file": "carte/avamposti/avamposti-vivi/ALTARE_DI_VAEL.md",
+    "nome": "ALTARE DI VAEL",
+    "tipo": "Avamposto",
+    "fazione": "Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, recupera 2 HP.\""
+  },
+  {
+    "id": "BASTIONE_DI_SOHL",
+    "file": "carte/avamposti/avamposti-vivi/BASTIONE_DI_SOHL.md",
+    "nome": "BASTIONE DI SOHL",
+    "tipo": "Avamposto",
+    "fazione": "Nord",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, guarda l'ultima carta del tuo mazzo: scegli se tenerla lì o metterla in cima.\""
+  },
+  {
+    "id": "BASTIONE_SACRO",
+    "file": "carte/avamposti/avamposti-vivi/BASTIONE_SACRO.md",
+    "nome": "BASTIONE SACRO",
+    "tipo": "Avamposto",
+    "fazione": "Vorthaan · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, recupera 2 HP.\""
+  },
+  {
+    "id": "BOSCO_DELLE_OMBRE",
+    "file": "carte/avamposti/avamposti-vivi/BOSCO_DELLE_OMBRE.md",
+    "nome": "BOSCO DELLE OMBRE",
+    "tipo": "Avamposto",
+    "fazione": "Endal · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, milla 1 carta dal tuo mazzo.\""
+  },
+  {
+    "id": "CRIPTA_DEL_GELO",
+    "file": "carte/avamposti/avamposti-vivi/CRIPTA_DEL_GELO.md",
+    "nome": "CRIPTA DEL GELO",
+    "tipo": "Avamposto",
+    "fazione": "Vorthaan · Endal",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, milla 1 carta dal tuo mazzo, poi guarda la cima del tuo mazzo.\""
+  },
+  {
+    "id": "FORNACE_DI_KHAL",
+    "file": "carte/avamposti/avamposti-vivi/FORNACE_DI_KHAL.md",
+    "nome": "FORNACE DI KHAL",
+    "tipo": "Avamposto",
+    "fazione": "Caleth",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
+  },
+  {
+    "id": "FORTEZZA_DI_CONFINE",
+    "file": "carte/avamposti/avamposti-vivi/FORTEZZA_DI_CONFINE.md",
+    "nome": "FORTEZZA DI CONFINE",
+    "tipo": "Avamposto",
+    "fazione": "Vorthaan · Caleth",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
+  },
+  {
+    "id": "GIARDINO_ARTICO",
+    "file": "carte/avamposti/avamposti-vivi/GIARDINO_ARTICO.md",
+    "nome": "GIARDINO ARTICO",
+    "tipo": "Avamposto",
+    "fazione": "Vorthaan · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, metti un segnalino +0/+1 su una creatura che controlli.\""
+  },
+  {
+    "id": "GIARDINO_SACRO",
+    "file": "carte/avamposti/avamposti-vivi/GIARDINO_SACRO.md",
+    "nome": "GIARDINO SACRO",
+    "tipo": "Avamposto",
+    "fazione": "Faelorn · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, se controlli 2 o più creature, recupera 2 HP.\""
+  },
+  {
+    "id": "OSSARIO_CONSACRATO",
+    "file": "carte/avamposti/avamposti-vivi/OSSARIO_CONSACRATO.md",
+    "nome": "OSSARIO CONSACRATO",
+    "tipo": "Avamposto",
+    "fazione": "Endal · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, milla 1 carta dal tuo mazzo e recupera 1 HP.\""
+  },
+  {
+    "id": "OSSARIO_DI_MORDETH",
+    "file": "carte/avamposti/avamposti-vivi/OSSARIO_DI_MORDETH.md",
+    "nome": "OSSARIO DI MORDETH",
+    "tipo": "Avamposto",
+    "fazione": "Endal",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, milla 1 carta dal tuo mazzo.\""
+  },
+  {
+    "id": "PIRA_MALEDETTA",
+    "file": "carte/avamposti/avamposti-vivi/PIRA_MALEDETTA.md",
+    "nome": "PIRA MALEDETTA",
+    "tipo": "Avamposto",
+    "fazione": "Caleth · Endal",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
+  },
+  {
+    "id": "RADICI_DI_LYREN",
+    "file": "carte/avamposti/avamposti-vivi/RADICI_DI_LYREN.md",
+    "nome": "RADICI DI LYREN",
+    "tipo": "Avamposto",
+    "fazione": "Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, se controlli 2 o più creature, metti un segnalino +1/+1 su una di esse.\""
+  },
+  {
+    "id": "SAVANA_IN_FIAMME",
+    "file": "carte/avamposti/avamposti-vivi/SAVANA_IN_FIAMME.md",
+    "nome": "SAVANA IN FIAMME",
+    "tipo": "Avamposto",
+    "fazione": "Caleth · Faelorn",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
+  },
+  {
+    "id": "TEMPIO_ARDENTE",
+    "file": "carte/avamposti/avamposti-vivi/TEMPIO_ARDENTE.md",
+    "nome": "TEMPIO ARDENTE",
+    "tipo": "Avamposto",
+    "fazione": "Caleth · Mid Vael",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
+  },
+  {
+    "id": "BUSSOLA_DEL_PELLEGRINO",
+    "file": "carte/benedizioni/benedizioni-nomadi/BUSSOLA_DEL_PELLEGRINO.md",
+    "nome": "Bussola del Pellegrino",
+    "tipo": "Benedizione",
+    "fazione": "Nomadi (incolore)",
+    "costo": "3",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, fai scry 1.\""
+  },
+  {
+    "id": "ELISIR_DI_GIOVINEZZA",
+    "file": "carte/benedizioni/benedizioni-nomadi/ELISIR_DI_GIOVINEZZA.md",
+    "nome": "Elisir di Giovinezza",
+    "tipo": "Benedizione",
+    "fazione": "Nomadi (incolore)",
+    "costo": "5",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che giochi una creatura, guadagni HP pari al suo costo totale in mana.\""
+  },
+  {
+    "id": "IL_BENE_CHE_TORNA",
+    "file": "carte/benedizioni/benedizioni-nomadi/IL_BENE_CHE_TORNA.md",
+    "nome": "Il Bene che Torna",
+    "tipo": "Benedizione",
+    "fazione": "Nomadi (incolore)",
+    "costo": "4",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, evoca un Token \"Pellegrino Senza Nome\" 1/1 incolore di tipo Umano sotto il tuo controllo.\""
+  },
+  {
+    "id": "FRAMMENTO_DI_URIA",
+    "file": "carte/benedizioni/benedizioni-nord/FRAMMENTO_DI_URIA.md",
+    "nome": "Frammento di Uria",
+    "tipo": "Benedizione",
+    "fazione": "Nord",
+    "costo": "1 Nord + 3",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, una tua creatura bersaglio guadagna un segnalino +0/+1 permanente.\""
+  },
+  {
+    "id": "POLVERE_DI_STELLE",
+    "file": "carte/benedizioni/benedizioni-nord/POLVERE_DI_STELLE.md",
+    "nome": "Polvere di Stelle",
+    "tipo": "Benedizione",
+    "fazione": "Nord",
+    "costo": "2 Nord + 2",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo turno, applica **Gelo 1** a una creatura avversaria bersaglio.\""
+  },
+  {
+    "id": "VOLONTA_DEL_RE",
+    "file": "carte/benedizioni/benedizioni-nord/VOLONTA_DEL_RE.md",
+    "nome": "Volontà del Re",
+    "tipo": "Benedizione",
+    "fazione": "Nord",
+    "costo": "2 Nord + 5",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le tue creature guadagnano **Scudo**.\""
+  },
+  {
+    "id": "ACCOLITO_DI_VAEL",
+    "file": "carte/creature/creature-mono/creature-centro/ACCOLITO_DI_VAEL/ACCOLITO_DI_VAEL.md",
+    "nome": "Accolito di Vael",
+    "tipo": "Creatura — Umano · Chierico",
+    "fazione": "Centro",
+    "costo": "1 Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: recupera 1 HP.\""
+  },
+  {
+    "id": "AELITH_VOCE_DI_VAEL",
+    "file": "carte/creature/creature-mono/creature-centro/AELITH_VOCE_DI_VAEL/AELITH_VOCE_DI_VAEL.md",
+    "nome": "Aelith, Voce di Vael",
+    "tipo": "Creatura — Divinità",
+    "fazione": "Centro",
+    "costo": "7 Centro",
+    "keyword": [
+      "protezione"
+    ],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: azzera tutti i contatori negativi sul campo.\""
+  },
+  {
+    "id": "ANGELO_CUSTODE",
+    "file": "carte/creature/creature-mono/creature-centro/ANGELO_CUSTODE/ANGELO_CUSTODE.md",
+    "nome": "Angelo Custode",
+    "tipo": "Creatura — Angelo",
+    "fazione": "Centro",
+    "costo": "2 Centro + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: applica Scudo a un'altra tua unità a scelta.\""
+  },
+  {
+    "id": "GIUDICE_ETERNO",
+    "file": "carte/creature/creature-mono/creature-centro/GIUDICE_ETERNO/GIUDICE_ETERNO.md",
+    "nome": "Giudice Eterno",
+    "tipo": "Creatura — Divinità · Guerriero",
+    "fazione": "Centro",
+    "costo": "3 Centro + 1",
+    "keyword": [
+      "protezione"
+    ],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che un'unità avversaria viene distrutta, guadagna +1/+1 permanente.\""
+  },
+  {
+    "id": "PALADINO_NOVIZIO",
+    "file": "carte/creature/creature-mono/creature-centro/PALADINO_NOVIZIO/PALADINO_NOVIZIO.md",
+    "nome": "Paladino Novizio",
+    "tipo": "Creatura — Umano · Guerriero",
+    "fazione": "Centro",
+    "costo": "2 Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "SERAFINO_DI_MID_VAEL",
+    "file": "carte/creature/creature-mono/creature-centro/SERAFINO_DI_MID_VAEL/SERAFINO_DI_MID_VAEL.md",
+    "nome": "Serafino di Mid Vael",
+    "tipo": "Creatura — Angelo · Divinità",
+    "fazione": "Centro",
+    "costo": "3 Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: applica Scudo a 2 altre tue unità a scelta.\""
+  },
+  {
+    "id": "TESSITORE_DEL_NEXUS",
+    "file": "carte/creature/creature-mono/creature-centro/TESSITORE_DEL_NEXUS/TESSITORE_DEL_NEXUS.md",
+    "nome": "Tessitore del Nexus",
+    "tipo": "Creatura — Costrutto",
+    "fazione": "Centro",
+    "costo": "3 Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che generi mana tramite Nexus, recupera 1 HP.\""
+  },
+  {
+    "id": "VAELOS_IL_SILENZIOSO",
+    "file": "carte/creature/creature-mono/creature-centro/VAELOS_IL_SILENZIOSO/VAELOS_IL_SILENZIOSO.md",
+    "nome": "Vaelos il Silenzioso",
+    "tipo": "Creatura — Divinità",
+    "fazione": "Centro",
+    "costo": "4 Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Mentre è in campo: tutte le tue unità guadagnano +0/+1.\""
+  },
+  {
+    "id": "LETH_IL_PROSCIUGATO",
+    "file": "carte/creature/creature-mono/creature-est/LETH_IL_PROSCIUGATO/LETH_IL_PROSCIUGATO.md",
+    "nome": "Leth il Prosciugato",
+    "tipo": "Creatura — Vampiro",
+    "fazione": "Est",
+    "costo": "4 Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando attacca un giocatore direttamente, quel giocatore milla 2 carte.\""
+  },
+  {
+    "id": "LICH_MINORE",
+    "file": "carte/creature/creature-mono/creature-est/LICH_MINORE/LICH_MINORE.md",
+    "nome": "Lich Minore",
+    "tipo": "Creatura — Lich",
+    "fazione": "Est",
+    "costo": "3 Est",
+    "keyword": [
+      "lamento"
+    ],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: applica -2/-2 a un'unità avversaria a scelta.\""
+  },
+  {
+    "id": "MORDETH_IL_FALCEMORTIS",
+    "file": "carte/creature/creature-mono/creature-est/MORDETH_IL_FALCEMORTIS/MORDETH_IL_FALCEMORTIS.md",
+    "nome": "Mordeth, il Falcemortis",
+    "tipo": "Creatura — Lich · Divinità",
+    "fazione": "Est",
+    "costo": "6 Est + 1",
+    "keyword": [
+      "lamento"
+    ],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: tutti i giocatori millano 3 carte.\""
+  },
+  {
+    "id": "NECROMANTE_DI_ENDAL",
+    "file": "carte/creature/creature-mono/creature-est/NECROMANTE_DI_ENDAL/NECROMANTE_DI_ENDAL.md",
+    "nome": "Necromante di Endal",
+    "tipo": "Creatura — Mago",
+    "fazione": "Est",
+    "costo": "2 Est + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: milla 2 carte dal tuo mazzo.\""
+  },
+  {
+    "id": "OMBRA_SILENZIOSA",
+    "file": "carte/creature/creature-mono/creature-est/OMBRA_SILENZIOSA/OMBRA_SILENZIOSA.md",
+    "nome": "Ombra Silenziosa",
+    "tipo": "Creatura — Spettro",
+    "fazione": "Est",
+    "costo": "2 Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "SCHELETRO_ERRANTE",
+    "file": "carte/creature/creature-mono/creature-est/SCHELETRO_ERRANTE/SCHELETRO_ERRANTE.md",
+    "nome": "Scheletro Errante",
+    "tipo": "Creatura — Non-Morto",
+    "fazione": "Est",
+    "costo": "1 Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "STREGA_LAMENTANTE",
+    "file": "carte/creature/creature-mono/creature-est/STREGA_LAMENTANTE/STREGA_LAMENTANTE.md",
+    "nome": "Strega Lamentante",
+    "tipo": "Creatura — Umano · Mago",
+    "fazione": "Est",
+    "costo": "3 Est",
+    "keyword": [
+      "lamento"
+    ],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "VAMPIRO_DELLA_CRIPTA",
+    "file": "carte/creature/creature-mono/creature-est/VAMPIRO_DELLA_CRIPTA/VAMPIRO_DELLA_CRIPTA.md",
+    "nome": "Vampiro della Cripta",
+    "tipo": "Creatura — Vampiro",
+    "fazione": "Est",
+    "costo": "3 Est + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che un'unità muore, recupera 1 HP.\""
+  },
+  {
+    "id": "AELTH_DELLA_TORMENTA",
+    "file": "carte/creature/creature-mono/creature-nord/AELTH_DELLA_TORMENTA.md",
+    "nome": "Aelth della Tormenta",
+    "tipo": "Creatura — Spirito",
+    "fazione": "Nord",
+    "costo": "3 Nord + 1",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "pesca",
+            "valore": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "CACCIATRICE_ARTICA",
+    "file": "carte/creature/creature-mono/creature-nord/CACCIATRICE_ARTICA.md",
+    "nome": "Cacciatrice Artica",
+    "tipo": "Creatura — Umano",
+    "fazione": "Nord",
+    "costo": "1 Nord + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "CUSTODE_GLACIALE",
+    "file": "carte/creature/creature-mono/creature-nord/CUSTODE_GLACIALE.md",
+    "nome": "Custode Glaciale",
+    "tipo": "Creatura — Elementale",
+    "fazione": "Nord",
+    "costo": "3 Nord + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni turno in cui non attacca, guadagna +0/+1 permanente.\""
+  },
+  {
+    "id": "ELAR_SOVRANO_DEL_PERMAFROST",
+    "file": "carte/creature/creature-mono/creature-nord/ELAR_SOVRANO_DEL_PERMAFROST/ELAR_SOVRANO_DEL_PERMAFROST.md",
+    "nome": "Elar, Sovrano del Permafrost",
+    "tipo": "Creatura — Guerriero · Divinità",
+    "fazione": "Nord",
+    "costo": "3 Nord",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando attacca: congela 1 unità avversaria a scelta per 2 turni.\""
+  },
+  {
+    "id": "LEVIATANO_DI_GHIACCIO",
+    "file": "carte/creature/creature-mono/creature-nord/LEVIATANO_DI_GHIACCIO/LEVIATANO_DI_GHIACCIO.md",
+    "nome": "Leviatano di Ghiaccio",
+    "tipo": "Creatura — Drago · Elementale",
+    "fazione": "Nord",
+    "costo": "6 Nord + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: congela tutte le unità in campo per 1 turno.\""
+  },
+  {
+    "id": "MURO_DI_GHIACCIO_VIVO",
+    "file": "carte/creature/creature-mono/creature-nord/MURO_DI_GHIACCIO_VIVO.md",
+    "nome": "Muro di Ghiaccio Vivo",
+    "tipo": "Creatura — Costrutto · Elementale",
+    "fazione": "Nord",
+    "costo": "3 Nord",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Non può attaccare.\""
+  },
+  {
+    "id": "SOLDATO_DEL_GELO",
+    "file": "carte/creature/creature-mono/creature-nord/SOLDATO_DEL_GELO.md",
+    "nome": "Soldato del Gelo",
+    "tipo": "Creatura — Guerriero",
+    "fazione": "Nord",
+    "costo": "1 Nord",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "VRYN_DEL_PERMAFROST",
+    "file": "carte/creature/creature-mono/creature-nord/VRYN_DEL_PERMAFROST.md",
+    "nome": "Vryn del Permafrost",
+    "tipo": "Creatura — Mago",
+    "fazione": "Nord",
+    "costo": "2 Nord + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: congela un'unità avversaria a scelta per 1 turno.\""
+  },
+  {
+    "id": "DRIADE_DELLE_RADICI",
+    "file": "carte/creature/creature-mono/creature-ovest/DRIADE_DELLE_RADICI.md",
+    "nome": "Driade delle Radici",
+    "tipo": "Creatura — Driade",
+    "fazione": "Ovest",
+    "costo": "3 Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "DRUIDO_APPRENDISTA",
+    "file": "carte/creature/creature-mono/creature-ovest/DRUIDO_APPRENDISTA.md",
+    "nome": "Druido Apprendista",
+    "tipo": "Creatura — Umano · Druido",
+    "fazione": "Ovest",
+    "costo": "2 Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "ELFO_CACCIATORE",
+    "file": "carte/creature/creature-mono/creature-ovest/ELFO_CACCIATORE.md",
+    "nome": "Elfo Cacciatore",
+    "tipo": "Creatura — Elfo · Guerriero",
+    "fazione": "Ovest",
+    "costo": "2 Ovest + 1",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "etb",
+        "azioni": [
+          {
+            "verbo": "pesca",
+            "valore": 2
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "FOLLETTO_DEL_BOSCO",
+    "file": "carte/creature/creature-mono/creature-ovest/FOLLETTO_DEL_BOSCO.md",
+    "nome": "Folletto del Bosco",
+    "tipo": "Creatura — Fata",
+    "fazione": "Ovest",
+    "costo": "1 Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "GRANDE_BESTIA_ANCESTRALE",
+    "file": "carte/creature/creature-mono/creature-ovest/GRANDE_BESTIA_ANCESTRALE.md",
+    "nome": "Grande Bestia Ancestrale",
+    "tipo": "Creatura — Bestia · Elementale",
+    "fazione": "Ovest",
+    "costo": "6 Ovest + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: metti un segnalino +1/+1 su ogni altra tua creatura in campo.\""
+  },
+  {
+    "id": "GUARDIANO_DELLA_FORESTA",
+    "file": "carte/creature/creature-mono/creature-ovest/GUARDIANO_DELLA_FORESTA.md",
+    "nome": "Guardiano della Foresta",
+    "tipo": "Creatura — Bestia",
+    "fazione": "Ovest",
+    "costo": "3 Ovest + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "LYREN_ANZIANA_DEL_BOSCO",
+    "file": "carte/creature/creature-mono/creature-ovest/LYREN_ANZIANA_DEL_BOSCO/LYREN_ANZIANA_DEL_BOSCO.md",
+    "nome": "Lyren, Anziana del Bosco",
+    "tipo": "Creatura — Driade · Mago",
+    "fazione": "Ovest",
+    "costo": "4 Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: cerca nel mazzo una Magia con costo ≤3 e mettila in mano.\""
+  },
+  {
+    "id": "SYLVARA_CUSTODE_DI_FAELORN",
+    "file": "carte/creature/creature-mono/creature-ovest/SYLVARA_CUSTODE_DI_FAELORN/SYLVARA_CUSTODE_DI_FAELORN.md",
+    "nome": "Sylvara, Custode di Faelorn",
+    "tipo": "Creatura — Fata · Divinità",
+    "fazione": "Ovest",
+    "costo": "3 Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Mentre è in campo: le tue Magie Ovest costano 1 mana generico in meno per essere giocate.\""
+  },
+  {
+    "id": "BERSERKER_DI_CALETH",
+    "file": "carte/creature/creature-mono/creature-sud/BERSERKER_DI_CALETH.md",
+    "nome": "Berserker di Caleth",
+    "tipo": "Creatura — Assassino",
+    "fazione": "Sud",
+    "costo": "2 Sud + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando attacca: infligge 1 danno a tutte le unità avversarie.\""
+  },
+  {
+    "id": "CENDRATH_IL_BRUCIANTE",
+    "file": "carte/creature/creature-mono/creature-sud/CENDRATH_IL_BRUCIANTE/CENDRATH_IL_BRUCIANTE.md",
+    "nome": "Cendrath il Bruciante",
+    "tipo": "Creatura — Elementale",
+    "fazione": "Sud",
+    "costo": "4 Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: infligge 2 danni a un'unità avversaria a scelta.\""
+  },
+  {
+    "id": "DRAGO_DI_CALETH",
+    "file": "carte/creature/creature-mono/creature-sud/DRAGO_DI_CALETH/DRAGO_DI_CALETH.md",
+    "nome": "Drago di Caleth",
+    "tipo": "Creatura — Drago",
+    "fazione": "Sud",
+    "costo": "3 Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: infligge 3 danni divisi a scelta tra unità e/o giocatori avversari.\""
+  },
+  {
+    "id": "EVOCATORE_DI_FIAMME",
+    "file": "carte/creature/creature-mono/creature-sud/EVOCATORE_DI_FIAMME.md",
+    "nome": "Evocatore di Fiamme",
+    "tipo": "Creatura — Mago",
+    "fazione": "Sud",
+    "costo": "3 Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: crea un token Fiamma 1/1 con Velocità.\""
+  },
+  {
+    "id": "FIAMMIFERA",
+    "file": "carte/creature/creature-mono/creature-sud/FIAMMIFERA.md",
+    "nome": "Fiammifera",
+    "tipo": "Creatura — Umano",
+    "fazione": "Sud",
+    "costo": "2 Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: infligge 1 danno a una creatura avversaria a scelta.\""
+  },
+  {
+    "id": "LANCIAFIAMME",
+    "file": "carte/creature/creature-mono/creature-sud/LANCIAFIAMME.md",
+    "nome": "Lanciafiamme",
+    "tipo": "Creatura — Costrutto",
+    "fazione": "Sud",
+    "costo": "2 Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Puoi tapparlo: infligge 1 danno a un'unità a scelta.\""
+  },
+  {
+    "id": "SIGNORE_DELLE_FIAMME",
+    "file": "carte/creature/creature-mono/creature-sud/SIGNORE_DELLE_FIAMME.md",
+    "nome": "Signore delle Fiamme",
+    "tipo": "Creatura — Elementale",
+    "fazione": "Sud",
+    "costo": "3 Sud + 1",
+    "keyword": [
+      "frenesia"
+    ],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "SOLDATO_DELLE_BRACI",
+    "file": "carte/creature/creature-mono/creature-sud/SOLDATO_DELLE_BRACI.md",
+    "nome": "Soldato delle Braci",
+    "tipo": "Creatura — Guerriero",
+    "fazione": "Sud",
+    "costo": "1 Sud",
+    "keyword": [
+      "velocità"
+    ],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "URIAN_LAMA_DI_URIA",
+    "file": "carte/creature/creature-mono/creature-sud/URIAN_LAMA_DI_URIA.md",
+    "nome": "Urian, Lama di Uria",
+    "tipo": "Creatura — Assassino",
+    "fazione": "Sud",
+    "costo": "5 Sud + 1",
+    "keyword": [
+      "velocità"
+    ],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando uccide un'unità in combattimento, può attaccare di nuovo immediatamente.\""
+  },
+  {
+    "id": "APOTEOSI_DI_MID_VAEL",
+    "file": "carte/magie/magie-mono/magie-centro/APOTEOSI_DI_MID_VAEL.md",
+    "nome": "Apoteosi di Mid Vael",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Centro",
+    "costo": "2 Centro più 4 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Prendi il controllo di tutte le unità avversarie fino alla fine del turno.\""
+  },
+  {
+    "id": "BENEDIZIONE_DI_VAEL",
+    "file": "carte/magie/magie-mono/magie-centro/BENEDIZIONE_DI_VAEL.md",
+    "nome": "Benedizione di Vael",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Centro",
+    "costo": "1 Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Scegli uno: una tua unità bersaglio recupera DEF pari al suo valore stampato di DEF;\""
+  },
+  {
+    "id": "ECO_DI_VAEL",
+    "file": "carte/magie/magie-mono/magie-centro/ECO_DI_VAEL.md",
+    "nome": "Eco di Vael",
+    "tipo": "Magia — Istante",
+    "fazione": "Centro",
+    "costo": "2 Centro più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Copia una Magia bersaglio giocata da un giocatore avversario.\""
+  },
+  {
+    "id": "EDITTO_DEL_CENTRO",
+    "file": "carte/magie/magie-mono/magie-centro/EDITTO_DEL_CENTRO.md",
+    "nome": "Editto del Centro",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Centro",
+    "costo": "2 Centro più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"oppure metti un contatore +2/+2 permanente su una tua unità bersaglio;\""
+  },
+  {
+    "id": "MANO_DI_VAEL",
+    "file": "carte/magie/magie-mono/magie-centro/MANO_DI_VAEL.md",
+    "nome": "Mano di Vael",
+    "tipo": "Magia — Istante",
+    "fazione": "Centro",
+    "costo": "1 Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una tua unità bersaglio guadagna Protezione fino alla fine del turno.\""
+  },
+  {
+    "id": "RIALLINEAMENTO_DEL_NEXUS",
+    "file": "carte/magie/magie-mono/magie-centro/RIALLINEAMENTO_DEL_NEXUS.md",
+    "nome": "Riallineamento del Nexus",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Centro",
+    "costo": "3 Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Scegli uno: tutte le unità che controlli ricevono +1 atk/+1 def fino alla fine del turno;\""
+  },
+  {
+    "id": "SPECCHIO_DEL_NEXUS",
+    "file": "carte/magie/magie-mono/magie-centro/SPECCHIO_DEL_NEXUS.md",
+    "nome": "Specchio del Nexus",
+    "tipo": "Magia — Istante",
+    "fazione": "Centro",
+    "costo": "2 Centro più 2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Annulla una Magia bersaglio giocata da un giocatore avversario.\""
+  },
+  {
+    "id": "MALEDIZIONE_DEL_LICH",
+    "file": "carte/magie/magie-mono/magie-est/MALEDIZIONE_DEL_LICH.md",
+    "nome": "Maledizione del Lich",
+    "tipo": "Magia — Istante",
+    "fazione": "Est",
+    "costo": "2 Est più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Applica un contatore Maledizione -3 atk/-3 def a un'unità avversaria bersaglio.\""
+  },
+  {
+    "id": "PATTO_COL_FALCEMORTIS",
+    "file": "carte/magie/magie-mono/magie-est/PATTO_COL_FALCEMORTIS.md",
+    "nome": "Patto col Falcemortis",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Est",
+    "costo": "1 Est più 2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Come costo aggiuntivo per giocare Patto col Falcemortis, sacrifica un'unità che controlli.\""
+  },
+  {
+    "id": "RITORNO_DALLE_OMBRE",
+    "file": "carte/magie/magie-mono/magie-est/RITORNO_DALLE_OMBRE.md",
+    "nome": "Ritorno dalle Ombre",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Est",
+    "costo": "2 Est più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Riporta in campo sotto il tuo controllo una carta unità dal tuo Cimitero il cui costo mana totale sia 3 o inferiore.\""
+  },
+  {
+    "id": "SUSSURRO_DI_ENDAL",
+    "file": "carte/magie/magie-mono/magie-est/SUSSURRO_DI_ENDAL.md",
+    "nome": "Sussurro di Endal",
+    "tipo": "Magia — Istante",
+    "fazione": "Est",
+    "costo": "1 Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Un'unità avversaria bersaglio riceve -2 atk/-2 def fino alla fine del turno.\""
+  },
+  {
+    "id": "TOCCO_DEL_PROSCIUGATORE",
+    "file": "carte/magie/magie-mono/magie-est/TOCCO_DEL_PROSCIUGATORE.md",
+    "nome": "Tocco del Prosciugatore",
+    "tipo": "Magia — Istante",
+    "fazione": "Est",
+    "costo": "1 Est più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tocco del Prosciugatore infligge 2 danni a un'unità avversaria bersaglio.\""
+  },
+  {
+    "id": "VEGLIA_DI_MORDETH",
+    "file": "carte/magie/magie-mono/magie-est/VEGLIA_DI_MORDETH.md",
+    "nome": "Veglia di Mordeth",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Est",
+    "costo": "4 Est più 2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni giocatore avversario mette le prime 7 carte del proprio mazzo nel proprio Cimitero.\""
+  },
+  {
+    "id": "VOCE_DEI_SEPOLTI",
+    "file": "carte/magie/magie-mono/magie-est/VOCE_DEI_SEPOLTI.md",
+    "nome": "Voce dei Sepolti",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Est",
+    "costo": "1 Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Un giocatore avversario bersaglio mette le prime 4 carte del proprio mazzo nel proprio Cimitero.\""
+  },
+  {
+    "id": "EDITTO_GLACIALE",
+    "file": "carte/magie/magie-mono/magie-nord/EDITTO_GLACIALE.md",
+    "nome": "Editto Glaciale",
+    "tipo": "Magia — Istante",
+    "fazione": "Nord",
+    "costo": "2 Nord più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "distruggi",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "AVVERSARIO",
+              "quantificatore": "una"
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "INVERNO_ETERNO",
+    "file": "carte/magie/magie-mono/magie-nord/INVERNO_ETERNO.md",
+    "nome": "Inverno Eterno",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Nord",
+    "costo": "4 Nord più 2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Inverno Eterno congela ogni unità avversaria in campo per 3 turni.\""
+  },
+  {
+    "id": "RAFFICA_GELIDA",
+    "file": "carte/magie/magie-mono/magie-nord/RAFFICA_GELIDA.md",
+    "nome": "Raffica Gelida",
+    "tipo": "Magia — Istante",
+    "fazione": "Nord",
+    "costo": "1 Nord più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Un'unità avversaria bersaglio viene congelata per 1 turno.\""
+  },
+  {
+    "id": "RIFLESSO_DEL_PERMAFROST",
+    "file": "carte/magie/magie-mono/magie-nord/RIFLESSO_DEL_PERMAFROST.md",
+    "nome": "Riflesso del Permafrost",
+    "tipo": "Magia — Istante",
+    "fazione": "Nord",
+    "costo": "2 Nord",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Annulla una Magia avversaria oppure un'abilità attiva avversaria che ha come bersaglio una tua unità o te stesso.\""
+  },
+  {
+    "id": "SCUDO_DI_BRINA",
+    "file": "carte/magie/magie-mono/magie-nord/SCUDO_DI_BRINA.md",
+    "nome": "Scudo di Brina",
+    "tipo": "Magia — Istante",
+    "fazione": "Nord",
+    "costo": "1 Nord",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una tua unità bersaglio guadagna +0 atk/+3 def fino alla fine del turno.\""
+  },
+  {
+    "id": "TEMPESTA_DI_BRINA",
+    "file": "carte/magie/magie-mono/magie-nord/TEMPESTA_DI_BRINA.md",
+    "nome": "Tempesta di Brina",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Nord",
+    "costo": "3 Nord più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tempesta di Brina congela ogni unità avversaria in campo per 1 turno.\""
+  },
+  {
+    "id": "VISIONE_DEL_NORD",
+    "file": "carte/magie/magie-mono/magie-nord/VISIONE_DEL_NORD.md",
+    "nome": "Visione del Nord",
+    "tipo": "Magia — Istante",
+    "fazione": "Nord",
+    "costo": "1 Nord più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"**\""
+  },
+  {
+    "id": "CONVERGENZA_ARCANA",
+    "file": "carte/magie/magie-mono/magie-ovest/CONVERGENZA_ARCANA.md",
+    "nome": "Convergenza Arcana",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Ovest",
+    "costo": "2 Ovest più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Le Magie Ovest che giochi in questo turno costano 2 mana generico in meno da pagare.\""
+  },
+  {
+    "id": "ECO_DEL_VECCHIO_BOSCO",
+    "file": "carte/magie/magie-mono/magie-ovest/ECO_DEL_VECCHIO_BOSCO.md",
+    "nome": "Eco del Vecchio Bosco",
+    "tipo": "Magia — Istante",
+    "fazione": "Ovest",
+    "costo": "1 Ovest più 2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Copia una Magia bersaglio che hai giocato in questo turno.\""
+  },
+  {
+    "id": "GERMOGLIO_DI_FAELORN",
+    "file": "carte/magie/magie-mono/magie-ovest/GERMOGLIO_DI_FAELORN.md",
+    "nome": "Germoglio di Faelorn",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Ovest",
+    "costo": "1 Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una tua unità bersaglio riceve +0 atk/+2 def fino alla fine del turno.\""
+  },
+  {
+    "id": "PATTO_DELLE_RADICI",
+    "file": "carte/magie/magie-mono/magie-ovest/PATTO_DELLE_RADICI.md",
+    "nome": "Patto delle Radici",
+    "tipo": "Magia — Istante",
+    "fazione": "Ovest",
+    "costo": "1 Ovest più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una tua unità bersaglio riceve +0 atk/+3 def e guadagna Compromesso fino alla fine del turno.\""
+  },
+  {
+    "id": "RISVEGLIO_DI_FAELORN",
+    "file": "carte/magie/magie-mono/magie-ovest/RISVEGLIO_DI_FAELORN.md",
+    "nome": "Risveglio di Faelorn",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Ovest",
+    "costo": "4 Ovest più 2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Guarda le prime 7 carte del tuo mazzo.\""
+  },
+  {
+    "id": "SUSSURRO_DELLE_FOGLIE",
+    "file": "carte/magie/magie-mono/magie-ovest/SUSSURRO_DELLE_FOGLIE.md",
+    "nome": "Sussurro delle Foglie",
+    "tipo": "Magia — Istante",
+    "fazione": "Ovest",
+    "costo": "1 Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Guarda le prime 3 carte del tuo mazzo.\""
+  },
+  {
+    "id": "VISIONE_DI_LYREN",
+    "file": "carte/magie/magie-mono/magie-ovest/VISIONE_DI_LYREN.md",
+    "nome": "Visione di Lyren",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Ovest",
+    "costo": "2 Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Guarda le prime 5 carte del tuo mazzo.\""
+  },
+  {
+    "id": "CARICA_VULCANICA",
+    "file": "carte/magie/magie-mono/magie-sud/CARICA_VULCANICA.md",
+    "nome": "Carica Vulcanica",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Sud",
+    "costo": "2 Sud più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Se al momento della risoluzione controlli 4 o più unità, queste guadagnano anche Travolta fino alla fine del turno.\""
+  },
+  {
+    "id": "CATACLISMA_DI_CENDRATH",
+    "file": "carte/magie/magie-mono/magie-sud/CATACLISMA_DI_CENDRATH.md",
+    "nome": "Cataclisma di Cendrath",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Sud",
+    "costo": "3 Sud più 3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Cataclisma di Cendrath infligge 4 danni a ogni unità avversaria.\""
+  },
+  {
+    "id": "DOPPIA_FIAMMA",
+    "file": "carte/magie/magie-mono/magie-sud/DOPPIA_FIAMMA.md",
+    "nome": "Doppia Fiamma",
+    "tipo": "Magia — Istante",
+    "fazione": "Sud",
+    "costo": "1 Sud più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"La prossima Magia Sud che giochi in questo turno viene copiata.\""
+  },
+  {
+    "id": "FURIA_DELLE_BRACI",
+    "file": "carte/magie/magie-mono/magie-sud/FURIA_DELLE_BRACI.md",
+    "nome": "Furia delle Braci",
+    "tipo": "Magia — Istante",
+    "fazione": "Sud",
+    "costo": "1 Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una tua unità bersaglio guadagna +2 atk/+0 def e Velocità fino alla fine del turno.\""
+  },
+  {
+    "id": "INCENDIO_DOLOSO",
+    "file": "carte/magie/magie-mono/magie-sud/INCENDIO_DOLOSO.md",
+    "nome": "Incendio Doloso",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Sud",
+    "costo": "2 Sud più 1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Incendio Doloso infligge 2 danni a ogni unità avversaria in campo.\""
+  },
+  {
+    "id": "LANCIA_DI_FIAMME",
+    "file": "carte/magie/magie-mono/magie-sud/LANCIA_DI_FIAMME.md",
+    "nome": "Lancia di Fiamme",
+    "tipo": "Magia — Istante",
+    "fazione": "Sud",
+    "costo": "1 Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Lancia di Fiamme infligge 3 danni a un bersaglio: un'unità o un giocatore.\""
+  },
+  {
+    "id": "SIGILLO_DI_CALETH",
+    "file": "carte/magie/magie-mono/magie-sud/SIGILLO_DI_CALETH.md",
+    "nome": "Sigillo di Caleth",
+    "tipo": "Magia — Sorcery",
+    "fazione": "Sud",
+    "costo": "2 Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una tua unità bersaglio guadagna Frenesia fino alla fine del turno.\""
+  },
+  {
+    "id": "CAMERA_DEL_RIFLESSO",
+    "file": "carte/santuari/santuari-centro/CAMERA_DEL_RIFLESSO.md",
+    "nome": "Camera del Riflesso",
+    "tipo": "Santuario",
+    "fazione": "Centro",
+    "costo": "2 Centro + 2",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando un giocatore gioca una Magia, quel giocatore può pagare 2 mana qualsiasi per copiare immediatamente quella Magia.\""
+  },
+  {
+    "id": "NEXUS_DI_EQUILIBRIO",
+    "file": "carte/santuari/santuari-centro/NEXUS_DI_EQUILIBRIO.md",
+    "nome": "Nexus di Equilibrio",
+    "tipo": "Santuario",
+    "fazione": "Centro",
+    "costo": "1 Centro + 2",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del Mantenimento di ogni giocatore, se quel giocatore ha meno HP di tutti i suoi avversari, quel giocatore guadagna 2 HP.\""
+  },
+  {
+    "id": "TEMPIO_DEL_RIALLINEAMENTO",
+    "file": "carte/santuari/santuari-centro/TEMPIO_DEL_RIALLINEAMENTO.md",
+    "nome": "Tempio del Riallineamento",
+    "tipo": "Santuario",
+    "fazione": "Centro",
+    "costo": "2 Centro + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio della propria fase di Mantenimento, ogni giocatore aggiunge alla propria riserva 1 mana di una fazione a sua scelta.\""
+  },
+  {
+    "id": "TRONO_DI_MID_VAEL",
+    "file": "carte/santuari/santuari-centro/TRONO_DI_MID_VAEL.md",
+    "nome": "Trono di Mid Vael",
+    "tipo": "Santuario",
+    "fazione": "Centro",
+    "costo": "2 Centro + 3",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUTTI",
+              "quantificatore": "tutte"
+            },
+            "stat": "DEF",
+            "valore": 1
+          }
+        ]
+      },
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "pesca",
+            "valore": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "CRIPTA_DEL_LAMENTO",
+    "file": "carte/santuari/santuari-est/CRIPTA_DEL_LAMENTO.md",
+    "nome": "Cripta del Lamento",
+    "tipo": "Santuario",
+    "fazione": "Est",
+    "costo": "1 Est + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del Mantenimento di ogni giocatore, quel giocatore scarta la prima carta del proprio mazzo nel proprio cimitero.\""
+  },
+  {
+    "id": "MAUSOLEO_DELLE_ANIME",
+    "file": "carte/santuari/santuari-est/MAUSOLEO_DELLE_ANIME.md",
+    "nome": "Mausoleo delle Anime",
+    "tipo": "Santuario",
+    "fazione": "Est",
+    "costo": "1 Est + 2",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che una creatura muore, ogni avversario del suo controllore subisce 1 danno.\""
+  },
+  {
+    "id": "NECROPOLI_DEL_SUSSURRO",
+    "file": "carte/santuari/santuari-est/NECROPOLI_DEL_SUSSURRO.md",
+    "nome": "Necropoli del Sussurro",
+    "tipo": "Santuario",
+    "fazione": "Est",
+    "costo": "2 Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una volta per turno, ogni giocatore può pagare 2 mana qualsiasi per restituire una creatura bersaglio dal proprio cimitero alla propria mano.\""
+  },
+  {
+    "id": "TOMBA_DEL_FALCEMORTIS",
+    "file": "carte/santuari/santuari-est/TOMBA_DEL_FALCEMORTIS.md",
+    "nome": "Tomba del Falcemortis",
+    "tipo": "Santuario",
+    "fazione": "Est",
+    "costo": "1 Est + 3",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che una carta entra nel cimitero di un giocatore, quel giocatore subisce 1 danno.\""
+  },
+  {
+    "id": "ALTARE_DEL_VEGLIANTE_ETERNO",
+    "file": "carte/santuari/santuari-nomadi/ALTARE_DEL_VEGLIANTE_ETERNO.md",
+    "nome": "Altare del Vegliante Eterno",
+    "tipo": "Santuario",
+    "fazione": "Nomade",
+    "costo": "3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio della propria fase di Mantenimento, ogni giocatore guarda la prima carta del proprio mazzo.\""
+  },
+  {
+    "id": "CERCHIO_DELLE_RUNE_SPEZZATE",
+    "file": "carte/santuari/santuari-nomadi/CERCHIO_DELLE_RUNE_SPEZZATE.md",
+    "nome": "Cerchio delle Rune Spezzate",
+    "tipo": "Santuario",
+    "fazione": "Nomade",
+    "costo": "4 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le unità con **Scudo** entrano in campo con un contatore Scudo aggiuntivo.\""
+  },
+  {
+    "id": "CUORE_DEL_MONDO_EROSO",
+    "file": "carte/santuari/santuari-nomadi/CUORE_DEL_MONDO_EROSO.md",
+    "nome": "Cuore del Mondo Eroso",
+    "tipo": "Santuario",
+    "fazione": "Nomade",
+    "costo": "6 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando questo Santuario entra in campo, un giocatore bersaglio guadagna 10 HP.\""
+  },
+  {
+    "id": "NECROPOLI_SENZA_NOME",
+    "file": "carte/santuari/santuari-nomadi/NECROPOLI_SENZA_NOME.md",
+    "nome": "Necropoli Senza Nome",
+    "tipo": "Santuario",
+    "fazione": "Nomade",
+    "costo": "4 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che una Creatura muore, il suo controllore guadagna 1 HP.\""
+  },
+  {
+    "id": "PIANURA_DEL_VENTO_ETERNO",
+    "file": "carte/santuari/santuari-nomadi/PIANURA_DEL_VENTO_ETERNO.md",
+    "nome": "Pianura del Vento Eterno",
+    "tipo": "Santuario",
+    "fazione": "Nomade",
+    "costo": "3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUTTI",
+              "quantificatore": "tutte",
+              "filtro": "costo<=2"
+            },
+            "stat": "ATK",
+            "valore": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "ROVINA_DEL_NEXUS_SEPOLTO",
+    "file": "carte/santuari/santuari-nomadi/ROVINA_DEL_NEXUS_SEPOLTO.md",
+    "nome": "Rovina del Nexus Sepolto",
+    "tipo": "Santuario",
+    "fazione": "Nomade",
+    "costo": "3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"La prima Magia non-Creatura che ogni giocatore gioca in ogni turno costa 1 mana generico in meno.\""
+  },
+  {
+    "id": "STRADA_DEL_PELLEGRINO_SENZA_NOME",
+    "file": "carte/santuari/santuari-nomadi/STRADA_DEL_PELLEGRINO_SENZA_NOME.md",
+    "nome": "Strada del Pellegrino Senza Nome",
+    "tipo": "Santuario",
+    "fazione": "Nomade",
+    "costo": "3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"La prima Creatura che ogni giocatore gioca in ogni turno costa 1 mana generico in meno.\""
+  },
+  {
+    "id": "TEMPIO_DEL_TEMPO_EROSSO",
+    "file": "carte/santuari/santuari-nomadi/TEMPIO_DEL_TEMPO_EROSSO.md",
+    "nome": "Tempio del Tempo Erosso",
+    "tipo": "Santuario",
+    "fazione": "Nomade",
+    "costo": "4 mana qualsiasi",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "pesca",
+            "valore": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "CATTEDRALE_DI_BRINA",
+    "file": "carte/santuari/santuari-nord/CATTEDRALE_DI_BRINA.md",
+    "nome": "Cattedrale di Brina",
+    "tipo": "Santuario",
+    "fazione": "Nord",
+    "costo": "2 Nord + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le creature con DEF pari o superiore a 4 guadagnano **Vedetta**.\""
+  },
+  {
+    "id": "INVERNO_SENZA_FINE",
+    "file": "carte/santuari/santuari-nord/INVERNO_SENZA_FINE.md",
+    "nome": "Inverno Senza Fine",
+    "tipo": "Santuario",
+    "fazione": "Nord",
+    "costo": "2 Nord + 4",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le creature entrano in campo tappate, ignorando qualsiasi abilità contraria.\""
+  },
+  {
+    "id": "TRONO_DEL_RE_GLACIALE",
+    "file": "carte/santuari/santuari-nord/TRONO_DEL_RE_GLACIALE.md",
+    "nome": "Trono del Re Glaciale",
+    "tipo": "Santuario",
+    "fazione": "Nord",
+    "costo": "2 Nord + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio della fase di Combattimento di ogni giocatore, quel giocatore tappa una creatura bersaglio nel proprio campo.\""
+  },
+  {
+    "id": "TUNDRA_DEL_SILENZIO",
+    "file": "carte/santuari/santuari-nord/TUNDRA_DEL_SILENZIO.md",
+    "nome": "Tundra del Silenzio",
+    "tipo": "Santuario",
+    "fazione": "Nord",
+    "costo": "1 Nord + 2",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Nessuna creatura può attaccare nel turno in cui entra in campo.\""
+  },
+  {
+    "id": "BOSCHETTO_ANCESTRALE",
+    "file": "carte/santuari/santuari-ovest/BOSCHETTO_ANCESTRALE.md",
+    "nome": "Boschetto Ancestrale",
+    "tipo": "Santuario",
+    "fazione": "Ovest",
+    "costo": "2 Ovest + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio della propria fase di Mantenimento, ogni giocatore guarda le prime 2 carte del proprio mazzo e le rimette in cima al mazzo nell'ordine che preferisce.\""
+  },
+  {
+    "id": "CERCHIO_DRUIDICO",
+    "file": "carte/santuari/santuari-ovest/CERCHIO_DRUIDICO.md",
+    "nome": "Cerchio Druidico",
+    "tipo": "Santuario",
+    "fazione": "Ovest",
+    "costo": "1 Ovest + 2",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le Magie giocate dai giocatori costano 1 mana generico in meno.\""
+  },
+  {
+    "id": "CUORE_DI_FAELORN",
+    "file": "carte/santuari/santuari-ovest/CUORE_DI_FAELORN.md",
+    "nome": "Cuore di Faelorn",
+    "tipo": "Santuario",
+    "fazione": "Ovest",
+    "costo": "3 Ovest + 3",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio della propria fase di Mantenimento, ogni giocatore guarda le prime 4 carte del proprio mazzo, ne mette una nella propria mano e rimette le altre in cima al mazzo nell'ordine che preferisce.\""
+  },
+  {
+    "id": "GRANDE_QUERCIA_SENZIENTE",
+    "file": "carte/santuari/santuari-ovest/GRANDE_QUERCIA_SENZIENTE.md",
+    "nome": "Grande Quercia Senziente",
+    "tipo": "Santuario",
+    "fazione": "Ovest",
+    "costo": "2 Ovest + 2",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUTTI",
+              "quantificatore": "tutte",
+              "filtro": "tipo:driade, druido, elfo o bestia"
+            },
+            "stat": "ATK",
+            "valore": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "ARA_DELLE_FIAMME",
+    "file": "carte/santuari/santuari-sud/ARA_DELLE_FIAMME.md",
+    "nome": "Ara delle Fiamme",
+    "tipo": "Santuario",
+    "fazione": "Sud",
+    "costo": "1 Sud + 3",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le creature con costo totale pari o inferiore a 3 guadagnano **Frenesia**.\""
+  },
+  {
+    "id": "CALDERONE_ARDENTE",
+    "file": "carte/santuari/santuari-sud/CALDERONE_ARDENTE.md",
+    "nome": "Calderone Ardente",
+    "tipo": "Santuario",
+    "fazione": "Sud",
+    "costo": "1 Sud + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Alla fine del turno di ogni giocatore, se quel giocatore non ha attaccato durante quel turno, quel giocatore subisce 1 danno.\""
+  },
+  {
+    "id": "FORGIA_DELLA_FIAMMA",
+    "file": "carte/santuari/santuari-sud/FORGIA_DELLA_FIAMMA.md",
+    "nome": "Forgia della Fiamma",
+    "tipo": "Santuario",
+    "fazione": "Sud",
+    "costo": "2 Sud + 1",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUTTI",
+              "quantificatore": "tutte",
+              "filtro": "attaccante"
+            },
+            "stat": "ATK",
+            "valore": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "RICORRENZA_DEL_DESERTO",
+    "file": "carte/santuari/santuari-sud/RICORRENZA_DEL_DESERTO.md",
+    "nome": "Ricorrenza del Deserto",
+    "tipo": "Santuario",
+    "fazione": "Sud",
+    "costo": "2 Sud + 2",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del Mantenimento di ogni giocatore, ogni creatura che quel giocatore controlla riceve un segnalino **-0/-1** permanente.\""
+  },
+  {
+    "id": "AVANGUARDIA_DI_MID_VAEL",
+    "file": "carte/satelliti/satelliti-centro/AVANGUARDIA_DI_MID_VAEL.md",
+    "nome": "Avanguardia di Mid Vael",
+    "tipo": "Satellite",
+    "fazione": "Centro",
+    "costo": "2 Centro + 2",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "tutte"
+            },
+            "stat": "DEF",
+            "valore": 1
+          }
+        ]
+      },
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "pesca",
+            "valore": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "BILANCIA_DI_HILIA",
+    "file": "carte/satelliti/satelliti-centro/BILANCIA_DI_HILIA.md",
+    "nome": "Bilancia di Hilia",
+    "tipo": "Satellite",
+    "fazione": "Centro",
+    "costo": "1 Centro + 1",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "infliggi_danno",
+            "valore": 1,
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "una"
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "PEGNO_DEI_27",
+    "file": "carte/satelliti/satelliti-centro/PEGNO_DEI_27.md",
+    "nome": "Pegno dei 27",
+    "tipo": "Satellite",
+    "fazione": "Centro",
+    "costo": "2 Centro + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, se hai meno HP dell'avversario, guadagni 2 HP;\""
+  },
+  {
+    "id": "RISONANZA_PACIFICA",
+    "file": "carte/satelliti/satelliti-centro/RISONANZA_PACIFICA.md",
+    "nome": "Risonanza Pacifica",
+    "tipo": "Satellite",
+    "fazione": "Centro",
+    "costo": "2 Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, guadagni 1 HP.\""
+  },
+  {
+    "id": "CATENA_DEI_SEPOLTI",
+    "file": "carte/satelliti/satelliti-est/CATENA_DEI_SEPOLTI.md",
+    "nome": "Catena dei Sepolti",
+    "tipo": "Satellite",
+    "fazione": "Est",
+    "costo": "2 Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, un'unità avversaria bersaglio subisce -1 ATK e -1 DEF fino alla fine del turno.\""
+  },
+  {
+    "id": "SUSSURRO_DEL_CIMITERO",
+    "file": "carte/satelliti/satelliti-est/SUSSURRO_DEL_CIMITERO.md",
+    "nome": "Sussurro del Cimitero",
+    "tipo": "Satellite",
+    "fazione": "Est",
+    "costo": "2 Est + 2",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che una tua creatura entra nel cimitero, l'avversario subisce mill X, dove X è pari al costo totale in mana della creatura entrata nel cimitero.\""
+  },
+  {
+    "id": "TRIBUTO_DI_SHEVA",
+    "file": "carte/satelliti/satelliti-est/TRIBUTO_DI_SHEVA.md",
+    "nome": "Tributo di Sheva",
+    "tipo": "Satellite",
+    "fazione": "Est",
+    "costo": "2 Est + 3",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del Mantenimento di ogni giocatore, quel giocatore sacrifica una creatura che controlla a propria scelta.\""
+  },
+  {
+    "id": "VELO_DI_ENDAL",
+    "file": "carte/satelliti/satelliti-est/VELO_DI_ENDAL.md",
+    "nome": "Velo di Endal",
+    "tipo": "Satellite",
+    "fazione": "Est",
+    "costo": "1 Est + 2",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le creature avversarie subiscono -1 ATK e -0 DEF.\""
+  },
+  {
+    "id": "ACQUEDOTTO_EROSSO",
+    "file": "carte/satelliti/satelliti-nomadi/ACQUEDOTTO_EROSSO.md",
+    "nome": "Acquedotto Erosso",
+    "tipo": "Satellite",
+    "fazione": "Nomade",
+    "costo": "4 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio della tua fase di Pesca, peschi 1 carta aggiuntiva.\""
+  },
+  {
+    "id": "CARRO_DEL_VIANDANTE",
+    "file": "carte/satelliti/satelliti-nomadi/CARRO_DEL_VIANDANTE.md",
+    "nome": "Carro del Viandante",
+    "tipo": "Satellite",
+    "fazione": "Nomade",
+    "costo": "1 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, aggiungi alla tua riserva 1 mana di una fazione a tua scelta.\""
+  },
+  {
+    "id": "CUORE_DEL_PELLEGRINO_SENZA_NOME",
+    "file": "carte/satelliti/satelliti-nomadi/CUORE_DEL_PELLEGRINO_SENZA_NOME.md",
+    "nome": "Cuore del Pellegrino Senza Nome",
+    "tipo": "Satellite",
+    "fazione": "Nomade",
+    "costo": "6 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, guadagni 2 HP, peschi 1 carta aggiuntiva e aggiungi alla tua riserva 1 mana di una fazione a tua scelta.\""
+  },
+  {
+    "id": "FORZIERE_DEL_VEGLIANTE",
+    "file": "carte/satelliti/satelliti-nomadi/FORZIERE_DEL_VEGLIANTE.md",
+    "nome": "Forziere del Vegliante",
+    "tipo": "Satellite",
+    "fazione": "Nomade",
+    "costo": "2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "tutte",
+              "filtro": "costo<=2"
+            },
+            "stat": "ATK",
+            "valore": 0
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "LANTERNA_DEL_PELLEGRINO",
+    "file": "carte/satelliti/satelliti-nomadi/LANTERNA_DEL_PELLEGRINO.md",
+    "nome": "Lanterna del Pellegrino",
+    "tipo": "Satellite",
+    "fazione": "Nomade",
+    "costo": "3 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, guarda la prima carta del tuo mazzo.\""
+  },
+  {
+    "id": "MAPPA_DELLA_ROVINA",
+    "file": "carte/satelliti/satelliti-nomadi/MAPPA_DELLA_ROVINA.md",
+    "nome": "Mappa della Rovina",
+    "tipo": "Satellite",
+    "fazione": "Nomade",
+    "costo": "4 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una volta per turno, puoi pagare 2 mana qualsiasi per pescare 1 carta.\""
+  },
+  {
+    "id": "SIGILLO_DEL_CAMMINO_ETERNO",
+    "file": "carte/satelliti/satelliti-nomadi/SIGILLO_DEL_CAMMINO_ETERNO.md",
+    "nome": "Sigillo del Cammino Eterno",
+    "tipo": "Satellite",
+    "fazione": "Nomade",
+    "costo": "4 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Le tue Magie costano 1 mana generico in meno.\""
+  },
+  {
+    "id": "STENDARDO_DEL_CAMMINO",
+    "file": "carte/satelliti/satelliti-nomadi/STENDARDO_DEL_CAMMINO.md",
+    "nome": "Stendardo del Cammino",
+    "tipo": "Satellite",
+    "fazione": "Nomade",
+    "costo": "2 mana qualsiasi",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, guadagni 1 HP.\""
+  },
+  {
+    "id": "CUORE_DEL_PERMAFROST",
+    "file": "carte/satelliti/satelliti-nord/CUORE_DEL_PERMAFROST.md",
+    "nome": "Cuore del Permafrost",
+    "tipo": "Satellite",
+    "fazione": "Nord",
+    "costo": "3 Nord + 3",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, applica **Gelo 1** a un'unità avversaria bersaglio.\""
+  },
+  {
+    "id": "RIFUGIO_GLACIALE",
+    "file": "carte/satelliti/satelliti-nord/RIFUGIO_GLACIALE.md",
+    "nome": "Rifugio Glaciale",
+    "tipo": "Satellite",
+    "fazione": "Nord",
+    "costo": "1 Nord + 2",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "tutte"
+            },
+            "stat": "ATK",
+            "valore": 0
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "TRINCEA_GLACIALE",
+    "file": "carte/satelliti/satelliti-nord/TRINCEA_GLACIALE.md",
+    "nome": "Trincea Glaciale",
+    "tipo": "Satellite",
+    "fazione": "Nord",
+    "costo": "1 Nord + 3",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni creatura avversaria che dichiara un attacco contro di te subisce 1 danno prima della fase di Danno.\""
+  },
+  {
+    "id": "VETTA_DEL_PERMAFROST",
+    "file": "carte/satelliti/satelliti-nord/VETTA_DEL_PERMAFROST.md",
+    "nome": "Vetta del Permafrost",
+    "tipo": "Satellite",
+    "fazione": "Nord",
+    "costo": "2 Nord + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, applica **Gelo 1** a un'unità avversaria bersaglio.\""
+  },
+  {
+    "id": "ALBERO_DELLA_PRESCIENZA",
+    "file": "carte/satelliti/satelliti-ovest/ALBERO_DELLA_PRESCIENZA.md",
+    "nome": "Albero della Prescienza",
+    "tipo": "Satellite",
+    "fazione": "Ovest",
+    "costo": "1 Ovest + 3",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "tutte"
+            },
+            "stat": "DEF",
+            "valore": 1
+          }
+        ]
+      },
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "pesca",
+            "valore": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "RESPIRO_DELL_ALBERO",
+    "file": "carte/satelliti/satelliti-ovest/RESPIRO_DELL_ALBERO.md",
+    "nome": "Respiro dell'Albero",
+    "tipo": "Satellite",
+    "fazione": "Ovest",
+    "costo": "2 Ovest + 1",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "pesca",
+            "valore": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "TRIBALE_DEL_BOSCO",
+    "file": "carte/satelliti/satelliti-ovest/TRIBALE_DEL_BOSCO.md",
+    "nome": "Tribale del Bosco",
+    "tipo": "Satellite",
+    "fazione": "Ovest",
+    "costo": "1 Ovest + 2",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che una tua creatura di tipo Druido, Elfo, Driade o Bestia entra in campo, fai scry 1.\""
+  },
+  {
+    "id": "VELO_DI_YELENA",
+    "file": "carte/satelliti/satelliti-ovest/VELO_DI_YELENA.md",
+    "nome": "Velo di Yelena",
+    "tipo": "Satellite",
+    "fazione": "Ovest",
+    "costo": "1 Ovest + 2",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le tue creature con costo totale ≤2 mana guadagnano **Protezione**.\""
+  },
+  {
+    "id": "CALDERONE_BOLLENTE",
+    "file": "carte/satelliti/satelliti-sud/CALDERONE_BOLLENTE.md",
+    "nome": "Calderone Bollente",
+    "tipo": "Satellite",
+    "fazione": "Sud",
+    "costo": "2 Sud",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "infliggi_danno",
+            "valore": 1,
+            "target": {
+              "tipo": "giocatore",
+              "proprietario": "TUTTI",
+              "quantificatore": "una"
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "FALO_DEL_DESERTO",
+    "file": "carte/satelliti/satelliti-sud/FALO_DEL_DESERTO.md",
+    "nome": "Falò del Deserto",
+    "tipo": "Satellite",
+    "fazione": "Sud",
+    "costo": "1 Sud + 2",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "tutte"
+            },
+            "stat": "ATK",
+            "valore": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "FIAMMA_DI_CALETH",
+    "file": "carte/satelliti/satelliti-sud/FIAMMA_DI_CALETH.md",
+    "nome": "Fiamma di Caleth",
+    "tipo": "Satellite",
+    "fazione": "Sud",
+    "costo": "2 Sud + 3",
+    "keyword": [],
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "tutte"
+            },
+            "stat": "ATK",
+            "valore": 1
+          }
+        ]
+      },
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "infliggi_danno",
+            "valore": 1,
+            "target": {
+              "tipo": "giocatore",
+              "proprietario": "TUTTI",
+              "quantificatore": "una"
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
+  },
+  {
+    "id": "PIRA_DA_GUERRA",
+    "file": "carte/satelliti/satelliti-sud/PIRA_DA_GUERRA.md",
+    "nome": "Pira da Guerra",
+    "tipo": "Satellite",
+    "fazione": "Sud",
+    "costo": "1 Sud + 2",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni creatura avversaria che dichiara un blocco contro una tua creatura subisce 1 danno prima della fase di Danno.\""
+  },
+  {
+    "id": "MALEDIZIONE_DELLE_ROVINE",
+    "file": "carte/tragedie/tragedie-nomadi/MALEDIZIONE_DELLE_ROVINE.md",
+    "nome": "Maledizione delle Rovine",
+    "tipo": "Tragedia",
+    "fazione": "Nomadi (incolore)",
+    "costo": "3",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Bonus] frase non riconosciuta: \"All'inizio del tuo Mantenimento, aggiungi 2 mana generici alla tua riserva mana.\""
+  },
+  {
+    "id": "PATTO_DEL_VIANDANTE",
+    "file": "carte/tragedie/tragedie-nomadi/PATTO_DEL_VIANDANTE.md",
+    "nome": "Patto del Viandante",
+    "tipo": "Tragedia",
+    "fazione": "Nomadi (incolore)",
+    "costo": "2",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Bonus] frase non riconosciuta: \"Peschi 2 carte.\""
+  },
+  {
+    "id": "TASSA_DI_ROWA",
+    "file": "carte/tragedie/tragedie-nomadi/TASSA_DI_ROWA.md",
+    "nome": "Tassa di Rowa",
+    "tipo": "Tragedia",
+    "fazione": "Nomadi (incolore)",
+    "costo": "4",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Bonus] frase non riconosciuta: \"Tutte le tue Magie costano 2 mana generici in meno.\""
+  },
+  {
+    "id": "IL_PREZZO_DA_PAGARE",
+    "file": "carte/tragedie/tragedie-nord/IL_PREZZO_DA_PAGARE.md",
+    "nome": "Il Prezzo da Pagare",
+    "tipo": "Tragedia",
+    "fazione": "Nord",
+    "costo": "2 Nord + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Bonus] frase non riconosciuta: \"Peschi 3 carte.\""
+  },
+  {
+    "id": "MURO_DI_TIKYR",
+    "file": "carte/tragedie/tragedie-nord/MURO_DI_TIKYR.md",
+    "nome": "Muro di Tikyr",
+    "tipo": "Tragedia",
+    "fazione": "Nord",
+    "costo": "1 Nord + 1",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Malus] frase non riconosciuta: \"Subisci 3 danni.\""
+  },
+  {
+    "id": "NELL_OCCHIO_DEL_CICLONE",
+    "file": "carte/tragedie/tragedie-nord/NELL_OCCHIO_DEL_CICLONE.md",
+    "nome": "Nell'Occhio del Ciclone",
+    "tipo": "Tragedia",
+    "fazione": "Nord",
+    "costo": "3 Nord + 2",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT3",
+    "motivoCat3": "[Bonus] frase non riconosciuta: \"Tutte le creature avversarie non si stappano durante la fase di Sveglia avversaria.\""
+  },
+  {
+    "id": "NHELION",
+    "file": "leader/bi-est-centro/NHELION.md",
+    "nome": "NHELION, L'EQUILIBRIO CORROTTO",
+    "tipo": "Divinità · Costrutto · Leader",
+    "fazione": "Est + Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "SYLVETH",
+    "file": "leader/bi-est-ovest/SYLVETH.md",
+    "nome": "SYLVETH, LA RADICE OSCURA",
+    "tipo": "Elfo · Vampiro · Leader",
+    "fazione": "Est + Ovest",
+    "keyword": [
+      "lamento"
+    ],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "AUREN",
+    "file": "leader/bi-nord-centro/AUREN.md",
+    "nome": "AUREN DI BRAID",
+    "tipo": "Monaco · Umano · Leader",
+    "fazione": "Nord + Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "LYYRA",
+    "file": "leader/bi-nord-est/LYYRA.md",
+    "nome": "LYYRA, IL RISORTO",
+    "tipo": "Drago · Zombie · Leader",
+    "fazione": "Nord + Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "FOLKRA",
+    "file": "leader/bi-nord-ovest/FOLKRA.md",
+    "nome": "FOLKRA, GUARDIANA DEL CONFINE",
+    "tipo": "Elfo · Golem · Leader",
+    "fazione": "Nord + Ovest",
+    "keyword": [
+      "vedetta"
+    ],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "VARAK",
+    "file": "leader/bi-nord-sud/VARAK.md",
+    "nome": "VARAK, LA TEMPESTA DI FUOCO",
+    "tipo": "Guerriero · Elementale · Leader",
+    "fazione": "Nord + Sud",
+    "keyword": [
+      "velocità"
+    ],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "FAELA",
+    "file": "leader/bi-ovest-centro/FAELA.md",
+    "nome": "FAELA, ARMONIA DI SOLVARATH",
+    "tipo": "Fata · Divinità · Leader",
+    "fazione": "Ovest + Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "ALERIA",
+    "file": "leader/bi-sud-centro/ALERIA.md",
+    "nome": "ALERIA, BENEDETTA DAL FUOCO",
+    "tipo": "Angelo · Guerriero · Leader",
+    "fazione": "Sud + Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "SERATH",
+    "file": "leader/bi-sud-est/SERATH.md",
+    "nome": "SERATH DEL FUOCO CORROTTO",
+    "tipo": "Demone · Assassino · Leader",
+    "fazione": "Sud + Est",
+    "keyword": [
+      "velocità"
+    ],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "THYRA",
+    "file": "leader/bi-sud-ovest/THYRA.md",
+    "nome": "THYRA, FIGLIA DEL BOSCHETTO",
+    "tipo": "Bestia · Elementale · Leader",
+    "fazione": "Sud + Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "VAELOS",
+    "file": "leader/mono-centro/VAELOS.md",
+    "nome": "VAELOS, L'EQUILIBRIO",
+    "tipo": "Divinità · Leader",
+    "fazione": "Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "KAZET",
+    "file": "leader/mono-est/KAZET.md",
+    "nome": "KAZET, IL CORROTTO",
+    "tipo": "Vampiro · Leader",
+    "fazione": "Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "XIRLIA",
+    "file": "leader/mono-nord/XIRLIA.md",
+    "nome": "XIRLIA, CUSTODE DI SOHL",
+    "tipo": "Monaco · Titano · Leader",
+    "fazione": "Nord",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "MARIKA",
+    "file": "leader/mono-ovest/MARIKA.md",
+    "nome": "MARIKA, RADICE ETERNA",
+    "tipo": "Ent · Druido · Leader",
+    "fazione": "Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "SHAI",
+    "file": "leader/mono-sud/SHAI.md",
+    "nome": "SHAI, LAMA DEL CONCLAVE",
+    "tipo": "Angelo · Guerriero · Mech · Leader",
+    "fazione": "Sud",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "AETHRAK",
+    "file": "leader/penta/AETHRAK.md",
+    "nome": "AETHRAK, IL SETTIMO SIGILLO",
+    "tipo": "Elementale · Divinità · Leader",
+    "fazione": "Tutte e 5",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "PRIMA_DEL_PRIMO_RESPIRO",
+    "file": "leader/penta/PRIMA_DEL_PRIMO_RESPIRO.md",
+    "nome": "PRIMA DEL PRIMO RESPIRO",
+    "tipo": "Divinità · Leader",
+    "fazione": "Tutte e 5",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "VAEL",
+    "file": "leader/penta/VAEL.md",
+    "nome": "VAEL, GUARDIANO DEI SEI",
+    "tipo": "Divinità · Costrutto · Leader",
+    "fazione": "Tutte e 5",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "MORVRETH",
+    "file": "leader/quad-nord-est-ovest-centro/MORVRETH.md",
+    "nome": "MORVRETH, IL SILENZIO",
+    "tipo": "Lich · Divinità · Leader",
+    "fazione": "Nord + Est + Ovest + Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "ALDRATH",
+    "file": "leader/quad-nord-sud-est-centro/ALDRATH.md",
+    "nome": "ALDRATH, IL QUARTO SIGILLO",
+    "tipo": "Divinità · Guerriero · Leader",
+    "fazione": "Nord + Sud + Est + Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "VRAETH",
+    "file": "leader/quad-nord-sud-est-ovest/VRAETH.md",
+    "nome": "VRAETH, IL SENZA LEGGE",
+    "tipo": "Elementale · Demone · Leader",
+    "fazione": "Nord + Sud + Est + Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "AETHVAEL",
+    "file": "leader/quad-nord-sud-ovest-centro/AETHVAEL.md",
+    "nome": "AETHVAEL, CUORE DI SOLVARATH",
+    "tipo": "Guerriero · Divinità · Leader",
+    "fazione": "Nord + Sud + Ovest + Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "KETH",
+    "file": "leader/quad-sud-est-ovest-centro/KETH.md",
+    "nome": "KETH, IL VASO SENZIENTE",
+    "tipo": "Costrutto · Leader",
+    "fazione": "Sud + Est + Ovest + Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "SYLMOR",
+    "file": "leader/tri-est-ovest-centro/SYLMOR.md",
+    "nome": "SYLMOR, DOVE I MORTI FIORISCONO",
+    "tipo": "Driade · Lich · Leader",
+    "fazione": "Est + Ovest + Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "VORTHAEL",
+    "file": "leader/tri-nord-est-centro/VORTHAEL.md",
+    "nome": "VORTHAEL, SENTENZA DELL'OBLIO",
+    "tipo": "Divinità · Leader",
+    "fazione": "Nord + Est + Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "NELVETH",
+    "file": "leader/tri-nord-est-ovest/NELVETH.md",
+    "nome": "NELVETH DEL SOTTOSUOLO",
+    "tipo": "Vampiro · Leader",
+    "fazione": "Nord + Est + Ovest",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "ERYNDAEL",
+    "file": "leader/tri-nord-ovest-centro/ERYNDAEL.md",
+    "nome": "ERYNDAEL, CUSTODE DELLE TRE VIE",
+    "tipo": "Fata · Divinità · Leader",
+    "fazione": "Nord + Ovest + Centro",
+    "keyword": [
+      "vedetta"
+    ],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "SOLVERATH",
+    "file": "leader/tri-nord-sud-centro/SOLVERATH.md",
+    "nome": "SOLVERATH, DELL'ASSE Y",
+    "tipo": "Guerriero · Divinità · Leader",
+    "fazione": "Nord + Sud + Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "AZARETH",
+    "file": "leader/tri-nord-sud-est/AZARETH.md",
+    "nome": "AZARETH, CENERE DEL PRIMO CIELO",
+    "tipo": "Drago · Demone · Leader",
+    "fazione": "Nord + Sud + Est",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "VAELTHORN",
+    "file": "leader/tri-nord-sud-ovest/VAELTHORN.md",
+    "nome": "VAELTHORN, PATTO DELLE STAGIONI",
+    "tipo": "Elementale · Leader",
+    "fazione": "Nord + Sud + Ovest",
+    "keyword": [
+      "vedetta"
+    ],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "KAELTHAR",
+    "file": "leader/tri-sud-est-centro/KAELTHAR.md",
+    "nome": "KAELTHAR, IL SIGILLO SPEZZATO",
+    "tipo": "Angelo · Demone · Leader",
+    "fazione": "Sud + Est + Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "ASHVET",
+    "file": "leader/tri-sud-est-ovest/ASHVET.md",
+    "nome": "ASHVET, DRUIDO DELLE CENERI",
+    "tipo": "Druido · Bestia · Leader",
+    "fazione": "Sud + Est + Ovest",
+    "keyword": [
+      "velocità"
+    ],
+    "effetti": [],
+    "categoria": "CAT1"
+  },
+  {
+    "id": "SOLANDRA",
+    "file": "leader/tri-sud-ovest-centro/SOLANDRA.md",
+    "nome": "SOLANDRA, DEL VELO DORATO",
+    "tipo": "Elfo · Divinità · Leader",
+    "fazione": "Sud + Ovest + Centro",
+    "keyword": [],
+    "effetti": [],
+    "categoria": "CAT1"
+  }
+]
