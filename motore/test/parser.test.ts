@@ -34,3 +34,43 @@ test("piu' frasi separate da punto", () => {
   if (!r.ok) return;
   expect(r.effetti).toHaveLength(2);
 });
+
+test("concedi keyword: TUTTI guadagnano Frenesia", () => {
+  const r = parseEffetto("Tutte le creature guadagnano Frenesia.");
+  expect(r.ok).toBe(true);
+  if (!r.ok) return;
+  expect(r.effetti[0].azioni[0].verbo).toBe("concedi_keyword");
+  expect(r.effetti[0].azioni[0].keyword).toBe("frenesia");
+  expect(r.effetti[0].azioni[0].target?.proprietario).toBe("TUTTI");
+});
+
+test("concedi keyword TUE: le tue creature hanno Arcano", () => {
+  const r = parseEffetto("Le tue creature hanno Arcano.");
+  expect(r.ok).toBe(true);
+  if (!r.ok) return;
+  expect(r.effetti[0].azioni[0].verbo).toBe("concedi_keyword");
+  expect(r.effetti[0].azioni[0].target?.proprietario).toBe("TUE");
+});
+
+test("mill: millano N carte", () => {
+  const r = parseEffetto("Tutti i giocatori millano 3 carte.");
+  expect(r.ok).toBe(true);
+  if (!r.ok) return;
+  expect(r.effetti[0].azioni[0].verbo).toBe("mill");
+  expect(r.effetti[0].azioni[0].valore).toBe(3);
+});
+
+test("mill: mette le prime N carte nel Cimitero", () => {
+  const r = parseEffetto("Ogni giocatore mette le prime 4 carte del proprio mazzo nel proprio Cimitero.");
+  expect(r.ok).toBe(true);
+  if (!r.ok) return;
+  expect(r.effetti[0].azioni[0].verbo).toBe("mill");
+  expect(r.effetti[0].azioni[0].valore).toBe(4);
+});
+
+test("genera_mana via 'aggiungi'", () => {
+  const r = parseEffetto("Aggiungi 1 mana generico.");
+  expect(r.ok).toBe(true);
+  if (!r.ok) return;
+  expect(r.effetti[0].azioni[0].verbo).toBe("genera_mana");
+});

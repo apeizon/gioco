@@ -7,9 +7,29 @@
     "fazione": "Centro",
     "costo": "1 Centro più 1 mana qualsiasi",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Tappa:** aggiungi 1 mana generico alla tua riserva.\""
+    "effetti": [
+      {
+        "trigger": "attivata",
+        "azioni": [
+          {
+            "verbo": "genera_mana",
+            "valore": 1,
+            "colore": "generico"
+          }
+        ]
+      },
+      {
+        "trigger": "attivata",
+        "azioni": [
+          {
+            "verbo": "genera_mana",
+            "valore": 1,
+            "colore": "Centro"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "MANTELLO_DEL_RIFLESSO",
@@ -80,7 +100,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo turno, ogni giocatore avversario mette le prime 2 carte del proprio mazzo nel proprio Cimitero.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Tappa, paga 2 Est:** scegli una carta unità in un Cimitero qualsiasi con costo mana totale 3 o inferiore.\""
   },
   {
     "id": "CINTO_DI_ENDAL",
@@ -188,7 +208,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le tue creature hanno Arcano.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"**\""
   },
   {
     "id": "CUSTODE_DRUIDA",
@@ -282,7 +302,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le tue creature hanno Surriscaldamento.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"**\""
   },
   {
     "id": "LAMA_INCANDESCENTE",
@@ -328,9 +348,19 @@
     "fazione": "Nomade",
     "costo": "3 mana qualsiasi",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tappa: aggiungi 2 mana di qualsiasi tipo alla tua riserva.\""
+    "effetti": [
+      {
+        "trigger": "attivata",
+        "azioni": [
+          {
+            "verbo": "genera_mana",
+            "valore": 2,
+            "colore": "di"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "TALISMANO_DELLA_MARCIA",
@@ -468,9 +498,19 @@
     "fazione": "Nomade",
     "costo": "2 mana qualsiasi",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"**1 mana qualsiasi, Tappa la creatura equipaggiata:** aggiungi 1 mana di un tipo a tua scelta alla riserva del controllore.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "genera_mana",
+            "valore": 1,
+            "colore": "di"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "EGIDA_DEL_VEGLIANTE_ETERNO",
@@ -1464,7 +1504,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, milla 1 carta dal tuo mazzo.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Se in questo turno una creatura è morta, metti un segnalino +1/+1 su una creatura che controlli.\""
   },
   {
     "id": "CRIPTA_DEL_GELO",
@@ -1475,7 +1515,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, milla 1 carta dal tuo mazzo, poi guarda la cima del tuo mazzo.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
   },
   {
     "id": "FORNACE_DI_KHAL",
@@ -1530,7 +1570,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, milla 1 carta dal tuo mazzo e recupera 1 HP.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
   },
   {
     "id": "OSSARIO_DI_MORDETH",
@@ -1541,7 +1581,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo, milla 1 carta dal tuo mazzo.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Può essere attaccato direttamente — le tue unità possono difenderlo.\""
   },
   {
     "id": "PIRA_MALEDETTA",
@@ -1692,7 +1732,9 @@
     "tipo": "Creatura — Angelo",
     "fazione": "Centro",
     "costo": "2 Centro + 1",
-    "keyword": [],
+    "keyword": [
+      "volo"
+    ],
     "effetti": [],
     "categoria": "CAT3",
     "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: applica Scudo a un'altra tua unità a scelta.\""
@@ -1718,7 +1760,9 @@
     "tipo": "Creatura — Umano · Guerriero",
     "fazione": "Centro",
     "costo": "2 Centro",
-    "keyword": [],
+    "keyword": [
+      "scudo"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -1729,7 +1773,9 @@
     "tipo": "Creatura — Angelo · Divinità",
     "fazione": "Centro",
     "costo": "3 Centro",
-    "keyword": [],
+    "keyword": [
+      "volo"
+    ],
     "effetti": [],
     "categoria": "CAT3",
     "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: applica Scudo a 2 altre tue unità a scelta.\""
@@ -1741,7 +1787,9 @@
     "tipo": "Creatura — Costrutto",
     "fazione": "Centro",
     "costo": "3 Centro",
-    "keyword": [],
+    "keyword": [
+      "nexus"
+    ],
     "effetti": [],
     "categoria": "CAT3",
     "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che generi mana tramite Nexus, recupera 1 HP.\""
@@ -1765,10 +1813,21 @@
     "tipo": "Creatura — Vampiro",
     "fazione": "Est",
     "costo": "4 Est",
-    "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando attacca un giocatore direttamente, quel giocatore milla 2 carte.\""
+    "keyword": [
+      "revoca"
+    ],
+    "effetti": [
+      {
+        "trigger": "attacco",
+        "azioni": [
+          {
+            "verbo": "mill",
+            "valore": 2
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "LICH_MINORE",
@@ -1794,9 +1853,32 @@
     "keyword": [
       "lamento"
     ],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: tutti i giocatori millano 3 carte.\""
+    "effetti": [
+      {
+        "trigger": "etb",
+        "azioni": [
+          {
+            "verbo": "mill",
+            "valore": 3
+          }
+        ]
+      },
+      {
+        "trigger": "morte",
+        "azioni": [
+          {
+            "verbo": "genera_token",
+            "token": {
+              "nome": "Non-Morto",
+              "atk": 1,
+              "def": 1,
+              "controllore": "tu"
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "NECROMANTE_DI_ENDAL",
@@ -1808,7 +1890,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: milla 2 carte dal tuo mazzo.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Se almeno una è una creatura, crea un token Non-Morto 1/1 in campo.\""
   },
   {
     "id": "OMBRA_SILENZIOSA",
@@ -1817,7 +1899,9 @@
     "tipo": "Creatura — Spettro",
     "fazione": "Est",
     "costo": "2 Est",
-    "keyword": [],
+    "keyword": [
+      "inafferrabile"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -1828,7 +1912,9 @@
     "tipo": "Creatura — Non-Morto",
     "fazione": "Est",
     "costo": "1 Est",
-    "keyword": [],
+    "keyword": [
+      "revoca"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -1864,7 +1950,9 @@
     "tipo": "Creatura — Spirito",
     "fazione": "Nord",
     "costo": "3 Nord + 1",
-    "keyword": [],
+    "keyword": [
+      "volo"
+    ],
     "effetti": [
       {
         "trigger": "passiva",
@@ -1885,7 +1973,9 @@
     "tipo": "Creatura — Umano",
     "fazione": "Nord",
     "costo": "1 Nord + 1",
-    "keyword": [],
+    "keyword": [
+      "portata"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -1896,7 +1986,9 @@
     "tipo": "Creatura — Elementale",
     "fazione": "Nord",
     "costo": "3 Nord + 1",
-    "keyword": [],
+    "keyword": [
+      "baluardo"
+    ],
     "effetti": [],
     "categoria": "CAT3",
     "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni turno in cui non attacca, guadagna +0/+1 permanente.\""
@@ -1908,7 +2000,9 @@
     "tipo": "Creatura — Guerriero · Divinità",
     "fazione": "Nord",
     "costo": "3 Nord",
-    "keyword": [],
+    "keyword": [
+      "baluardo"
+    ],
     "effetti": [],
     "categoria": "CAT3",
     "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando attacca: congela 1 unità avversaria a scelta per 2 turni.\""
@@ -1920,7 +2014,9 @@
     "tipo": "Creatura — Drago · Elementale",
     "fazione": "Nord",
     "costo": "6 Nord + 1",
-    "keyword": [],
+    "keyword": [
+      "baluardo"
+    ],
     "effetti": [],
     "categoria": "CAT3",
     "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: congela tutte le unità in campo per 1 turno.\""
@@ -1944,7 +2040,9 @@
     "tipo": "Creatura — Guerriero",
     "fazione": "Nord",
     "costo": "1 Nord",
-    "keyword": [],
+    "keyword": [
+      "resistenza"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -1978,7 +2076,9 @@
     "tipo": "Creatura — Umano · Druido",
     "fazione": "Ovest",
     "costo": "2 Ovest",
-    "keyword": [],
+    "keyword": [
+      "arcano"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -2010,7 +2110,9 @@
     "tipo": "Creatura — Fata",
     "fazione": "Ovest",
     "costo": "1 Ovest",
-    "keyword": [],
+    "keyword": [
+      "prescienza"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -2021,7 +2123,9 @@
     "tipo": "Creatura — Bestia · Elementale",
     "fazione": "Ovest",
     "costo": "6 Ovest + 1",
-    "keyword": [],
+    "keyword": [
+      "compromesso"
+    ],
     "effetti": [],
     "categoria": "CAT3",
     "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: metti un segnalino +1/+1 su ogni altra tua creatura in campo.\""
@@ -2033,7 +2137,9 @@
     "tipo": "Creatura — Bestia",
     "fazione": "Ovest",
     "costo": "3 Ovest + 1",
-    "keyword": [],
+    "keyword": [
+      "compromesso"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -2044,7 +2150,9 @@
     "tipo": "Creatura — Driade · Mago",
     "fazione": "Ovest",
     "costo": "4 Ovest",
-    "keyword": [],
+    "keyword": [
+      "prescienza"
+    ],
     "effetti": [],
     "categoria": "CAT3",
     "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: cerca nel mazzo una Magia con costo ≤3 e mettila in mano.\""
@@ -2068,7 +2176,9 @@
     "tipo": "Creatura — Assassino",
     "fazione": "Sud",
     "costo": "2 Sud + 1",
-    "keyword": [],
+    "keyword": [
+      "surriscaldamento"
+    ],
     "effetti": [],
     "categoria": "CAT3",
     "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando attacca: infligge 1 danno a tutte le unità avversarie.\""
@@ -2092,7 +2202,9 @@
     "tipo": "Creatura — Drago",
     "fazione": "Sud",
     "costo": "3 Sud",
-    "keyword": [],
+    "keyword": [
+      "volo"
+    ],
     "effetti": [],
     "categoria": "CAT3",
     "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: infligge 3 danni divisi a scelta tra unità e/o giocatori avversari.\""
@@ -2104,7 +2216,9 @@
     "tipo": "Creatura — Mago",
     "fazione": "Sud",
     "costo": "3 Sud",
-    "keyword": [],
+    "keyword": [
+      "surriscaldamento"
+    ],
     "effetti": [],
     "categoria": "CAT3",
     "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: crea un token Fiamma 1/1 con Velocità.\""
@@ -2327,7 +2441,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni giocatore avversario mette le prime 7 carte del proprio mazzo nel proprio Cimitero.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tra le carte così messe nei Cimiteri, scegline una e giocala senza pagarne il costo di mana.\""
   },
   {
     "id": "VOCE_DEI_SEPOLTI",
@@ -2339,7 +2453,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Un giocatore avversario bersaglio mette le prime 4 carte del proprio mazzo nel proprio Cimitero.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"**\""
   },
   {
     "id": "EDITTO_GLACIALE",
@@ -3529,7 +3643,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Bonus] frase non riconosciuta: \"All'inizio del tuo Mantenimento, aggiungi 2 mana generici alla tua riserva mana.\""
+    "motivoCat3": "[Malus] frase non riconosciuta: \"Tutte le tue creature subiscono -1 ATK fino alla rimozione della Tragedia.\""
   },
   {
     "id": "PATTO_DEL_VIANDANTE",
@@ -3597,7 +3711,9 @@
     "nome": "NHELION, L'EQUILIBRIO CORROTTO",
     "tipo": "Divinità · Costrutto · Leader",
     "fazione": "Est + Centro",
-    "keyword": [],
+    "keyword": [
+      "assorbimento"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -3619,7 +3735,9 @@
     "nome": "AUREN DI BRAID",
     "tipo": "Monaco · Umano · Leader",
     "fazione": "Nord + Centro",
-    "keyword": [],
+    "keyword": [
+      "scudo"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -3629,7 +3747,9 @@
     "nome": "LYYRA, IL RISORTO",
     "tipo": "Drago · Zombie · Leader",
     "fazione": "Nord + Est",
-    "keyword": [],
+    "keyword": [
+      "volo"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -3663,7 +3783,9 @@
     "nome": "FAELA, ARMONIA DI SOLVARATH",
     "tipo": "Fata · Divinità · Leader",
     "fazione": "Ovest + Centro",
-    "keyword": [],
+    "keyword": [
+      "prescienza"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -3673,7 +3795,9 @@
     "nome": "ALERIA, BENEDETTA DAL FUOCO",
     "tipo": "Angelo · Guerriero · Leader",
     "fazione": "Sud + Centro",
-    "keyword": [],
+    "keyword": [
+      "scudo"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -3695,7 +3819,9 @@
     "nome": "THYRA, FIGLIA DEL BOSCHETTO",
     "tipo": "Bestia · Elementale · Leader",
     "fazione": "Sud + Ovest",
-    "keyword": [],
+    "keyword": [
+      "prescienza"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -3715,7 +3841,9 @@
     "nome": "KAZET, IL CORROTTO",
     "tipo": "Vampiro · Leader",
     "fazione": "Est",
-    "keyword": [],
+    "keyword": [
+      "compromesso"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -3725,7 +3853,9 @@
     "nome": "XIRLIA, CUSTODE DI SOHL",
     "tipo": "Monaco · Titano · Leader",
     "fazione": "Nord",
-    "keyword": [],
+    "keyword": [
+      "resistenza"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -3745,7 +3875,9 @@
     "nome": "SHAI, LAMA DEL CONCLAVE",
     "tipo": "Angelo · Guerriero · Mech · Leader",
     "fazione": "Sud",
-    "keyword": [],
+    "keyword": [
+      "volo"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -3845,7 +3977,9 @@
     "nome": "VORTHAEL, SENTENZA DELL'OBLIO",
     "tipo": "Divinità · Leader",
     "fazione": "Nord + Est + Centro",
-    "keyword": [],
+    "keyword": [
+      "baluardo"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -3855,7 +3989,9 @@
     "nome": "NELVETH DEL SOTTOSUOLO",
     "tipo": "Vampiro · Leader",
     "fazione": "Nord + Est + Ovest",
-    "keyword": [],
+    "keyword": [
+      "inafferrabile"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -3877,7 +4013,9 @@
     "nome": "SOLVERATH, DELL'ASSE Y",
     "tipo": "Guerriero · Divinità · Leader",
     "fazione": "Nord + Sud + Centro",
-    "keyword": [],
+    "keyword": [
+      "carica"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -3887,7 +4025,9 @@
     "nome": "AZARETH, CENERE DEL PRIMO CIELO",
     "tipo": "Drago · Demone · Leader",
     "fazione": "Nord + Sud + Est",
-    "keyword": [],
+    "keyword": [
+      "volo"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -3909,7 +4049,9 @@
     "nome": "KAELTHAR, IL SIGILLO SPEZZATO",
     "tipo": "Angelo · Demone · Leader",
     "fazione": "Sud + Est + Centro",
-    "keyword": [],
+    "keyword": [
+      "volo"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   },
@@ -3931,7 +4073,9 @@
     "nome": "SOLANDRA, DEL VELO DORATO",
     "tipo": "Elfo · Divinità · Leader",
     "fazione": "Sud + Ovest + Centro",
-    "keyword": [],
+    "keyword": [
+      "prescienza"
+    ],
     "effetti": [],
     "categoria": "CAT1"
   }

@@ -10,19 +10,24 @@ export const TRIGGER: RegolaTrigger[] = [
   { id: "etb",      regex: /quando entra in campo/ },
   { id: "morte",    regex: /quando muore|va al cimitero|che muore/ },
   { id: "passiva",  regex: /mentre è in campo/ },
-  { id: "upkeep",   regex: /all'inizio del mantenimento/ },
+  { id: "upkeep",   regex: /all'inizio del mantenimento|all'inizio del (?:tuo |proprio )?turno/ },
   { id: "attacco",  regex: /quando attacca|che dichiara un attacco/ },
   { id: "blocco",   regex: /quando blocca|che dichiara un blocco/ },
-  { id: "attivata", regex: /quando viene attivata|\{t\}/ },
+  { id: "attivata", regex: /quando viene attivata|\{t\}|^\s*\*{0,2}tappa\b/ },
 ];
 
 // Default quando nessun trigger esplicito nella frase: passiva (effetto continuo).
 export const TRIGGER_DEFAULT = "passiva";
 
 export const KEYWORD = new Set<string>([
-  "vedetta", "frenesia", "velocità", "protezione",
-  "travolta", "resilienza", "lamento",
+  "volo", "velocità", "prescienza", "baluardo", "vedetta", "protezione",
+  "lamento", "travolta", "scudo", "revoca", "inafferrabile", "compromesso",
+  "surriscaldamento", "resistenza", "portata", "nexus", "frenesia", "eco",
+  "riflesso", "incendio", "esplosione", "carica", "assorbimento", "arcano",
+  "resilienza",
 ]);
+
+const KEYWORD_ALT = [...KEYWORD].join("|");
 
 export interface RegolaVerbo {
   verbo: string;
@@ -42,6 +47,15 @@ export const VERBI: RegolaVerbo[] = [
     }),
   },
   {
+    verbo: "concedi_keyword",
+    regex: new RegExp(`(.+?)\\s+(?:guadagnano?|hanno|ottengono?|ottiene)\\s+(${KEYWORD_ALT})\\b`, "i"),
+    build: (m) => ({
+      verbo: "concedi_keyword",
+      target: parseTarget(m[1]),
+      keyword: m[2].toLowerCase(),
+    }),
+  },
+  {
     verbo: "infliggi_danno",
     regex: /infliggi\s+(\d+)\s+dann[oi]\s+a\s+(.+)/i,
     build: (m) => ({
@@ -56,8 +70,23 @@ export const VERBI: RegolaVerbo[] = [
     build: (m) => ({ verbo: "pesca", valore: Number(m[1]) }),
   },
   {
+    verbo: "mill",
+    regex: /milla(?:no)?\s+(\d+)\s+cart/i,
+    build: (m) => ({ verbo: "mill", valore: Number(m[1]) }),
+  },
+  {
+    verbo: "mill",
+    regex: /mette le prime (\d+) carte[^.]*cimitero/i,
+    build: (m) => ({ verbo: "mill", valore: Number(m[1]) }),
+  },
+  {
     verbo: "genera_mana",
     regex: /genera\s+(\d+)\s+mana\s+([a-zà-ù]+)/i,
+    build: (m) => ({ verbo: "genera_mana", valore: Number(m[1]), colore: m[2] }),
+  },
+  {
+    verbo: "genera_mana",
+    regex: /aggiungi\s+(\d+)\s+mana\s+(generic[oi]|[a-zà-ù]+)/i,
     build: (m) => ({ verbo: "genera_mana", valore: Number(m[1]), colore: m[2] }),
   },
   {

@@ -1,16 +1,15 @@
 # Motore — carte da fare a mano
 <!-- AUTO-GENERATO dal validatore. Non modificare a mano. -->
-Ultimo aggiornamento: commit 79645d9
+Ultimo aggiornamento: commit 13f5704
 
-## ⚠️ CAT3 — serve codice custom (243)
+## ⚠️ CAT3 — serve codice custom (238)
 | Carta | File | Motivo |
 |---|---|---|
-| Frammento del Nexus | carte/artefatti/artefatti-mono/artefatti-centro/FRAMMENTO_DEL_NEXUS.md | [Effetto] frase non riconosciuta: "**Tappa:** aggiungi 1 mana generico alla tua riserva." |
 | Mantello del Riflesso | carte/artefatti/artefatti-mono/artefatti-centro/MANTELLO_DEL_RIFLESSO.md | [Effetto] frase non riconosciuta: "La creatura equipaggiata guadagna Riflesso 2." |
 | Specchio Centrale | carte/artefatti/artefatti-mono/artefatti-centro/SPECCHIO_CENTRALE.md | [Effetto] frase non riconosciuta: "**Tappa, paga 3 mana qualsiasi:** copia una Magia bersaglio attualmente sullo stack." |
 | Stendardo dell'Assorbimento | carte/artefatti/artefatti-mono/artefatti-centro/STENDARDO_DELL_ASSORBIMENTO.md | [Effetto] frase non riconosciuta: "Ogni volta che un'unità avversaria viene distrutta, una tua creatura bersaglio riceve +1 atk/+1 def in modo permanente." |
 | Brandello di Sudario | carte/artefatti/artefatti-mono/artefatti-est/BRANDELLO_DI_SUDARIO.md | [Effetto] frase non riconosciuta: "**Tappa, sacrifica Brandello di Sudario:** applica un contatore Maledizione -1 atk/-1 def a un'unità avversaria bersaglio." |
-| Calice del Falcemortis | carte/artefatti/artefatti-mono/artefatti-est/CALICE_DEL_FALCEMORTIS.md | [Effetto] frase non riconosciuta: "All'inizio del tuo turno, ogni giocatore avversario mette le prime 2 carte del proprio mazzo nel proprio Cimitero." |
+| Calice del Falcemortis | carte/artefatti/artefatti-mono/artefatti-est/CALICE_DEL_FALCEMORTIS.md | [Effetto] frase non riconosciuta: "**Tappa, paga 2 Est:** scegli una carta unità in un Cimitero qualsiasi con costo mana totale 3 o inferiore." |
 | Cinto di Endal | carte/artefatti/artefatti-mono/artefatti-est/CINTO_DI_ENDAL.md | [Effetto] frase non riconosciuta: "La creatura equipaggiata guadagna Revoca." |
 | Lich-Costrutto | carte/artefatti/artefatti-mono/artefatti-est/LICH_COSTRUTTO.md | [Effetto] frase non riconosciuta: "**Lamento —** Lich-Costrutto infligge 2 danni a un'unità avversaria a scelta." |
 | Stendardo dei Lamenti | carte/artefatti/artefatti-mono/artefatti-est/STENDARDO_DEI_LAMENTI.md | [Effetto] frase non riconosciuta: "All'inizio del tuo turno, ogni giocatore avversario mette la prima carta del proprio mazzo nel proprio Cimitero." |
@@ -19,17 +18,16 @@ Ultimo aggiornamento: commit 79645d9
 | Sentinella Glaciale | carte/artefatti/artefatti-mono/artefatti-nord/SENTINELLA_GLACIALE.md | [Effetto] frase non riconosciuta: "Quando Sentinella Glaciale blocca un attaccante, applica Gelo 1 a quell'attaccante." |
 | Sigillo del Permafrost | carte/artefatti/artefatti-mono/artefatti-nord/SIGILLO_DEL_PERMAFROST.md | [Effetto] frase non riconosciuta: "Le creature avversarie entrano in campo tappate." |
 | Stendardo del Baluardo | carte/artefatti/artefatti-mono/artefatti-nord/STENDARDO_DEL_BALUARDO.md | [Effetto] frase non riconosciuta: "Le tue creature ricevono +0 atk/+1 def fintanto che Stendardo del Baluardo è in campo." |
-| Anello Arcano del Bosco | carte/artefatti/artefatti-mono/artefatti-ovest/ANELLO_ARCANO_DEL_BOSCO.md | [Effetto] frase non riconosciuta: "Tutte le tue creature hanno Arcano." |
+| Anello Arcano del Bosco | carte/artefatti/artefatti-mono/artefatti-ovest/ANELLO_ARCANO_DEL_BOSCO.md | [Effetto] frase non riconosciuta: "**" |
 | Mantello del Druido | carte/artefatti/artefatti-mono/artefatti-ovest/MANTELLO_DEL_DRUIDO.md | [Effetto] frase non riconosciuta: "Ogni volta che la creatura equipaggiata attacca, il suo controllore guarda le prime 2 carte del proprio mazzo, poi rimette ciascuna in cima o in fondo al proprio mazzo." |
 | Pietra Rúnica | carte/artefatti/artefatti-mono/artefatti-ovest/PIETRA_RUNICA.md | [Effetto] frase non riconosciuta: "**Tappa, sacrifica Pietra Rúnica:** guarda le prime 3 carte del tuo mazzo, poi rimettile in cima al tuo mazzo nell'ordine che preferisci." |
 | Stendardo del Bosco Antico | carte/artefatti/artefatti-mono/artefatti-ovest/STENDARDO_DEL_BOSCO_ANTICO.md | [Effetto] frase non riconosciuta: "Le tue Magie Ovest costano 1 mana generico in meno per essere giocate." |
 | Bandiera della Frenesia | carte/artefatti/artefatti-mono/artefatti-sud/BANDIERA_DELLA_FRENESIA.md | [Effetto] frase non riconosciuta: "Le tue creature ricevono +1 atk/+0 def fintanto che Bandiera della Frenesia è in campo." |
 | Carbone Ardente | carte/artefatti/artefatti-mono/artefatti-sud/CARBONE_ARDENTE.md | [Effetto] frase non riconosciuta: "**Tappa, sacrifica Carbone Ardente:** Carbone Ardente infligge 2 danni a un bersaglio: un'unità o un giocatore." |
-| Forgia di Caleth | carte/artefatti/artefatti-mono/artefatti-sud/FORGIA_DI_CALETH.md | [Effetto] frase non riconosciuta: "Tutte le tue creature hanno Surriscaldamento." |
+| Forgia di Caleth | carte/artefatti/artefatti-mono/artefatti-sud/FORGIA_DI_CALETH.md | [Effetto] frase non riconosciuta: "**" |
 | Lama Incandescente | carte/artefatti/artefatti-mono/artefatti-sud/LAMA_INCANDESCENTE.md | [Effetto] frase non riconosciuta: "La creatura equipaggiata guadagna Frenesia." |
 | Anello del Viandante | carte/artefatti/artefatti-nomadi/artefatti/ANELLO_DEL_VIANDANTE.md | [Effetto] frase non riconosciuta: "Tappa: scarta una carta." |
 | Bussola Erosa | carte/artefatti/artefatti-nomadi/artefatti/BUSSOLA_EROSA.md | [Effetto] frase non riconosciuta: "Tappa: guarda la prima carta del tuo mazzo." |
-| Sfera del Nexus Erosa | carte/artefatti/artefatti-nomadi/artefatti/SFERA_DEL_NEXUS_EROSA.md | [Effetto] frase non riconosciuta: "Tappa: aggiungi 2 mana di qualsiasi tipo alla tua riserva." |
 | Talismano della Marcia | carte/artefatti/artefatti-nomadi/artefatti/TALISMANO_DELLA_MARCIA.md | [Effetto] frase non riconosciuta: "All'inizio del tuo turno, recuperi 1 punto vita." |
 | Tamburo del Nomade | carte/artefatti/artefatti-nomadi/artefatti/TAMBURO_DEL_NOMADE.md | [Effetto] frase non riconosciuta: "Tappa: una tua creatura bersaglio riceve +1 atk/+0 def fino alla fine del turno." |
 | Tomo del Viandante | carte/artefatti/artefatti-nomadi/artefatti/TOMO_DEL_VIANDANTE.md | [Effetto] frase non riconosciuta: "Tomo del Viandante entra in campo con 3 segnalini sopra di sé." |
@@ -37,7 +35,6 @@ Ultimo aggiornamento: commit 79645d9
 | Colosso di Ferro Antico | carte/artefatti/artefatti-nomadi/creature/COLOSSO_DI_FERRO_ANTICO.md | [Effetto] frase non riconosciuta: "Quando Colosso di Ferro Antico entra in campo, infligge 4 danni a un'unità avversaria bersaglio." |
 | Custode delle Rovine | carte/artefatti/artefatti-nomadi/creature/CUSTODE_DELLE_ROVINE.md | [Effetto] frase non riconosciuta: "Ogni volta che un altro artefatto che controlli va al Cimitero, Custode delle Rovine riceve +1 atk/+1 def in modo permanente." |
 | Statua del Vegliante | carte/artefatti/artefatti-nomadi/creature/STATUA_DEL_VEGLIANTE.md | [Effetto] frase non riconosciuta: "Statua del Vegliante non può attaccare." |
-| Cintura del Pellegrino | carte/artefatti/artefatti-nomadi/equipaggiamenti/CINTURA_DEL_PELLEGRINO.md | [Effetto] frase non riconosciuta: "**1 mana qualsiasi, Tappa la creatura equipaggiata:** aggiungi 1 mana di un tipo a tua scelta alla riserva del controllore." |
 | Egida del Vegliante Eterno | carte/artefatti/artefatti-nomadi/equipaggiamenti/EGIDA_DEL_VEGLIANTE_ETERNO.md | [Effetto] frase non riconosciuta: "La creatura equipaggiata guadagna Resilienza e Protezione." |
 | Lama del Cataclisma Sepolto | carte/artefatti/artefatti-nomadi/equipaggiamenti/LAMA_DEL_CATACLISMA_SEPOLTO.md | [Effetto] frase non riconosciuta: "Quando Lama del Cataclisma Sepolto entra in campo, equipaggiala a una creatura che il suo controllore controlla, se possibile." |
 | Lama Spuntata | carte/artefatti/artefatti-nomadi/equipaggiamenti/LAMA_SPUNTATA.md | [Effetto] frase non riconosciuta: "La creatura equipaggiata riceve +1 atk/+0 def." |
@@ -121,14 +118,14 @@ Ultimo aggiornamento: commit 79645d9
 | ALTARE DI VAEL | carte/avamposti/avamposti-vivi/ALTARE_DI_VAEL.md | [Effetto] frase non riconosciuta: "Quando entra in campo, recupera 2 HP." |
 | BASTIONE DI SOHL | carte/avamposti/avamposti-vivi/BASTIONE_DI_SOHL.md | [Effetto] frase non riconosciuta: "Quando entra in campo, guarda l'ultima carta del tuo mazzo: scegli se tenerla lì o metterla in cima." |
 | BASTIONE SACRO | carte/avamposti/avamposti-vivi/BASTIONE_SACRO.md | [Effetto] frase non riconosciuta: "Quando entra in campo, recupera 2 HP." |
-| BOSCO DELLE OMBRE | carte/avamposti/avamposti-vivi/BOSCO_DELLE_OMBRE.md | [Effetto] frase non riconosciuta: "Quando entra in campo, milla 1 carta dal tuo mazzo." |
-| CRIPTA DEL GELO | carte/avamposti/avamposti-vivi/CRIPTA_DEL_GELO.md | [Effetto] frase non riconosciuta: "Quando entra in campo, milla 1 carta dal tuo mazzo, poi guarda la cima del tuo mazzo." |
+| BOSCO DELLE OMBRE | carte/avamposti/avamposti-vivi/BOSCO_DELLE_OMBRE.md | [Effetto] frase non riconosciuta: "Se in questo turno una creatura è morta, metti un segnalino +1/+1 su una creatura che controlli." |
+| CRIPTA DEL GELO | carte/avamposti/avamposti-vivi/CRIPTA_DEL_GELO.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
 | FORNACE DI KHAL | carte/avamposti/avamposti-vivi/FORNACE_DI_KHAL.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
 | FORTEZZA DI CONFINE | carte/avamposti/avamposti-vivi/FORTEZZA_DI_CONFINE.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
 | GIARDINO ARTICO | carte/avamposti/avamposti-vivi/GIARDINO_ARTICO.md | [Effetto] frase non riconosciuta: "Quando entra in campo, metti un segnalino +0/+1 su una creatura che controlli." |
 | GIARDINO SACRO | carte/avamposti/avamposti-vivi/GIARDINO_SACRO.md | [Effetto] frase non riconosciuta: "Quando entra in campo, se controlli 2 o più creature, recupera 2 HP." |
-| OSSARIO CONSACRATO | carte/avamposti/avamposti-vivi/OSSARIO_CONSACRATO.md | [Effetto] frase non riconosciuta: "Quando entra in campo, milla 1 carta dal tuo mazzo e recupera 1 HP." |
-| OSSARIO DI MORDETH | carte/avamposti/avamposti-vivi/OSSARIO_DI_MORDETH.md | [Effetto] frase non riconosciuta: "Quando entra in campo, milla 1 carta dal tuo mazzo." |
+| OSSARIO CONSACRATO | carte/avamposti/avamposti-vivi/OSSARIO_CONSACRATO.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
+| OSSARIO DI MORDETH | carte/avamposti/avamposti-vivi/OSSARIO_DI_MORDETH.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
 | PIRA MALEDETTA | carte/avamposti/avamposti-vivi/PIRA_MALEDETTA.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
 | RADICI DI LYREN | carte/avamposti/avamposti-vivi/RADICI_DI_LYREN.md | [Effetto] frase non riconosciuta: "Quando entra in campo, se controlli 2 o più creature, metti un segnalino +1/+1 su una di esse." |
 | SAVANA IN FIAMME | carte/avamposti/avamposti-vivi/SAVANA_IN_FIAMME.md | [Effetto] frase non riconosciuta: "Può essere attaccato direttamente — le tue unità possono difenderlo." |
@@ -146,10 +143,8 @@ Ultimo aggiornamento: commit 79645d9
 | Serafino di Mid Vael | carte/creature/creature-mono/creature-centro/SERAFINO_DI_MID_VAEL/SERAFINO_DI_MID_VAEL.md | [Effetto] frase non riconosciuta: "Quando entra in campo: applica Scudo a 2 altre tue unità a scelta." |
 | Tessitore del Nexus | carte/creature/creature-mono/creature-centro/TESSITORE_DEL_NEXUS/TESSITORE_DEL_NEXUS.md | [Effetto] frase non riconosciuta: "Ogni volta che generi mana tramite Nexus, recupera 1 HP." |
 | Vaelos il Silenzioso | carte/creature/creature-mono/creature-centro/VAELOS_IL_SILENZIOSO/VAELOS_IL_SILENZIOSO.md | [Effetto] frase non riconosciuta: "Mentre è in campo: tutte le tue unità guadagnano +0/+1." |
-| Leth il Prosciugato | carte/creature/creature-mono/creature-est/LETH_IL_PROSCIUGATO/LETH_IL_PROSCIUGATO.md | [Effetto] frase non riconosciuta: "Quando attacca un giocatore direttamente, quel giocatore milla 2 carte." |
 | Lich Minore | carte/creature/creature-mono/creature-est/LICH_MINORE/LICH_MINORE.md | [Effetto] frase non riconosciuta: "Quando entra in campo: applica -2/-2 a un'unità avversaria a scelta." |
-| Mordeth, il Falcemortis | carte/creature/creature-mono/creature-est/MORDETH_IL_FALCEMORTIS/MORDETH_IL_FALCEMORTIS.md | [Effetto] frase non riconosciuta: "Quando entra in campo: tutti i giocatori millano 3 carte." |
-| Necromante di Endal | carte/creature/creature-mono/creature-est/NECROMANTE_DI_ENDAL/NECROMANTE_DI_ENDAL.md | [Effetto] frase non riconosciuta: "Quando entra in campo: milla 2 carte dal tuo mazzo." |
+| Necromante di Endal | carte/creature/creature-mono/creature-est/NECROMANTE_DI_ENDAL/NECROMANTE_DI_ENDAL.md | [Effetto] frase non riconosciuta: "Se almeno una è una creatura, crea un token Non-Morto 1/1 in campo." |
 | Vampiro della Cripta | carte/creature/creature-mono/creature-est/VAMPIRO_DELLA_CRIPTA/VAMPIRO_DELLA_CRIPTA.md | [Effetto] frase non riconosciuta: "Ogni volta che un'unità muore, recupera 1 HP." |
 | Custode Glaciale | carte/creature/creature-mono/creature-nord/CUSTODE_GLACIALE.md | [Effetto] frase non riconosciuta: "Ogni turno in cui non attacca, guadagna +0/+1 permanente." |
 | Elar, Sovrano del Permafrost | carte/creature/creature-mono/creature-nord/ELAR_SOVRANO_DEL_PERMAFROST/ELAR_SOVRANO_DEL_PERMAFROST.md | [Effetto] frase non riconosciuta: "Quando attacca: congela 1 unità avversaria a scelta per 2 turni." |
@@ -178,8 +173,8 @@ Ultimo aggiornamento: commit 79645d9
 | Ritorno dalle Ombre | carte/magie/magie-mono/magie-est/RITORNO_DALLE_OMBRE.md | [Effetto] frase non riconosciuta: "Riporta in campo sotto il tuo controllo una carta unità dal tuo Cimitero il cui costo mana totale sia 3 o inferiore." |
 | Sussurro di Endal | carte/magie/magie-mono/magie-est/SUSSURRO_DI_ENDAL.md | [Effetto] frase non riconosciuta: "Un'unità avversaria bersaglio riceve -2 atk/-2 def fino alla fine del turno." |
 | Tocco del Prosciugatore | carte/magie/magie-mono/magie-est/TOCCO_DEL_PROSCIUGATORE.md | [Effetto] frase non riconosciuta: "Tocco del Prosciugatore infligge 2 danni a un'unità avversaria bersaglio." |
-| Veglia di Mordeth | carte/magie/magie-mono/magie-est/VEGLIA_DI_MORDETH.md | [Effetto] frase non riconosciuta: "Ogni giocatore avversario mette le prime 7 carte del proprio mazzo nel proprio Cimitero." |
-| Voce dei Sepolti | carte/magie/magie-mono/magie-est/VOCE_DEI_SEPOLTI.md | [Effetto] frase non riconosciuta: "Un giocatore avversario bersaglio mette le prime 4 carte del proprio mazzo nel proprio Cimitero." |
+| Veglia di Mordeth | carte/magie/magie-mono/magie-est/VEGLIA_DI_MORDETH.md | [Effetto] frase non riconosciuta: "Tra le carte così messe nei Cimiteri, scegline una e giocala senza pagarne il costo di mana." |
+| Voce dei Sepolti | carte/magie/magie-mono/magie-est/VOCE_DEI_SEPOLTI.md | [Effetto] frase non riconosciuta: "**" |
 | Inverno Eterno | carte/magie/magie-mono/magie-nord/INVERNO_ETERNO.md | [Effetto] frase non riconosciuta: "Inverno Eterno congela ogni unità avversaria in campo per 3 turni." |
 | Raffica Gelida | carte/magie/magie-mono/magie-nord/RAFFICA_GELIDA.md | [Effetto] frase non riconosciuta: "Un'unità avversaria bersaglio viene congelata per 1 turno." |
 | Riflesso del Permafrost | carte/magie/magie-mono/magie-nord/RIFLESSO_DEL_PERMAFROST.md | [Effetto] frase non riconosciuta: "Annulla una Magia avversaria oppure un'abilità attiva avversaria che ha come bersaglio una tua unità o te stesso." |
@@ -242,7 +237,7 @@ Ultimo aggiornamento: commit 79645d9
 | Tribale del Bosco | carte/satelliti/satelliti-ovest/TRIBALE_DEL_BOSCO.md | [Effetto] frase non riconosciuta: "Ogni volta che una tua creatura di tipo Druido, Elfo, Driade o Bestia entra in campo, fai scry 1." |
 | Velo di Yelena | carte/satelliti/satelliti-ovest/VELO_DI_YELENA.md | [Effetto] frase non riconosciuta: "Tutte le tue creature con costo totale ≤2 mana guadagnano **Protezione**." |
 | Pira da Guerra | carte/satelliti/satelliti-sud/PIRA_DA_GUERRA.md | [Effetto] frase non riconosciuta: "Ogni creatura avversaria che dichiara un blocco contro una tua creatura subisce 1 danno prima della fase di Danno." |
-| Maledizione delle Rovine | carte/tragedie/tragedie-nomadi/MALEDIZIONE_DELLE_ROVINE.md | [Bonus] frase non riconosciuta: "All'inizio del tuo Mantenimento, aggiungi 2 mana generici alla tua riserva mana." |
+| Maledizione delle Rovine | carte/tragedie/tragedie-nomadi/MALEDIZIONE_DELLE_ROVINE.md | [Malus] frase non riconosciuta: "Tutte le tue creature subiscono -1 ATK fino alla rimozione della Tragedia." |
 | Patto del Viandante | carte/tragedie/tragedie-nomadi/PATTO_DEL_VIANDANTE.md | [Bonus] frase non riconosciuta: "Peschi 2 carte." |
 | Tassa di Rowa | carte/tragedie/tragedie-nomadi/TASSA_DI_ROWA.md | [Bonus] frase non riconosciuta: "Tutte le tue Magie costano 2 mana generici in meno." |
 | Il Prezzo da Pagare | carte/tragedie/tragedie-nord/IL_PREZZO_DA_PAGARE.md | [Bonus] frase non riconosciuta: "Peschi 3 carte." |
@@ -250,4 +245,4 @@ Ultimo aggiornamento: commit 79645d9
 | Nell'Occhio del Ciclone | carte/tragedie/tragedie-nord/NELL_OCCHIO_DEL_CICLONE.md | [Bonus] frase non riconosciuta: "Tutte le creature avversarie non si stappano durante la fase di Sveglia avversaria." |
 
 ## ✅ Riepilogo
-317 carte · 52 CAT1 · 22 CAT2 · 243 CAT3
+317 carte · 52 CAT1 · 27 CAT2 · 238 CAT3
