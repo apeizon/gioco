@@ -6,10 +6,13 @@ export type RisultatoParse =
   | { ok: false; motivo: string };
 
 export function parseEffetto(testo: string): RisultatoParse {
-  const pulito = rimuoviParentesi(testo).trim();
+  const pulito = pulisciTesto(testo);
   if (!pulito) return { ok: true, effetti: [] };
 
-  const frasi = pulito.split(/(?<=[.;])\s+/).map((f) => f.trim()).filter(Boolean);
+  const frasi = pulito
+    .split(/(?<=[.;])\s+/)
+    .map((f) => f.trim())
+    .filter((f) => /[a-zà-ù]/i.test(f)); // scarta frammenti senza lettere (es. "**")
   const effetti: Effetto[] = [];
 
   for (const frase of frasi) {
@@ -49,8 +52,12 @@ function matchVerbo(corpo: string): Azione | null {
   return null;
 }
 
-// Rimuove le parentesi-promemoria che spiegano le keyword,
-// es. "Frenesia (questa unità può attaccare due volte...)" -> "Frenesia"
-function rimuoviParentesi(testo: string): string {
-  return testo.replace(/\s*\([^)]*\)/g, "");
+// Pulisce il testo prima del parsing: rimuove le parentesi-promemoria delle keyword
+// e il markup markdown (** / *), normalizza gli spazi.
+function pulisciTesto(testo: string): string {
+  return testo
+    .replace(/\s*\([^)]*\)/g, "")
+    .replace(/\*+/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
 }

@@ -74,3 +74,55 @@ test("genera_mana via 'aggiungi'", () => {
   if (!r.ok) return;
   expect(r.effetti[0].azioni[0].verbo).toBe("genera_mana");
 });
+
+test("strip markup: frase con ** non crea CAT3", () => {
+  const r = parseEffetto("La creatura equipaggiata guadagna Frenesia. **");
+  expect(r.ok).toBe(true);
+});
+
+test("stat combo etichettato atk/def", () => {
+  const r = parseEffetto("La creatura equipaggiata riceve +0 atk/+2 def.");
+  expect(r.ok).toBe(true);
+  if (!r.ok) return;
+  expect(r.effetti[0].azioni[0].verbo).toBe("modifica_stat_combo");
+  expect(r.effetti[0].azioni[0].def).toBe(2);
+  expect(r.effetti[0].azioni[0].atk).toBe(0);
+});
+
+test("stat combo non etichettato +0/+1", () => {
+  const r = parseEffetto("Mentre è in campo: tutte le tue unità guadagnano +0/+1.");
+  expect(r.ok).toBe(true);
+  if (!r.ok) return;
+  expect(r.effetti[0].azioni[0].verbo).toBe("modifica_stat_combo");
+});
+
+test("applica_stat", () => {
+  const r = parseEffetto("Quando entra in campo: applica -2/-2 a un'unità avversaria a scelta.");
+  expect(r.ok).toBe(true);
+  if (!r.ok) return;
+  expect(r.effetti[0].azioni[0].verbo).toBe("applica_stat");
+  expect(r.effetti[0].azioni[0].atk).toBe(-2);
+});
+
+test("segnalino_stat", () => {
+  const r = parseEffetto("Una tua creatura guadagna un segnalino +0/+1 permanente.");
+  expect(r.ok).toBe(true);
+  if (!r.ok) return;
+  expect(r.effetti[0].azioni[0].verbo).toBe("segnalino_stat");
+  expect(r.effetti[0].azioni[0].permanente).toBe(true);
+});
+
+test("mill singolare 'la prima carta'", () => {
+  const r = parseEffetto("Ogni avversario mette la prima carta del proprio mazzo nel proprio Cimitero.");
+  expect(r.ok).toBe(true);
+  if (!r.ok) return;
+  expect(r.effetti[0].azioni[0].verbo).toBe("mill");
+  expect(r.effetti[0].azioni[0].valore).toBe(1);
+});
+
+test("singolo +1 ATK ancora modifica_stat (no regressione)", () => {
+  const r = parseEffetto("Tutte le creature attaccanti guadagnano +1 ATK.");
+  expect(r.ok).toBe(true);
+  if (!r.ok) return;
+  expect(r.effetti[0].azioni[0].verbo).toBe("modifica_stat");
+});

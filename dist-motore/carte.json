@@ -39,9 +39,22 @@
     "fazione": "Centro",
     "costo": "2 Centro",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata guadagna Riflesso 2.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "concedi_keyword",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUTTI"
+            },
+            "keyword": "riflesso"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "SENTINELLA_DEL_NEXUS",
@@ -64,7 +77,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Tappa, paga 3 mana qualsiasi:** copia una Magia bersaglio attualmente sullo stack.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tappa, paga 3 mana qualsiasi: copia una Magia bersaglio attualmente sullo stack.\""
   },
   {
     "id": "STENDARDO_DELL_ASSORBIMENTO",
@@ -74,9 +87,24 @@
     "fazione": "Centro",
     "costo": "1 Centro più 2 mana qualsiasi",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che un'unità avversaria viene distrutta, una tua creatura bersaglio riceve +1 atk/+1 def in modo permanente.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat_combo",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "AVVERSARIO",
+              "quantificatore": "ogni"
+            },
+            "atk": 1,
+            "def": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "BRANDELLO_DI_SUDARIO",
@@ -88,7 +116,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Tappa, sacrifica Brandello di Sudario:** applica un contatore Maledizione -1 atk/-1 def a un'unità avversaria bersaglio.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tappa, sacrifica Brandello di Sudario: applica un contatore Maledizione -1 atk/-1 def a un'unità avversaria bersaglio.\""
   },
   {
     "id": "CALICE_DEL_FALCEMORTIS",
@@ -100,7 +128,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Tappa, paga 2 Est:** scegli una carta unità in un Cimitero qualsiasi con costo mana totale 3 o inferiore.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tappa, paga 2 Est: scegli una carta unità in un Cimitero qualsiasi con costo mana totale 3 o inferiore.\""
   },
   {
     "id": "CINTO_DI_ENDAL",
@@ -112,7 +140,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata guadagna Revoca.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una stessa creatura non può ottenere il beneficio di Revoca più di una volta per partita, anche se equipaggiata di nuovo.)\""
   },
   {
     "id": "LICH_COSTRUTTO",
@@ -124,7 +152,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Lamento —** Lich-Costrutto infligge 2 danni a un'unità avversaria a scelta.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Lamento — Lich-Costrutto infligge 2 danni a un'unità avversaria a scelta.\""
   },
   {
     "id": "STENDARDO_DEI_LAMENTI",
@@ -134,9 +162,18 @@
     "fazione": "Est",
     "costo": "2 Est",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo turno, ogni giocatore avversario mette la prima carta del proprio mazzo nel proprio Cimitero.\""
+    "effetti": [
+      {
+        "trigger": "upkeep",
+        "azioni": [
+          {
+            "verbo": "mill",
+            "valore": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "ARMATURA_GLACIALE",
@@ -146,9 +183,23 @@
     "fazione": "Nord",
     "costo": "2 Nord più 1 mana qualsiasi",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata riceve +0 atk/+2 def e guadagna Baluardo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat_combo",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUTTI"
+            },
+            "atk": 0,
+            "def": 2
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CRISTALLO_GELIDO",
@@ -160,7 +211,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Tappa, sacrifica Cristallo Gelido:** applica Gelo 1 a un'unità avversaria bersaglio.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tappa, sacrifica Cristallo Gelido: applica Gelo 1 a un'unità avversaria bersaglio.\""
   },
   {
     "id": "SENTINELLA_GLACIALE",
@@ -194,9 +245,23 @@
     "fazione": "Nord",
     "costo": "2 Nord",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Le tue creature ricevono +0 atk/+1 def fintanto che Stendardo del Baluardo è in campo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat_combo",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE"
+            },
+            "atk": 0,
+            "def": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "ANELLO_ARCANO_DEL_BOSCO",
@@ -206,9 +271,23 @@
     "fazione": "Ovest",
     "costo": "3 Ovest più 2 mana qualsiasi",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"**\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "concedi_keyword",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "tutte"
+            },
+            "keyword": "arcano"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CUSTODE_DRUIDA",
@@ -243,7 +322,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Tappa, sacrifica Pietra Rúnica:** guarda le prime 3 carte del tuo mazzo, poi rimettile in cima al tuo mazzo nell'ordine che preferisci.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tappa, sacrifica Pietra Rúnica: guarda le prime 3 carte del tuo mazzo, poi rimettile in cima al tuo mazzo nell'ordine che preferisci.\""
   },
   {
     "id": "STENDARDO_DEL_BOSCO_ANTICO",
@@ -265,9 +344,23 @@
     "fazione": "Sud",
     "costo": "2 Sud",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Le tue creature ricevono +1 atk/+0 def fintanto che Bandiera della Frenesia è in campo.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat_combo",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE"
+            },
+            "atk": 1,
+            "def": 0
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "BERSERKER_DI_BRONZO",
@@ -290,7 +383,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"**Tappa, sacrifica Carbone Ardente:** Carbone Ardente infligge 2 danni a un bersaglio: un'unità o un giocatore.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tappa, sacrifica Carbone Ardente: Carbone Ardente infligge 2 danni a un bersaglio: un'unità o un giocatore.\""
   },
   {
     "id": "FORGIA_DI_CALETH",
@@ -300,9 +393,23 @@
     "fazione": "Sud",
     "costo": "2 Sud più 1 mana qualsiasi",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"**\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "concedi_keyword",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "tutte"
+            },
+            "keyword": "surriscaldamento"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "LAMA_INCANDESCENTE",
@@ -312,9 +419,22 @@
     "fazione": "Sud",
     "costo": "1 Sud più 1 mana qualsiasi",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata guadagna Frenesia.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "concedi_keyword",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUTTI"
+            },
+            "keyword": "frenesia"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "ANELLO_DEL_VIANDANTE",
@@ -382,9 +502,24 @@
     "fazione": "Nomade",
     "costo": "3 mana qualsiasi",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tappa: una tua creatura bersaglio riceve +1 atk/+0 def fino alla fine del turno.\""
+    "effetti": [
+      {
+        "trigger": "attivata",
+        "azioni": [
+          {
+            "verbo": "modifica_stat_combo",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "una"
+            },
+            "atk": 1,
+            "def": 0
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "TOMO_DEL_VIANDANTE",
@@ -441,9 +576,24 @@
     "fazione": "Nomade",
     "costo": "5 mana qualsiasi",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che un altro artefatto che controlli va al Cimitero, Custode delle Rovine riceve +1 atk/+1 def in modo permanente.\""
+    "effetti": [
+      {
+        "trigger": "morte",
+        "azioni": [
+          {
+            "verbo": "modifica_stat_combo",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUTTI",
+              "quantificatore": "ogni"
+            },
+            "atk": 1,
+            "def": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "GOLEM_DI_SABBIA",
@@ -522,7 +672,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata guadagna Resilienza e Protezione.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Sacrifica Egida del Vegliante Eterno: previeni tutti i danni che verrebbero inflitti alla creatura equipaggiata in questo turno.\""
   },
   {
     "id": "LAMA_DEL_CATACLISMA_SEPOLTO",
@@ -544,9 +694,23 @@
     "fazione": "Nomade",
     "costo": "1 mana qualsiasi",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata riceve +1 atk/+0 def.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat_combo",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUTTI"
+            },
+            "atk": 1,
+            "def": 0
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "SCIABOLA_DELLA_SENTINELLA_EROSA",
@@ -558,7 +722,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"La creatura equipaggiata guadagna Vedetta.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Ogni volta che la creatura equipaggiata attacca, il suo controllore pesca una carta, poi scarta una carta.\""
   },
   {
     "id": "STIVALI_DEL_VIANDANTE",
@@ -3186,9 +3350,25 @@
     "fazione": "Nord",
     "costo": "1 Nord + 3",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, una tua creatura bersaglio guadagna un segnalino +0/+1 permanente.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "segnalino_stat",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "una"
+            },
+            "atk": 0,
+            "def": 1,
+            "permanente": true
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "POLVERE_DI_STELLE",
@@ -3200,7 +3380,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo turno, applica **Gelo 1** a una creatura avversaria bersaglio.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo turno, applica Gelo 1 a una creatura avversaria bersaglio.\""
   },
   {
     "id": "VOLONTA_DEL_RE",
@@ -3212,7 +3392,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le tue creature guadagnano **Scudo**.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, applica Gelo 1 a tutte le unità avversarie.\""
   },
   {
     "id": "ACCOLITO_DI_VAEL",
@@ -3317,9 +3497,24 @@
     "fazione": "Centro",
     "costo": "4 Centro",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Mentre è in campo: tutte le tue unità guadagnano +0/+1.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat_combo",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "tutte"
+            },
+            "atk": 0,
+            "def": 1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "LETH_IL_PROSCIUGATO",
@@ -3354,9 +3549,24 @@
     "keyword": [
       "lamento"
     ],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Quando entra in campo: applica -2/-2 a un'unità avversaria a scelta.\""
+    "effetti": [
+      {
+        "trigger": "etb",
+        "azioni": [
+          {
+            "verbo": "applica_stat",
+            "atk": -2,
+            "def": -2,
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "AVVERSARIO",
+              "quantificatore": "una"
+            }
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "MORDETH_IL_FALCEMORTIS",
@@ -3858,9 +4068,23 @@
     "fazione": "Centro",
     "costo": "1 Centro",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una tua unità bersaglio guadagna Protezione fino alla fine del turno.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "concedi_keyword",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "una"
+            },
+            "keyword": "protezione"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "RIALLINEAMENTO_DEL_NEXUS",
@@ -3870,9 +4094,39 @@
     "fazione": "Centro",
     "costo": "3 Centro",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Scegli uno: tutte le unità che controlli ricevono +1 atk/+1 def fino alla fine del turno;\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat_combo",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUTTI",
+              "quantificatore": "tutte"
+            },
+            "atk": 1,
+            "def": 1
+          }
+        ]
+      },
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat_combo",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "AVVERSARIO",
+              "quantificatore": "tutte"
+            },
+            "atk": -1,
+            "def": -1
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "SPECCHIO_DEL_NEXUS",
@@ -3930,9 +4184,24 @@
     "fazione": "Est",
     "costo": "1 Est",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Un'unità avversaria bersaglio riceve -2 atk/-2 def fino alla fine del turno.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat_combo",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "AVVERSARIO",
+              "quantificatore": "una"
+            },
+            "atk": -2,
+            "def": -2
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "TOCCO_DEL_PROSCIUGATORE",
@@ -3966,9 +4235,18 @@
     "fazione": "Est",
     "costo": "1 Est",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"**\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "mill",
+            "valore": 4
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "EDITTO_GLACIALE",
@@ -4039,9 +4317,24 @@
     "fazione": "Nord",
     "costo": "1 Nord",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una tua unità bersaglio guadagna +0 atk/+3 def fino alla fine del turno.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat_combo",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "una"
+            },
+            "atk": 0,
+            "def": 3
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "TEMPESTA_DI_BRINA",
@@ -4063,9 +4356,27 @@
     "fazione": "Nord",
     "costo": "1 Nord più 1 mana qualsiasi",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"**\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "pesca",
+            "valore": 2
+          }
+        ]
+      },
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "pesca",
+            "valore": 3
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CONVERGENZA_ARCANA",
@@ -4101,7 +4412,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una tua unità bersaglio riceve +0 atk/+2 def fino alla fine del turno.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Pesca una carta.\""
   },
   {
     "id": "PATTO_DELLE_RADICI",
@@ -4111,9 +4422,24 @@
     "fazione": "Ovest",
     "costo": "1 Ovest più 1 mana qualsiasi",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una tua unità bersaglio riceve +0 atk/+3 def e guadagna Compromesso fino alla fine del turno.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat_combo",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "una"
+            },
+            "atk": 0,
+            "def": 3
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "RISVEGLIO_DI_FAELORN",
@@ -4195,9 +4521,24 @@
     "fazione": "Sud",
     "costo": "1 Sud",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una tua unità bersaglio guadagna +2 atk/+0 def e Velocità fino alla fine del turno.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "modifica_stat_combo",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "una"
+            },
+            "atk": 2,
+            "def": 0
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "INCENDIO_DOLOSO",
@@ -4231,9 +4572,23 @@
     "fazione": "Sud",
     "costo": "2 Sud",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Una tua unità bersaglio guadagna Frenesia fino alla fine del turno.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "concedi_keyword",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "una"
+            },
+            "keyword": "frenesia"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CAMERA_DEL_RIFLESSO",
@@ -4377,7 +4732,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le unità con **Scudo** entrano in campo con un contatore Scudo aggiuntivo.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le unità con Scudo entrano in campo con un contatore Scudo aggiuntivo.\""
   },
   {
     "id": "CUORE_DEL_MONDO_EROSO",
@@ -4484,9 +4839,24 @@
     "fazione": "Nord",
     "costo": "2 Nord + 1",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le creature con DEF pari o superiore a 4 guadagnano **Vedetta**.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "concedi_keyword",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUTTI",
+              "quantificatore": "tutte",
+              "filtro": "def>=4"
+            },
+            "keyword": "vedetta"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "INVERNO_SENZA_FINE",
@@ -4596,9 +4966,24 @@
     "fazione": "Sud",
     "costo": "1 Sud + 3",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le creature con costo totale pari o inferiore a 3 guadagnano **Frenesia**.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "concedi_keyword",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUTTI",
+              "quantificatore": "tutte",
+              "filtro": "costo<=3"
+            },
+            "keyword": "frenesia"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CALDERONE_ARDENTE",
@@ -4650,7 +5035,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del Mantenimento di ogni giocatore, ogni creatura che quel giocatore controlla riceve un segnalino **-0/-1** permanente.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del Mantenimento di ogni giocatore, ogni creatura che quel giocatore controlla riceve un segnalino -0/-1 permanente.\""
   },
   {
     "id": "AVANGUARDIA_DI_MID_VAEL",
@@ -4908,7 +5293,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, applica **Gelo 1** a un'unità avversaria bersaglio.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, applica Gelo 1 a un'unità avversaria bersaglio.\""
   },
   {
     "id": "RIFUGIO_GLACIALE",
@@ -4959,7 +5344,7 @@
     "keyword": [],
     "effetti": [],
     "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, applica **Gelo 1** a un'unità avversaria bersaglio.\""
+    "motivoCat3": "[Effetto] frase non riconosciuta: \"All'inizio del tuo Mantenimento, applica Gelo 1 a un'unità avversaria bersaglio.\""
   },
   {
     "id": "ALBERO_DELLA_PRESCIENZA",
@@ -5038,9 +5423,23 @@
     "fazione": "Ovest",
     "costo": "1 Ovest + 2",
     "keyword": [],
-    "effetti": [],
-    "categoria": "CAT3",
-    "motivoCat3": "[Effetto] frase non riconosciuta: \"Tutte le tue creature con costo totale ≤2 mana guadagnano **Protezione**.\""
+    "effetti": [
+      {
+        "trigger": "passiva",
+        "azioni": [
+          {
+            "verbo": "concedi_keyword",
+            "target": {
+              "tipo": "creatura",
+              "proprietario": "TUE",
+              "quantificatore": "tutte"
+            },
+            "keyword": "protezione"
+          }
+        ]
+      }
+    ],
+    "categoria": "CAT2"
   },
   {
     "id": "CALDERONE_BOLLENTE",

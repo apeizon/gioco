@@ -37,6 +37,26 @@ export interface RegolaVerbo {
 
 export const VERBI: RegolaVerbo[] = [
   {
+    verbo: "modifica_stat_combo",
+    regex: /(.+?)\s+(?:guadagna(?:no)?|ricevono?|riceve|ottengono?|ottiene)\s+([+\-]\d+)\s*atk\s*\/\s*([+\-]\d+)\s*def/i,
+    build: (m) => ({ verbo: "modifica_stat_combo", target: parseTarget(m[1]), atk: Number(m[2]), def: Number(m[3]) }),
+  },
+  {
+    verbo: "segnalino_stat",
+    regex: /(.+?)\s+guadagna(?:no)?\s+un\s+segnalino\s+([+\-]\d+)\s*\/\s*([+\-]\d+)\s*(permanente)?/i,
+    build: (m) => ({ verbo: "segnalino_stat", target: parseTarget(m[1]), atk: Number(m[2]), def: Number(m[3]), permanente: !!m[4] }),
+  },
+  {
+    verbo: "modifica_stat_combo",
+    regex: /(.+?)\s+(?:guadagna(?:no)?|ricevono?|riceve)\s+([+\-]\d+)\s*\/\s*([+\-]\d+)(?!\s*\w)/i,
+    build: (m) => ({ verbo: "modifica_stat_combo", target: parseTarget(m[1]), atk: Number(m[2]), def: Number(m[3]) }),
+  },
+  {
+    verbo: "applica_stat",
+    regex: /applica\s+([+\-]\d+)\s*\/\s*([+\-]\d+)\s+a\s+(.+)/i,
+    build: (m) => ({ verbo: "applica_stat", atk: Number(m[1]), def: Number(m[2]), target: parseTarget(m[3]) }),
+  },
+  {
     verbo: "modifica_stat",
     regex: /(.+?)\s+guadagnano?\s+([+\-]\d+)\s+(atk|def)/i,
     build: (m) => ({
@@ -48,7 +68,7 @@ export const VERBI: RegolaVerbo[] = [
   },
   {
     verbo: "concedi_keyword",
-    regex: new RegExp(`(.+?)\\s+(?:guadagnano?|hanno|ottengono?|ottiene)\\s+(${KEYWORD_ALT})\\b`, "i"),
+    regex: new RegExp(`(.+?)\\s+(?:guadagna(?:no)?|hanno|ottengono?|ottiene)\\s+(${KEYWORD_ALT})\\b`, "i"),
     build: (m) => ({
       verbo: "concedi_keyword",
       target: parseTarget(m[1]),
@@ -78,6 +98,11 @@ export const VERBI: RegolaVerbo[] = [
     verbo: "mill",
     regex: /mette le prime (\d+) carte[^.]*cimitero/i,
     build: (m) => ({ verbo: "mill", valore: Number(m[1]) }),
+  },
+  {
+    verbo: "mill",
+    regex: /mette la prima carta[^.]*cimitero/i,
+    build: () => ({ verbo: "mill", valore: 1 }),
   },
   {
     verbo: "genera_mana",
