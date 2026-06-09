@@ -1,0 +1,37 @@
+name: Valida carte motore
+
+on:
+  push:
+    paths: ["carte/**", "leader/**", "motore/**"]
+  pull_request:
+    paths: ["carte/**", "leader/**", "motore/**"]
+
+jobs:
+  valida:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Installa deps motore
+        working-directory: motore
+        run: npm ci
+      - name: Test motore
+        working-directory: motore
+        run: npm test
+      - name: Valida carte (rigenera output)
+        working-directory: motore
+        run: npm run valida
+      - name: Committa output se cambiati
+        if: github.event_name == 'push'
+        run: |
+          if [[ -n "$(git status --porcelain dist-motore MOTORE-DA-FARE.md)" ]]; then
+            git config user.name "motore-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add dist-motore MOTORE-DA-FARE.md
+            git commit -m "🤖 aggiorna motore (carte.json + MOTORE-DA-FARE.md)"
+            git push
+          fi
