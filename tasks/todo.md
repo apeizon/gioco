@@ -52,8 +52,34 @@ Target: 7 magie per fazione (mix Sorcery/Istante, mix rarità, mix Comune→Eter
 Struttura: **3 Tragedie + 3 Benedizioni per fazione**. Meccanica Eco introdotta per Tragedie (vedi REGOLE_BASE_TCG.md §5.6).
 
 - [x] 4.0 — Nomadi (3 Tragedie + 3 Benedizioni)
-- [ ] 4.1 — Nord
-- [ ] 4.2 — Sud
+- [x] 4.1 — Nord
+- [x] 4.2 — Sud
 - [ ] 4.3 — Est
 - [ ] 4.4 — Ovest
 - [ ] 4.5 — Centro
+
+> ⏸️ Fase 4 in pausa (4.3 Est / 4.4 Ovest / 4.5 Centro mancanti): si lavora prima al formato Start Mobile. Da riprendere — vedi promemoria.
+
+---
+
+# FORMATO START MOBILE (regolamento di Luca — `FORMATO_START_MOBILE/DESIGN_V1.md`)
+
+> Formato parallelo, snello, che esce per primo. Stesse carte del mondo, regole proprie (energia automatica, 3 tipi di carta, combat alla Hearthstone, Obiettivi Segreti). Non sovrascrive nulla del formato Leader.
+
+## SM-1 — Regolamento e meccaniche-firma
+
+- [x] **SM-1.1 — Pool Obiettivi v1** (`FORMATO_START_MOBILE/OBIETTIVI_START_MOBILE.md`): 22 ranked + 6 casual, telegrafo a 3 stati, doppia via di vittoria. Calibrazione difficoltà da validare in playtest.
+- [x] **SM-1.2 — Reattività piena** (DESIGN_V1.md §6.5): Istanti nel turno avversario, stack LIFO + priorità, finestra di risposta in combattimento, energia trattenuta (§2). ⚠️ Reverse di §3/§6/§11 → **da coordinare con Luca** (impatta il motore).
+
+## SM-2 — Validazione carte per la legalità Start Mobile
+
+- [x] SM-2.1 — Censite Creature/Magie/Leader (81 carte). Esito in `FORMATO_START_MOBILE/CENSIMENTO_CARTE.md`: 44 ✅ / 33 ⚠️ / 4 ❌.
+- [x] SM-2.2 — Segnate le carte da adattare e i 4 problemi sistematici.
+
+## SM-3 — Adattamento carte (20 ⚠️; le carte sono CONDIVISE col formato Leader → decidere il modello)
+
+- [ ] SM-3.1 — Decidere il modello: layer di rulings/errata Start Mobile (non tocca le schede) vs reprint dedicati vs campo per-formato.
+- [x] ~~SM-3.2 — Riprogettare il cluster reattivo~~ → NON serve più: con la reattività piena counterspell/copie/Riflesso/Hero Power di Xirlia sono **legali**.
+- [ ] SM-3.3 — Bonifica reminder che citano il blocco (Volo, Gelo, Travolta, Frenesia, Portata, Inafferrabile) — il blocco resta tagliato.
+- [ ] SM-3.4 — Conversione mana colorato → energia (Marika, keyword Nexus).
+- [ ] SM-3.5 — Pulizia Leader (rimuovere Evoluzione + doppio Rientro per il formato Start Mobile).
