@@ -60,7 +60,7 @@ Complessità totale ≈ Snap, ma con un gancio (l'Obiettivo) che Snap non ha.
 
 **Motivo:** una sola fase azioni (niente Main1/Combat/Main2 separate) tiene i turni corti = target 5-7 min realistico. La reattività non richiede fasi separate: le finestre di risposta agli Istanti avvengono **dentro** la fase azioni e durante il turno avversario (vedi §6.5).
 
-**REINTRODOTTO (DECISO 2026-06-18):** stack & priorità, Istante, finestre di risposta — la reattività è una scelta di design chiave (vedi §6.5). Resta **tagliato il blocco**: il combattimento è ad attacco diretto (§6), ma con finestra di risposta del difensore.
+**REINTRODOTTO (DECISO 2026-06-18):** stack & priorità, Istante, finestre di risposta (§6.5) **e il blocco** (§6) — reattività e profondità difensiva sono scelte di design chiave. Il combattimento è il modello classico attacco/blocco con finestre di risposta.
 
 ---
 
@@ -69,7 +69,7 @@ Complessità totale ≈ Snap, ma con un gancio (l'Obiettivo) che Snap non ha.
 ### 4.1 Creatura / Unità
 - Permanente con **ATK** e **DEF**. Occupa **1 slot** (max 6).
 - **Summoning sickness**: non attacca il turno in cui entra (salvo keyword *Velocità*).
-- Attacca scegliendo il bersaglio (§6); **non blocca** (modello HS). Può avere *Provocazione* (forza l'avversario a colpirla per prima).
+- Attacca e **può bloccare** (§6). Può avere *Provocazione* (le creature avversarie che possono bloccarla devono bloccarla — §6).
 - **DEF = salute**, il danno si accumula e persiste (§6).
 - Può avere effetti a trigger (vedi §7).
 
@@ -98,17 +98,23 @@ Artefatto / Equipaggiamento / Artefatto-Creatura, Santuario, Tragedia (+ costo E
 
 ---
 
-## 6. Combattimento — modello attacco diretto (Hearthstone)
+## 6. Combattimento — attacco e blocco (DECISO 2026-06-18: il blocco esiste)
 
-**DECISO** (no attacco/blocco, no reveal simultaneo): l'attaccante sceglie il bersaglio di ogni sua creatura; il difensore **non blocca**. La difesa passa per Provocazione (punto 4) e, dal 2026-06-18, per la **finestra di risposta con Istanti** (§6.5): il difensore può reagire prima che il danno si risolva, ma non riassegna i bersagli.
+**DECISO 2026-06-18 — il blocco esiste anche in Start Mobile** (revisione della bozza precedente, che lo aveva tagliato per velocità). Il combattimento è il modello classico attacco/blocco, integrato con le finestre di risposta agli Istanti (§6.5). Sequenza:
 
-1. Nella propria fase azioni, dichiara `Attacca(attaccante, bersaglio)`. Attaccante = creatura propria non tappata, senza summoning sickness (salvo *Velocità*). Attaccare la **tappa**.
-2. Bersaglio = **una creatura avversaria** oppure gli **HP del giocatore avversario**.
-3. Risoluzione **immediata e deterministica**:
-   - vs creatura: si infliggono danno a vicenda (ATK contro ATK). Il danno si **accumula** sulla creatura (vedi modello danno).
-   - vs giocatore: ATK direttamente agli HP.
-4. **Provocazione (Taunt):** se l'avversario controlla una creatura con Provocazione, devi attaccare quella prima di poter colpire altre creature o gli HP. È il vincolo di targeting che restituisce la profondità difensiva persa coi blocchi.
-5. **Velocità:** ignora la summoning sickness. **Travolta:** il danno in eccesso oltre la "salute" della creatura uccisa passa agli HP del giocatore.
+1. **Dichiarazione attaccanti.** Nella tua fase azioni dichiari uno o più **attaccanti** e, per ciascuno, il bersaglio (una **creatura avversaria** o gli **HP avversari**). Attaccante = creatura tua non tappata, senza summoning sickness (salvo *Velocità*). Attaccare la **tappa**.
+2. **Finestra di risposta** (§6.5): l'avversario può giocare Istanti; poi può rispondere l'attaccante (stack LIFO).
+3. **Dichiarazione bloccanti.** Il difensore può assegnare proprie creature non tappate come **bloccanti**, una per ciascun attaccante (salvo keyword che ne modificano il numero, es. *Inafferrabile*). Bloccare **non** tappa il bloccante.
+4. **Finestra di risposta** dopo i blocchi (§6.5).
+5. **Risoluzione del danno**, deterministica e simultanea:
+   - attaccante **bloccato**: attaccante e bloccante si infliggono danno a vicenda (ATK contro ATK);
+   - attaccante **non bloccato**: infligge il danno al bersaglio dichiarato (creatura o HP);
+   - il danno si **accumula** sulle creature (modello danno persistente, sotto).
+6. **Velocità:** ignora la summoning sickness. **Travolta:** se un attaccante uccide il bloccante, il danno in eccesso oltre la salute del bloccante passa agli HP del giocatore.
+
+**Provocazione (DECISO 2026-06-18, opzione "Richiamo"):** le creature avversarie che **possono** bloccare una creatura con Provocazione **devono** bloccarla (forza i blocchi, stile *Lure*). Se più attaccanti hanno Provocazione o i bloccanti non bastano, il difensore sceglie come soddisfare il vincolo. Resta una keyword utile e distinta dal blocco ordinario.
+
+**Keyword di blocco ora pienamente funzionanti:** *Volo* (bloccabile solo da creature con Volo o Portata), *Portata* (può bloccare creature con Volo), *Inafferrabile* (bloccabile da al massimo 1 creatura), *Frenesia* (il secondo attacco non può essere bloccato). Tutte tornano legali e con significato.
 
 ### Modello danno alla creatura (DECISO: persistente HS-style)
 - La **DEF è la salute massima**. Il danno si **accumula** sulla creatura e **NON si resetta** a fine/inizio turno — resta finché non viene **curato** (effetti di cura, Hero Power difensivi).
@@ -119,7 +125,7 @@ Artefatto / Equipaggiamento / Artefatto-Creatura, Santuario, Tragedia (+ costo E
 
 ## 6.5 Reattività, Istanti e priorità (DECISO 2026-06-18)
 
-> La reattività è una **scelta di design chiave** del formato Start Mobile. Reintroduce ciò che le bozze precedenti (§3, §6, §11) avevano tagliato. **Il blocco resta tagliato**: si aggiunge solo la possibilità di rispondere con effetti, non di bloccare gli attacchi.
+> La reattività è una **scelta di design chiave** del formato Start Mobile. Reintroduce stack e priorità che le bozze precedenti (§3, §11) avevano tagliato. Si integra con il combattimento attacco/blocco (§6).
 
 **Priorità.** Dopo ogni azione (giocare una carta, dichiarare un attacco, attivare un'abilità), l'avversario riceve **priorità**: può giocare uno o più **Istanti** (e abilità a velocità istante), oppure **passare**. Quando entrambi passano di fila, l'effetto in cima si risolve.
 
@@ -127,10 +133,7 @@ Artefatto / Equipaggiamento / Artefatto-Creatura, Santuario, Tragedia (+ costo E
 
 **Carburante.** Gli Istanti si pagano con l'**energia trattenuta** (§2): per reagire nel turno avversario devi aver lasciato energia non spesa nel tuo turno.
 
-**Finestra di combattimento (il momento reattivo principale).**
-1. L'attaccante dichiara `Attacca(attaccante, bersaglio)`.
-2. **Finestra di risposta del difensore:** può giocare Istanti (rimozione, buff, protezione, ecc.) prima che il danno si risolva. L'attaccante può a sua volta rispondere (stack).
-3. Quando entrambi passano, il danno si risolve in modo deterministico (§6) sui bersagli **come sono in quel momento** (una creatura uccisa dalla rimozione del difensore non infligge più danno).
+**Finestre di combattimento.** Il combattimento (§6) ha **due** finestre di risposta: una dopo la dichiarazione degli attaccanti, una dopo la dichiarazione dei bloccanti. In ciascuna i giocatori possono giocare Istanti (rimozione, buff, protezione) e rispondere sullo stack. Il danno si risolve sui bersagli/blocchi **come sono in quel momento** (una creatura uccisa o rimossa prima della risoluzione non infligge più danno).
 
 **UX mobile.** Serve un **timer di risposta** + tasto **Passa**. Mitigazione obbligatoria: **auto-pass** quando il giocatore non ha Istanti giocabili (per costo o per assenza in mano), così il timer non rallenta i turni quando non c'è nulla da fare.
 
@@ -211,7 +214,7 @@ Checklist engine completa: vedi `FEEDBACK_DESIGN_V1_E_OBIETTIVI.md` §6 (analisi
 ---
 
 ## 12. Decisioni — CHIUSE (2026-06-13, post-review Fable 5)
-- **Combat:** ✅ attacco diretto stile Hearthstone + Provocazione (§6). No attacco/blocco, no reveal simultaneo.
+- **Combat:** ✅ (REVISIONE 2026-06-18) attacco **e blocco** (§6), no reveal simultaneo. Provocazione = forza i blocchi (stile Richiamo/Lure). ⚠️ Reverse della bozza "attacco diretto Hearthstone" → da coordinare con Luca (impatta il motore).
 - **Danno creatura:** ✅ persistente HS-style, nessun reset (§6).
 - **Struttura turno:** ✅ una sola fase azioni (§3), con finestre di risposta per gli Istanti.
 - **Vincoli colore:** ✅ mono-fazione del Leader + Nomadi (§2).
