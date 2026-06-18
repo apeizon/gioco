@@ -81,7 +81,9 @@ Struttura: **3 Tragedie + 3 Benedizioni per fazione**. Meccanica Eco introdotta 
 
 - [x] ~~SM-3.2 — Riprogettare il cluster reattivo~~ → legale con la reattività piena.
 - [x] ~~SM-3.3 — Bonifica reminder sul blocco~~ → non serve: con il blocco (§6) Volo/Portata/Inafferrabile/Frenesia/Travolta/Gelo sono validi in entrambi i formati.
-- [ ] SM-3.4 — Conversione mana colorato → energia (Marika, keyword Nexus del Tessitore). Vera differenza tra formati.
-- [ ] SM-3.5 — Pulizia Leader per Start Mobile (rimuovere Evoluzione + doppio Rientro). Vera differenza tra formati.
-- [ ] SM-3.6 — Verifiche minori non legate al blocco: reminder Resistenza (Leviatano, Soldato del Gelo), tap di Lanciafiamme, timing Incendio (Cendrath).
-- [ ] SM-3.1 — Modello per le poche differenze residue (Leader + 2 carte mana): layer di errata leggero in FORMATO_START_MOBILE/ vs reprint. Ora che le carte divergenti sono ~7, l'errata leggera basta.
+- [x] SM-3.1 — Modello scelto: **errata leggera** (`FORMATO_START_MOBILE/ERRATA_START_MOBILE.md`), le schede condivise non si toccano.
+- [x] SM-3.4 — Conversione mana → energia (Marika, Shai, Tessitore del Nexus): in errata.
+- [x] SM-3.5 — Pulizia Leader (Evoluzione ignorata, solo Rientro A): regola generale in errata.
+- [x] SM-3.6 — Chiarimenti minori (Resistenza, tap Lanciafiamme, Incendio/Cendrath): in errata.
+
+**SM-3 COMPLETO.** Tutte le 81 carte hanno un comportamento definito in Start Mobile (72 dirette + 9 via errata).
