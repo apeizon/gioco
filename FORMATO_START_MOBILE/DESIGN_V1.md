@@ -20,33 +20,36 @@
 ```
 Formato:        1v1 (niente FFA in v1)
 Durata target:  5-7 minuti a partita
-HP:             30
-Energia:        automatica, +1 a turno (NIENTE terre/mana manuale)
-Tipi di carta:  3 — Creatura · Magia · Leader
-Mazzo:          30 carte + 1 Leader (Zona di Comando)
+Vita:           i Punti Vita del tuo Leader (varia per Leader) — niente HP del giocatore separati
+Energia:        tipizzata, +1 a turno del colore scelto (identità del Leader), si accumula, niente cap
+Tipi di carta:  3 — Creatura · Magia · Leader-avatar
+Mazzo:          30 carte + 1 Leader (parte in campo, è il giocatore)
 Mano iniziale:  5 · limite mano 7 · pesca 1/turno
 Board:          max 6 slot creatura per giocatore
 Obiettivo:      1 Obiettivo Segreto a testa, pescato da un pool curato
-Vittoria:       HP avversario a 0  OPPURE  completa il tuo Obiettivo
-Combat:         deterministico ATK vs DEF, niente stack/priorità
+Vittoria:       Punti Vita del Leader avversario a 0  OPPURE  completa il tuo Obiettivo
+Combat:         attacco/blocco + stack/priorità (Istanti) · danno resettato a fine turno (Magic-style)
 Monetizzazione: crediti (gratis giocando + rewarded ads, o comprabili) →
                 pack + craft + cosmetici + battle pass. No cash-out, no scambio P2P.
 ```
 
-Complessità totale ≈ Snap, ma con un gancio (l'Obiettivo) che Snap non ha.
+Il formato "senza terre" si è avvicinato molto a Magic (energia tipizzata, blocco, Istanti/stack, danno a fine turno, Leader-avatar), pur restando snello: pool di carte ridotto, niente terre da pescare, Obiettivi Segreti come gancio.
 
 ---
 
-## 2. Risorse — energia automatica
+## 2. Risorse — energia tipizzata (DECISO 2026-06-19)
 
-- **Niente Avamposti/terre, niente tap/untap per il mana.**
-- Ogni giocatore ha **energia che sale di +1 all'inizio del proprio turno** (turno 1 = 1, …), fino a un **cap = 8** (deciso: i turni 9-10 a curva piena allungano troppo; la curva costi va disegnata su 1-8, le carte 7-8 sono i finisher).
-- **Energia trattenuta (DECISO 2026-06-18):** l'energia **non spesa resta disponibile** — anche nel turno dell'avversario, per giocare Istanti in risposta (vedi §6.5) — **fino al tuo prossimo upkeep**. All'upkeep si **rigenera** al valore pieno del turno (= `min(numero del turno, 8)`): **non si accumula** tra un tuo turno e il successivo. Esempio: nel tuo turno hai 4 energia e ne spendi 2 → ti restano **2** per reagire durante il turno avversario; al tuo upkeep successivo torni a **5** (non 5 + 2).
-- **Motivo del cambiamento:** la reattività piena (Istanti giocabili nel turno avversario) richiede un carburante disponibile fuori dal proprio turno. Trattenere l'energia non spesa è il modo naturale per alimentarla; il "non accumulo tra turni" evita lo stockpiling.
-- Le carte costano energia (= `ManaCosto.Totale`). Si gioca finché si ha energia.
-- **Motivo:** rimuove mana-screw/flood, rimuove un intero tipo di carta, rimuove decisioni "amministrative". È la scelta deliberata che ha reso Snap veloce.
-- *Identità colori:* i 5 colori restano come **identità di fazione** per deckbuilding/tematica, ma **non** governano il costo. **Deckbuilding (deciso):** mono-fazione del Leader + carte **Nomadi** (incolori, sempre legali). Multicolore = upsell v2.
-- **Penalità mazzo vuoto (deciso): fatigue crescente** (1, 2, 3, … danno per ogni pesca a vuoto), non perdita immediata — così il `mill` resta pressione, non interruttore binario.
+> Questa sezione **sostituisce** il vecchio modello "energia incolore automatica, conta solo il totale, cap 8". Il nuovo modello è una base di mana costruita una "terra" a turno, del colore scelto.
+
+- **Niente Avamposti/terre da pescare.** All'inizio di ogni tuo turno **guadagni 1 energia** e **scegli il colore** di quell'energia.
+- Il colore si sceglie **nell'identità di fazione del tuo Leader**; una volta scelto, quell'energia ha **colore fisso** per tutta la partita.
+- **L'energia si accumula:** al turno N hai **N energie totali** (T1 = 1, T2 = 2, …). **Niente cap.**
+- Le energie accumulate si **ricaricano ogni turno** (come terre che si stappano): ogni turno puoi spendere fino al tuo totale.
+- **Il colore conta:** una carta che costa "2 Nord" si paga con **2 energie Nord**. Le carte **Nomadi** (incolori) si pagano con energia di **qualsiasi** colore.
+- **Energia trattenuta per la reattività:** l'energia non spesa resta disponibile — anche nel **turno avversario** — per giocare **Istanti** (§6.5). Al tuo upkeep successivo tutte le energie si ricaricano e ne aggiungi 1 nuova.
+- **Esempio (Leader Nord-Ovest):** T1 scegli Nord → `[Nord]`. T2 scegli Ovest → `[Nord, Ovest]`. T3 scegli Nord → `[Nord, Nord, Ovest]`. Con un Leader **mono** la scelta è automatica (una sola fazione).
+- **Deckbuilding:** al lancio **solo Leader mono** + carte **Nomadi**. I **Leader multi-fazione esisteranno** ma arrivano **dopo**, per non complicare l'onboarding (gli utenti imparano prima il gioco).
+- **Penalità mazzo vuoto:** fatigue crescente (1, 2, 3, … danno per ogni pesca a vuoto) — il `mill` resta pressione, non interruttore binario.
 
 ---
 
@@ -54,7 +57,7 @@ Complessità totale ≈ Snap, ma con un gancio (l'Obiettivo) che Snap non ha.
 
 **Deciso:** niente Main1/Combat/Main2 separate. Tre momenti:
 
-1. **Inizio turno** (automatico): stappa + azzera summoning sickness, **rigenera energia** al valore pieno del turno (= `min(numero del turno, 8)`; l'energia trattenuta dal turno precedente viene **sostituita**, non sommata — vedi §2), trigger `upkeep`, **pesca 1** (il primo non pesca al turno 1; mazzo vuoto → fatigue).
+1. **Inizio turno** (automatico): stappa + azzera summoning sickness, **ricarica tutte le energie** accumulate e **guadagni +1 energia del colore che scegli** (§2), trigger `upkeep`, **pesca 1** (il primo non pesca al turno 1; mazzo vuoto → fatigue).
 2. **Fase azioni** (libera): gioca carte, attiva abilità, **dichiara attacchi singoli**, in **qualsiasi ordine**. Dopo ogni azione l'avversario riceve una finestra di risposta per gli Istanti (vedi §6.5).
 3. **Fine turno** (automatico): scarta a 7, trigger di fine turno, passa.
 
@@ -70,7 +73,7 @@ Complessità totale ≈ Snap, ma con un gancio (l'Obiettivo) che Snap non ha.
 - Permanente con **ATK** e **DEF**. Occupa **1 slot** (max 6).
 - **Summoning sickness**: non attacca il turno in cui entra (salvo keyword *Velocità*).
 - Attacca e **può bloccare** (§6). Può avere *Provocazione* (le creature avversarie che possono bloccarla devono bloccarla — §6).
-- **DEF = salute**, il danno si accumula e persiste (§6).
+- **DEF = salute**; il danno marcato dura **fino a fine turno** e poi si cancella (Magic-style, §6).
 - Può avere effetti a trigger (vedi §7).
 
 ### 4.2 Magia / Spell
@@ -79,12 +82,23 @@ Complessità totale ≈ Snap, ma con un gancio (l'Obiettivo) che Snap non ha.
   - **Magia (Sorcery):** giocabile solo nella **tua fase azioni**, quando hai priorità e lo stack è vuoto.
   - **Istante:** giocabile **ogni volta che hai priorità**, anche nel **turno dell'avversario** e in risposta durante il combattimento (vedi §6.5). Pagato con l'energia trattenuta (§2).
 
-### 4.3 Leader / Eroe
-- **1 per mazzo**, nella **Zona di Comando** (sempre visibile), non si pesca, disponibile da subito.
-- Ha **ATK/DEF** + **1 Abilità Passiva** (attiva sempre) + **1 Hero Power** (attivabile 1 volta ogni X turni, costa energia).
-- Si può **giocare in campo** pagando il costo: lì è una creatura normale (attacca/bersagliabile), occupa uno slot.
-- **Morte del Leader:** torna in Zona di Comando (non al Cimitero). Per rigiocarlo: paga costo base **+ incremento cumulativo** per ogni morte (semplice; niente "attesa gratuita" in v1).
-- **Tagliato da v1:** evoluzione del Leader (→ v2).
+### 4.3 Leader / Avatar (DECISO 2026-06-19 — il Leader è il giocatore)
+
+> Cambiamento fondamentale: il Leader **non** è più un comandante nella Zona di Comando. **È il giocatore stesso.** Sostituisce il modello precedente (Zona di Comando, costo di evocazione, Rientro, Evoluzione).
+
+- Il Leader **è il giocatore**: i suoi **Punti Vita sono il tuo totale di vita** (non esiste un totale HP separato del giocatore). A **0 Punti Vita perdi**.
+- **Parte in campo** all'inizio della partita, sempre presente. **Niente Zona di Comando, niente costo per evocarlo.**
+- **Immune agli effetti di rimozione** (distruggi / esilia / rimbalza / prendi il controllo): è il tuo avatar. **NON** è immune al **danno** — una magia tipo "infliggi 3 danni" gli toglie 3 Punti Vita.
+- **Tre valori:**
+  - **Forza** e **Costituzione** = statistiche di **combattimento**, modificabili dalle carte (buff/debuff come ATK/DEF).
+  - **Punti Vita** = il **totale vita permanente** (varia per Leader: più o meno secondo tipologia e potenza → varietà di gioco).
+- **Combattimento:** attacca come una creatura (con la **Forza**), ma **non può bloccare/difendere**.
+  - **In attacco:** se bloccato, la **Costituzione** fa da corazza (assorbe il danno del bloccante) e l'**eccesso oltre la Costituzione passa ai Punti Vita**.
+  - **In difesa:** se il Leader viene attaccato e **non hai creature che lo bloccano**, il danno va **dritto ai Punti Vita** — la Costituzione **non** protegge in difesa (altrimenti sarebbe quasi impossibile attaccarlo). Puoi proteggerlo facendo bloccare le tue creature.
+- Può **riguadagnare e perdere Punti Vita** tramite effetti (cura/danno).
+- **Fazioni:** il Leader porta le sue fazioni solo per **identità/tematica** del mazzo e per scegliere il colore dell'energia (§2). Nessun costo di evocazione.
+- **Flip (DA RIVEDERE):** il Leader può **trasformarsi (flip)** pagando un costo in energia o soddisfacendo condizioni. **Costi e condizioni del flip sono provvisori, da ridefinire.**
+- **Al lancio: solo Leader mono** (multi-fazione più avanti, §2).
 
 ### 4.4 Tagliati da v1 (→ "modalità avanzata" v2)
 Artefatto / Equipaggiamento / Artefatto-Creatura, Santuario, Tragedia (+ costo Eco), Alleato (fedeltà a livelli), Satellite, Benedizione, Avamposto, contatori-utilizzi. Restano nel design completo (`REGOLE_BASE_TCG.md`) come espansione futura.
@@ -108,18 +122,23 @@ Artefatto / Equipaggiamento / Artefatto-Creatura, Santuario, Tragedia (+ costo E
 4. **Finestra di risposta** dopo i blocchi (§6.5).
 5. **Risoluzione del danno**, deterministica e simultanea:
    - attaccante **bloccato**: attaccante e bloccante si infliggono danno a vicenda (ATK contro ATK);
-   - attaccante **non bloccato**: infligge il danno al bersaglio dichiarato (creatura o HP);
-   - il danno si **accumula** sulle creature (modello danno persistente, sotto).
-6. **Velocità:** ignora la summoning sickness. **Travolta:** se un attaccante uccide il bloccante, il danno in eccesso oltre la salute del bloccante passa agli HP del giocatore.
+   - attaccante **non bloccato**: infligge il danno al bersaglio dichiarato (creatura o Punti Vita del Leader avversario);
+   - il danno marcato sulle creature dura **fino a fine turno** (modello sotto).
+6. **Velocità:** ignora la summoning sickness. **Travolta:** se un attaccante uccide il bloccante, il danno in eccesso oltre la salute del bloccante passa ai Punti Vita del giocatore.
+
+**Leader in combattimento (§4.3):** il Leader attacca con la **Forza** ma **non può bloccare**. In attacco la **Costituzione** fa da corazza e l'eccesso passa ai suoi **Punti Vita**; in difesa, senza creature che bloccano, il danno va dritto ai Punti Vita. Il Leader è **immune alla rimozione** ma non al danno.
 
 **Provocazione (DECISO 2026-06-18, opzione "Richiamo"):** le creature avversarie che **possono** bloccare una creatura con Provocazione **devono** bloccarla (forza i blocchi, stile *Lure*). Se più attaccanti hanno Provocazione o i bloccanti non bastano, il difensore sceglie come soddisfare il vincolo. Resta una keyword utile e distinta dal blocco ordinario.
 
 **Keyword di blocco ora pienamente funzionanti:** *Volo* (bloccabile solo da creature con Volo o Portata), *Portata* (può bloccare creature con Volo), *Inafferrabile* (bloccabile da al massimo 1 creatura), *Frenesia* (il secondo attacco non può essere bloccato). Tutte tornano legali e con significato.
 
-### Modello danno alla creatura (DECISO: persistente HS-style)
-- La **DEF è la salute massima**. Il danno si **accumula** sulla creatura e **NON si resetta** a fine/inizio turno — resta finché non viene **curato** (effetti di cura, Hero Power difensivi).
-- La creatura muore quando **danno accumulato ≥ DEF effettiva**.
-- **Perché persistente e non reset-per-turno:** (1) coerenza col pool obiettivi (OB-08 "DEF non danneggiata" sarebbe degenere col reset); (2) bilanciamento del removal (v1 ha poche rimozioni → l'attrito da combat è necessario); (3) **un solo sistema danno** unificato con `infliggi_danno` da effetti; (4) abilita cura/heal come meccanica reale e il chip-damage come valuta. La leggibilità mobile è un problema risolto (HS mostra la salute corrente da 12 anni).
+### Modello danno (DECISO 2026-06-19 — Magic-style, si resetta a fine turno)
+
+> **Annulla** la decisione precedente ("danno persistente HS-style"). Ora il danno funziona come in Magic.
+
+- La **DEF** (creature) e la **Costituzione** (Leader in attacco) sono la **salute massima in combattimento**. Il **danno marcato si cancella alla fine di ogni turno**: una creatura ferita ma non uccisa torna a piena DEF al turno successivo.
+- Una creatura muore quando il danno marcato **≥ DEF effettiva** nello stesso turno.
+- **L'unica vita permanente** sono i **Punti Vita del Leader** (§4.3): perdite e danni ai Punti Vita **non** si resettano.
 
 ---
 
@@ -204,10 +223,10 @@ Principio guida costante: ogni feature candidata va pesata contro **"allunga la 
 
 Il codice C# (`engine-cs/`) regge in parte, ma il pivot a combat-HS + fase unica richiede un **re-baseline**:
 - **Sopravvive:** E1 core loop · E3 interprete effetti completo (motore carte) · `StatEffettive`/`KeywordEffettive` · trigger morte/etb/upkeep/attivata · loader carte.
-- **Da rifare (E4):** il combat attacco/blocco (`DichiaraAttacco`/`DichiaraBlocchi`) → **attacco diretto** `Attacca(attaccante, bersaglio)` + Provocazione/Velocità/Travolta. Sopravvivono morte/eventi.
-- **Da cambiare (E2):** mana colorato/Avamposti → **energia automatica** (intero, +1/turno, cap 8) con **energia trattenuta** (non spesa resta fino al proprio upkeep, poi si rigenera senza accumulo — §2); costo = `ManaCosto.Totale`.
-- **DA FARE — reverse del 2026-06-18 (E5 stack/priorità):** prima tagliato, **ora richiesto**. Serve sottosistema **stack + priorità + finestra di risposta + risoluzione LIFO** per la reattività piena / Istanti (§6.5). Da coordinare con Luca.
-- **Nuovo:** modello **danno persistente su `CartaIstanza`** + state-based death · **fase unica** (collassa Untap..End) ma con **finestre di priorità** dentro la fase e nel turno avversario · **fatigue** · **cap board 6** + board-pieno · **sistema Obiettivi** (pool, assegnazione, tracking, telegrafo 3-stati, win-check parallelo) · **Leader**.
+- **E4 — combat attacco/blocco:** il modello originale (`DichiaraAttacco`/`DichiaraBlocchi`) **si mantiene** (in v1 il blocco esiste, §6). Aggiungere: Provocazione = Richiamo, Velocità, Travolta, e il **Leader-avatar in combattimento** (non blocca; Costituzione fa da corazza solo in attacco; eccesso → Punti Vita).
+- **E2 — energia tipizzata (REVISIONE 2026-06-19):** mana colorato/Avamposti → **energia tipizzata accumulata** (+1/turno del colore scelto nell'identità del Leader, **niente cap**, si ricarica ogni turno, **il colore conta** per i costi; non spesa resta per gli Istanti nel turno avversario — §2). Nomadi = pagabili con qualsiasi colore.
+- **DA FARE — reverse 2026-06-18 (E5 stack/priorità):** prima tagliato, **ora richiesto**. Serve sottosistema **stack + priorità + finestra di risposta + risoluzione LIFO** per Istanti/reattività (§6.5). Da coordinare con Luca.
+- **Nuovo / REVISIONE 2026-06-19:** modello **danno Magic-style** (marcato, si resetta a fine turno; l'unica vita permanente sono i Punti Vita del Leader — §6) · **Leader-avatar** (è il giocatore: Forza/Costituzione/Punti Vita, parte in campo, immune a rimozione non al danno, niente Zona di Comando né costo evocazione, **flip** da rivedere — §4.3) · **fatigue** · **cap board 6** + board-pieno · **sistema Obiettivi** (pool, assegnazione, tracking, telegrafo 3-stati, win-check parallelo).
 
 Checklist engine completa: vedi `FEEDBACK_DESIGN_V1_E_OBIETTIVI.md` §6 (analisi Fable 5, 2026-06-12).
 
@@ -215,12 +234,13 @@ Checklist engine completa: vedi `FEEDBACK_DESIGN_V1_E_OBIETTIVI.md` §6 (analisi
 
 ## 12. Decisioni — CHIUSE (2026-06-13, post-review Fable 5)
 - **Combat:** ✅ (REVISIONE 2026-06-18) attacco **e blocco** (§6), no reveal simultaneo. Provocazione = forza i blocchi (stile Richiamo/Lure). ⚠️ Reverse della bozza "attacco diretto Hearthstone" → da coordinare con Luca (impatta il motore).
-- **Danno creatura:** ✅ persistente HS-style, nessun reset (§6).
+- **Danno (REVISIONE 2026-06-19):** ✅ **Magic-style**, il danno marcato si resetta a fine turno (§6). Annulla il "persistente HS-style". L'unica vita permanente = Punti Vita del Leader.
 - **Struttura turno:** ✅ una sola fase azioni (§3), con finestre di risposta per gli Istanti.
-- **Vincoli colore:** ✅ mono-fazione del Leader + Nomadi (§2).
-- **Cap energia:** ✅ 8 (§2). **Mazzo vuoto:** ✅ fatigue crescente (§2).
-- **Reattività / Istanti (NUOVO, 2026-06-18):** ✅ reattività piena — Istanti giocabili nel turno avversario, stack LIFO + priorità, finestra di risposta in combattimento (§6.5). **Energia trattenuta** per alimentarla (§2). ⚠️ Reverse di §3/§6/§11: **da coordinare con Luca** (impatta il motore).
-- **Leader:** ✅ passiva debole, potenza nell'Hero Power.
+- **Energia (REVISIONE 2026-06-19):** ✅ **tipizzata, accumulata, +1/turno del colore scelto nell'identità del Leader, niente cap, il colore conta** (§2). Annulla "energia incolore, conta solo il totale, cap 8".
+- **Deckbuilding:** ✅ al lancio **solo Leader mono** + Nomadi; multi-fazione più avanti (§2). **Mazzo vuoto:** ✅ fatigue crescente.
+- **Reattività / Istanti (2026-06-18):** ✅ Istanti nel turno avversario, stack LIFO + priorità, finestra di risposta in combattimento (§6.5). Carburante = energia non spesa (§2).
+- **Leader-avatar (REVISIONE 2026-06-19):** ✅ il Leader **è il giocatore** (Forza/Costituzione/Punti Vita, parte in campo, immune a rimozione non al danno, non blocca, niente Zona di Comando né costo evocazione). **Flip da rivedere.** Annulla il Leader-comandante con Zona di Comando/Hero Power/Evoluzione/Rientro.
+- ⚠️ **Tutte le revisioni del 19/06 impattano il motore → da coordinare con Luca.**
 - **Pool obiettivi:** ✅ 22 ranked + 6 casual, vedi `FEEDBACK_DESIGN_V1_E_OBIETTIVI.md` §3-4. Turni target da validare in playtest (telemetria §5 di quel doc).
 - **Compliance:** pubblicare le probabilità pack in-app (Apple/Google).
 - **Soft-launch:** mercati neutri (no audience Karmate); canale Karmate = moltiplicatore al lancio globale.

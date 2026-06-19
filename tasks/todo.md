@@ -87,3 +87,20 @@ Struttura: **3 Tragedie + 3 Benedizioni per fazione**. Meccanica Eco introdotta 
 - [x] SM-3.6 — Chiarimenti minori (Resistenza, tap Lanciafiamme, Incendio/Cendrath): in errata.
 
 **SM-3 COMPLETO.** Tutte le 81 carte hanno un comportamento definito in Start Mobile (72 dirette + 9 via errata).
+
+## SM-4 — Revisione regole 2026-06-19 (applicata a DESIGN_V1.md)
+
+- [x] SM-4.1 — **Energia tipizzata**: +1/turno del colore scelto (identità Leader), accumula, no cap, il colore conta (§2).
+- [x] SM-4.2 — **Leader-avatar**: il Leader è il giocatore (Forza/Costituzione/Punti Vita, parte in campo, immune a rimozione non al danno, non blocca, niente Zona di Comando/costo evocazione; flip da rivedere) (§4.3).
+- [x] SM-4.3 — **Danno Magic-style**: si resetta a fine turno; solo i Punti Vita del Leader sono permanenti (§6).
+- [x] SM-4.4 — Aggiornati §1, §3, §11, §12 + memoria.
+
+## SM-5 — Downstream da rifare (le regole 19/06 invalidano lavoro precedente)
+
+- [ ] SM-5.1 — **Ridisegnare i 5 Leader** nel modello avatar (Forza/Costituzione/Punti Vita + flip al posto di ATK/DEF + Hero Power + Evoluzione + Rientro + costo mana). Serve decidere prima la meccanica **flip** (oggi "da rivedere").
+- [ ] SM-5.2 — **Riscrivere ERRATA_START_MOBILE.md**: ora il colore conta → le conversioni mana→energia (Marika/Shai/Tessitore) decadono; la sezione Leader (Evoluzione/Rientro) è superata dal modello avatar.
+- [ ] SM-5.3 — **Ripensare gli Obiettivi** legati al vecchio Leader/danno: R09 (cura del danno accumulato → il danno ora si resetta), R14 e C04 ("Leader in campo / Zona di Comando" → il Leader è sempre in campo), e aggiornare la dicitura "HP avversario" → "Punti Vita del Leader avversario".
+- [ ] SM-5.4 — **Rinfrescare CENSIMENTO_CARTE.md**: i punti mana-colorato decadono (colore conta), la sezione Leader cambia col modello avatar, le note "cura valorizzata dal danno persistente" non valgono più.
+- [ ] SM-5.5 — Decidere il **cap** (confermato: nessuno) e i **Leader multi-fazione** (post-lancio) — già recepiti nel regolamento.
+
+> ⚠️ Tutte le revisioni 19/06 impattano il motore di Luca → **messaggio di follow-up da mandargli** (energia tipizzata, Leader-avatar, danno a fine turno) prima che ci lavori.
