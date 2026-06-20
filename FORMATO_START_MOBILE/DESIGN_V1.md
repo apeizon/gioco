@@ -93,11 +93,13 @@ Il formato "senza terre" si è avvicinato molto a Magic (energia tipizzata, bloc
   - **Forza** e **Costituzione** = statistiche di **combattimento**, modificabili dalle carte (buff/debuff come ATK/DEF).
   - **Punti Vita** = il **totale vita permanente** (varia per Leader: più o meno secondo tipologia e potenza → varietà di gioco).
 - **Combattimento:** attacca come una creatura (con la **Forza**), ma **non può bloccare/difendere**.
-  - **In attacco:** se bloccato, la **Costituzione** fa da corazza (assorbe il danno del bloccante) e l'**eccesso oltre la Costituzione passa ai Punti Vita**.
-  - **In difesa:** se il Leader viene attaccato e **non hai creature che lo bloccano**, il danno va **dritto ai Punti Vita** — la Costituzione **non** protegge in difesa (altrimenti sarebbe quasi impossibile attaccarlo). Puoi proteggerlo facendo bloccare le tue creature.
+  - **In attacco (Assalto):** la **Costituzione conta SOLO qui.** Se bloccato, la Costituzione fa da corazza (assorbe il danno del bloccante) e l'**eccesso oltre la Costituzione passa ai Punti Vita**.
+  - **In difesa:** il Leader **non difende con Forza/Costituzione**. Se viene attaccato e **non hai creature che lo bloccano**, il danno va **dritto ai Punti Vita**. Puoi proteggerlo solo facendo **bloccare le tue creature** oppure con **Magie/effetti che prevengono il danno**.
+- **Assalto N (NUOVO 2026-06-20):** keyword propria di ogni Leader. Per **dichiarare il Leader come attaccante** devi pagare il suo **Assalto** = **N energia** (di qualsiasi colore, oppure colori specifici se indicato sulla carta, es. "Assalto 2 Nord"). Il Leader può assaltare **una sola volta per turno** (salvo carte specifiche che lo modificheranno in futuro). È il **gate anti-brawl**: nei primi turni l'energia scarseggia, quindi assaltare significa rinunciare a giocare altre carte.
+- **Niente Velocità di base (NUOVO 2026-06-20):** il Leader è soggetto a **summoning sickness** all'inizio della partita → **nel primo turno di ciascun giocatore il Leader NON può attaccare**, a prescindere dall'Assalto. Da T2 in poi può attaccare pagando l'Assalto. (Secondo strato anti-brawl, oltre all'Assalto.)
 - Può **riguadagnare e perdere Punti Vita** tramite effetti (cura/danno).
 - **Fazioni:** il Leader porta le sue fazioni solo per **identità/tematica** del mazzo e per scegliere il colore dell'energia (§2). Nessun costo di evocazione.
-- **Flip (DA RIVEDERE):** il Leader può **trasformarsi (flip)** pagando un costo in energia o soddisfacendo condizioni. **Costi e condizioni del flip sono provvisori, da ridefinire.**
+- **Flip (DECISO 2026-06-20):** ogni Leader ha una **condizione di flip** stampata sulla carta. Appena la condizione è soddisfatta (**controllo di stato**, anche durante il turno avversario), il Leader si **trasforma automaticamente** nella sua forma flippata. Il flip è **permanente e una tantum** (irreversibile — anche se la condizione smette di valere, resta flippato; la forma flippata è quella finale), **non costa energia** (la condizione è il prezzo) e **mantiene i Punti Vita correnti** — cambiano solo **Forza/Costituzione e le abilità**. Le forme flippate hanno stat migliori e abilità potenziate.
 - **Al lancio: solo Leader mono** (multi-fazione più avanti, §2).
 
 ### 4.4 Tagliati da v1 (→ "modalità avanzata" v2)
@@ -126,7 +128,7 @@ Artefatto / Equipaggiamento / Artefatto-Creatura, Santuario, Tragedia (+ costo E
    - il danno marcato sulle creature dura **fino a fine turno** (modello sotto).
 6. **Velocità:** ignora la summoning sickness. **Travolta:** se un attaccante uccide il bloccante, il danno in eccesso oltre la salute del bloccante passa ai Punti Vita del giocatore.
 
-**Leader in combattimento (§4.3):** il Leader attacca con la **Forza** ma **non può bloccare**. In attacco la **Costituzione** fa da corazza e l'eccesso passa ai suoi **Punti Vita**; in difesa, senza creature che bloccano, il danno va dritto ai Punti Vita. Il Leader è **immune alla rimozione** ma non al danno.
+**Leader in combattimento (§4.3):** il Leader attacca con la **Forza** ma **non può bloccare**. Per dichiararlo attaccante paghi il suo **Assalto N** (N energia), **una volta per turno**. Non ha Velocità: **non attacca nel primo turno** (summoning sickness). La **Costituzione conta solo in attacco** (fa da corazza, l'eccesso passa ai Punti Vita); in difesa il Leader non usa Forza/Costituzione e il danno va dritto ai Punti Vita (lo proteggi con creature o Magie anti-danno). Il Leader è **immune alla rimozione** ma non al danno.
 
 **Provocazione (DECISO 2026-06-18, opzione "Richiamo"):** le creature avversarie che **possono** bloccare una creatura con Provocazione **devono** bloccarla (forza i blocchi, stile *Lure*). Se più attaccanti hanno Provocazione o i bloccanti non bastano, il difensore sceglie come soddisfare il vincolo. Resta una keyword utile e distinta dal blocco ordinario.
 

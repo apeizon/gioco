@@ -97,7 +97,8 @@ Struttura: **3 Tragedie + 3 Benedizioni per fazione**. Meccanica Eco introdotta 
 
 ## SM-5 — Downstream da rifare (le regole 19/06 invalidano lavoro precedente)
 
-- [ ] SM-5.1 — **Ridisegnare i 5 Leader** nel modello avatar (Forza/Costituzione/Punti Vita + flip al posto di ATK/DEF + Hero Power + Evoluzione + Rientro + costo mana). Serve decidere prima la meccanica **flip** (oggi "da rivedere").
+- [x] SM-5.1 — **5 Leader-avatar ridisegnati e scritti** in `FORMATO_START_MOBILE/leader/` (Xirlia 35 · Shai 25 · Kazet 20 · Marika 32 · Vaelos 30). Schede condivise `leader/` NON toccate. + **Assalto N** (una volta per turno) + niente Velocità (no attacco T1).
+- [x] SM-6 — **Meccanica flip DEFINITA**: condizione stampata, automatica (controllo di stato anche nel turno avversario), permanente/una tantum, niente costo extra, mantiene i Punti Vita correnti. Applicata ai 5 Leader (DESIGN_V1.md §4.3).
 - [ ] SM-5.2 — **Riscrivere ERRATA_START_MOBILE.md**: ora il colore conta → le conversioni mana→energia (Marika/Shai/Tessitore) decadono; la sezione Leader (Evoluzione/Rientro) è superata dal modello avatar.
 - [ ] SM-5.3 — **Ripensare gli Obiettivi** legati al vecchio Leader/danno: R09 (cura del danno accumulato → il danno ora si resetta), R14 e C04 ("Leader in campo / Zona di Comando" → il Leader è sempre in campo), e aggiornare la dicitura "HP avversario" → "Punti Vita del Leader avversario".
 - [ ] SM-5.4 — **Rinfrescare CENSIMENTO_CARTE.md**: i punti mana-colorato decadono (colore conta), la sezione Leader cambia col modello avatar, le note "cura valorizzata dal danno persistente" non valgono più.
